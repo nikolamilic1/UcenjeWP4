@@ -1,0 +1,110 @@
+Izrada web stranice za rock bend "Teheran" može se podijeliti u nekoliko ključnih faza kako bi se osigurao uspješan i profesionalan projekt. Evo tih faza:
+1. Planiranje i Analiza
+
+Definiranje ciljeva:
+
+    Razjasniti svrhu web stranice (promocija benda, informacije o koncertima, prodaja muzike i mercha, komunikacija s fanovima).
+    Definisati ciljnu publiku (fanovi, promotori, mediji).
+
+Analiza zahteva:
+
+    Prikupiti zahteve od članova benda i menadžmenta.
+    Odrediti ključne funkcionalnosti (npr. galerija, biografija, muzički player, kalendar događaja, kontakt forma).
+
+Konkurentska analiza:
+
+    Pregledati web stranice sličnih bendova kako bi se inspirisali i identifikovali najbolje prakse.
+
+2. Dizajn
+
+Informaciona arhitektura:
+
+    Kreirati strukturu web stranice, uključujući glavne sekcije (početna stranica, biografija, muzika, turneje, galerija, kontakt).
+
+UI/UX dizajn:
+
+    Razviti wireframe-ove za glavne stranice.
+    Dizajnirati vizuelni identitet stranice koji će odražavati stil i energiju benda "Teheran".
+    Izraditi prototipove za pregled i odobrenje.
+
+Responsive dizajn:
+
+    Osigurati da dizajn bude prilagođen različitim uređajima (desktop, tablet, mobilni telefon).
+
+3. Razvoj
+
+Front-end razvoj:
+
+    Kodirati dizajn koristeći HTML, CSS i JavaScript.
+    Implementirati responzivni dizajn za optimalno korisničko iskustvo na svim uređajima.
+
+Back-end razvoj:
+
+    Postaviti serversku stranu ako je potrebno za dinamičke funkcionalnosti (CMS za upravljanje sadržajem, baza podataka za liste događaja).
+    Integrisati potrebne servise (npr. muzički player, integracija sa društvenim mrežama, newsletter prijava).
+
+Integracija:
+
+    Integrisati dizajn sa back-end-om i osigurati funkcionalnost svih elemenata (muzički player, galerija, kalendar događaja).
+
+4. Testiranje
+
+Jedinično testiranje:
+
+    Testirati individualne komponente stranice kako bi se osiguralo da rade ispravno.
+
+Integraciono testiranje:
+
+    Testirati kako različiti moduli rade zajedno (npr. muzički player sa stranicom muzike, galerija sa CMS-om).
+
+Sistem testiranje:
+
+    Testirati celu stranicu kako bi se osiguralo da svi delovi funkcionišu bez problema.
+
+Korisničko testiranje:
+
+    Sprovesti testiranje sa nekoliko stvarnih korisnika kako bi se dobio povratni feedback i otkrili eventualni problemi u korisničkom iskustvu.
+
+5. Implementacija
+
+Deployment:
+
+    Postaviti stranicu na produkciono okruženje.
+    Konfigurisati hosting i domen.
+    Proveriti da li je sve pravilno postavljeno i funkcionalno.
+
+Finalno testiranje:
+
+    Izvršiti završno testiranje na produkcionom okruženju kako bi se osiguralo da nema problema.
+
+6. Održavanje i Ažuriranje
+
+Monitoring:
+
+    Pratiti performanse stranice i korisničke aktivnosti kako bi se brzo identifikovali problemi.
+
+Ispravljanje grešaka:
+
+    Reagovati na prijavljene probleme i greške, te ih ispravljati u što kraćem roku.
+
+Ažuriranja i unapređenja:
+
+    Redovno ažurirati sadržaj (npr. nove pesme, datumi turneja, novosti).
+    Implementirati nove funkcionalnosti na osnovu korisničkog feedback-a i tehnoloških unapređenja.
+
+7. Marketing i Promocija
+
+SEO optimizacija:
+
+    Optimizovati stranicu za pretraživače kako bi se poboljšala vidljivost.
+
+Promocija:
+
+    Promovisati stranicu putem društvenih mreža, e-mail marketinga, i drugih kanala.
+    Kreirati sadržaj koji će privući i zadržati posetioce (npr. blog postovi, ekskluzivne pesme, behind-the-scenes sadržaj).
+
+Korisnička podrška:
+
+    Pružati podršku posetiocima stranice kroz različite kanale (e-mail, chat) kako bi se osiguralo zadovoljstvo korisnika i rešili eventualni problemi.
+
+Ove faze obuhvataju sve aspekte izrade web stranice za rock bend "Teheran", od početnog planiranja do održavanja i promocije nakon lansiranja.
