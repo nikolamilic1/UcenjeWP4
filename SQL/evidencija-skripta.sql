@@ -1,4 +1,4 @@
-use master;
+ï»¿use master;
 go
 drop database if exists evidencija;
 go
@@ -47,10 +47,10 @@ alter table evidencija_rada add foreign key (djelatnik) references djelatnik(sif
 --INSERT DJELATNIKA
 
 insert into djelatnik (ime,prezime,email) values
-('Pero','Periæ','pero.peric@gmail.com'),
-('Ivan','Iviæ','ivan.ivic@gmail.com'),
-('Jozo','Joziæ','jozo.jozicgmail.com'),
-('Lucija','Luciæ','lucija.lucic@gmail.com');
+('Pero','PeriÄ‡','pero.peric@gmail.com'),
+('Ivan','IviÄ‡','ivan.ivic@gmail.com'),
+('Jozo','JoziÄ‡','jozo.jozicgmail.com'),
+('Lucija','LuciÄ‡','lucija.lucic@gmail.com');
 
 
 
@@ -65,13 +65,13 @@ insert into projekt (naziv,klijent) values
 --INSERTI ZADATAKA ZA PROJEKT ExploreEasy
 
 insert into zadatak (naziv,pocetak,zavrsetak,projekt,opis) values
-('Postavljanje Ciljeva','2024-01-01','2024-01-31',1,'Definirati glavne funkcionalnosti aplikacije (karte, turistièke atrakcije, preporuke restorana, smještaj, itd.).'),
-('Izrada Projektnog Plana','2024-02-01','2024-02-28',1,'Planirati resurse, vremenske okvire, budet i definirati tim'),
-('Wireframing','2024-03-01','2024-03-31',1,'Kreirati osnovne skice korisnièkog suèelja (UI) kako bi se vizualizirale glavne komponente aplikacije'),
-('UI/UX Dizajn','2024-04-01','2024-04-30',1,'Razviti detaljan dizajn korisnièkog suèelja i iskustva korisnika. Paziti na intuitivnost, estetiku i funkcionalnost.'),
+('Postavljanje Ciljeva','2024-01-01','2024-01-31',1,'Definirati glavne funkcionalnosti aplikacije (karte, turistiÄke atrakcije, preporuke restorana, smjeÅ¡taj, itd.).'),
+('Izrada Projektnog Plana','2024-02-01','2024-02-28',1,'Planirati resurse, vremenske okvire, budÅ¾et i definirati tim'),
+('Wireframing','2024-03-01','2024-03-31',1,'Kreirati osnovne skice korisniÄkog suÄelja (UI) kako bi se vizualizirale glavne komponente aplikacije'),
+('UI/UX Dizajn','2024-04-01','2024-04-30',1,'Razviti detaljan dizajn korisniÄkog suÄelja i iskustva korisnika. Paziti na intuitivnost, estetiku i funkcionalnost.'),
 ('Izbor Tehnologija','2024-05-01','2024-05-31',1,'Odabrati platformu (iOS, Android, ili obje), programske jezike (Swift, Kotlin, React Native, itd.), i alate za razvoj.'),
-('Back-end Razvoj','2024-06-01','2024-12-30',1,'Postaviti servere, baze podataka i API-je koji æe podravati aplikaciju.'),
-('Front-end Razvoj','2024-07-01','2024-07-31',1,'Razviti korisnièko suèelje prema dizajnu.'),
+('Back-end Razvoj','2024-06-01','2024-12-30',1,'Postaviti servere, baze podataka i API-je koji Ä‡e podrÅ¾avati aplikaciju.'),
+('Front-end Razvoj','2024-07-01','2024-07-31',1,'Razviti korisniÄko suÄelje prema dizajnu.'),
 ('Integracija API-ja','2024-08-01','2024-08-31',1,'Integrirati vanjske API-je za karte, informacije o atrakcijama, recenzije, itd.'),
 ('Funkcionalno Testiranje','2024-09-01','2024-09-30',1,'Provjeriti sve funkcionalnosti aplikacije.');
 
@@ -80,26 +80,26 @@ insert into zadatak (naziv,pocetak,zavrsetak,projekt,opis) values
 
 insert into zadatak (naziv,projekt,opis) values
 ('Definiranje ciljeva',2,'Razjasniti svrhu web stranice (promocija benda, informacije o koncertima, prodaja muzike i mercha, komunikacija s fanovima). Definirati ciljnu publiku (fanovi, promotori, mediji).'),
-('Analiza zahtjeva',2,'Prikupiti zahteve od èlanova benda i menadmenta. Odrediti kljuène funkcionalnosti (galerija, biografija, muzièki player, kalendar dogağaja, kontakt forma).'),
-('Informacijska arhitektura',2,'Kreirati strukturu web stranice, ukljuèujuæi glavne sekcije (poèetna stranica, biografija, muzika, turneje, galerija, kontakt).'),
-('UI/UX dizajn',2,'Razviti wireframe-ove za glavne stranice. Dizajnirati vizuelni identitet stranice koji æe odraavati stil i energiju benda Teheran. Izraditi prototipove za pregled i odobrenje. Osigurati da dizajn bude prilagoğen razlièitim ureğajima (desktop,tablet...)'),
-('Front-end razvoj',2,'Kodirati dizajn koristeæi HTML, CSS i JavaScript. Implementirati responzivni dizajn za optimalno korisnièko iskustvo na svim ureğajima.'),
-('Back-end razvoj',2,'Postaviti serversku stranu ako je potrebno za dinamièke funkcionalnosti (CMS za upravljanje sadrajem, baza podataka za liste dogağaja). Integrisati potrebne servise (npr. muzièki player, integracija sa društvenim mreama, newsletter prijava).'),
-('Deployment',2,'Postaviti stranicu na produkciono okruenje. Konfigurisati hosting i domen. Provjeriti je li sve pravilno postavljeno i funkcionalno.'),
-('Auriranja i unapreğenja',2,'Redovno aurirati sadraj (nove pjesme, datumi turneja, novosti). Implementirati nove funkcionalnosti na osnovu korisnièkog feedback-a i tehnoloških unapreğenja.'),
-('SEO optimizacija',2,'Optimizirati stranicu za trailice kako bi se poboljšala vidljivost.'),
-('Korisnièka podrška',2,'Pruati podršku posetiocima stranice kroz razlièite kanale (e-mail, chat) kako bi se osiguralo zadovoljstvo korisnika i rešili eventualni problemi.');
+('Analiza zahtjeva',2,'Prikupiti zahteve od Älanova benda i menadÅ¾menta. Odrediti kljuÄne funkcionalnosti (galerija, biografija, muziÄki player, kalendar dogaÄ‘aja, kontakt forma).'),
+('Informacijska arhitektura',2,'Kreirati strukturu web stranice, ukljuÄujuÄ‡i glavne sekcije (poÄetna stranica, biografija, muzika, turneje, galerija, kontakt).'),
+('UI/UX dizajn',2,'Razviti wireframe-ove za glavne stranice. Dizajnirati vizuelni identitet stranice koji Ä‡e odraÅ¾avati stil i energiju benda Teheran. Izraditi prototipove za pregled i odobrenje. Osigurati da dizajn bude prilagoÄ‘en razliÄitim ureÄ‘ajima (desktop,tablet...)'),
+('Front-end razvoj',2,'Kodirati dizajn koristeÄ‡i HTML, CSS i JavaScript. Implementirati responzivni dizajn za optimalno korisniÄko iskustvo na svim ureÄ‘ajima.'),
+('Back-end razvoj',2,'Postaviti serversku stranu ako je potrebno za dinamiÄke funkcionalnosti (CMS za upravljanje sadrÅ¾ajem, baza podataka za liste dogaÄ‘aja). Integrisati potrebne servise (npr. muziÄki player, integracija sa druÅ¡tvenim mreÅ¾ama, newsletter prijava).'),
+('Deployment',2,'Postaviti stranicu na produkciono okruÅ¾enje. Konfigurisati hosting i domen. Provjeriti je li sve pravilno postavljeno i funkcionalno.'),
+('AÅ¾uriranja i unapreÄ‘enja',2,'Redovno aÅ¾urirati sadrÅ¾aj (nove pjesme, datumi turneja, novosti). Implementirati nove funkcionalnosti na osnovu korisniÄkog feedback-a i tehnoloÅ¡kih unapreÄ‘enja.'),
+('SEO optimizacija',2,'Optimizirati stranicu za traÅ¾ilice kako bi se poboljÅ¡ala vidljivost.'),
+('KorisniÄka podrÅ¡ka',2,'PruÅ¾ati podrÅ¡ku posetiocima stranice kroz razliÄite kanale (e-mail, chat) kako bi se osiguralo zadovoljstvo korisnika i reÅ¡ili eventualni problemi.');
 
 
 --INSERTI ZADATAKA ZA PROJEKT TimeMaster (bez kolona pocetak i zavrsetak)
 
 insert into zadatak (naziv,projekt,opis) values
-('Tehnièka analiza',3,'Odluèiti o tehnologijama koje æe se koristiti za razvoj aplikacije (front-end, back-end, baza podataka, hosting itd.).'),
-('UI/UX dizajn',3,'Razviti dizajn korisnièkog interfejsa i korisnièkog iskustva. To ukljuèuje wireframe-ove, prototipove i dizajn svih ekrana i elemenata'),
+('TehniÄka analiza',3,'OdluÄiti o tehnologijama koje Ä‡e se koristiti za razvoj aplikacije (front-end, back-end, baza podataka, hosting itd.).'),
+('UI/UX dizajn',3,'Razviti dizajn korisniÄkog interfejsa i korisniÄkog iskustva. To ukljuÄuje wireframe-ove, prototipove i dizajn svih ekrana i elemenata'),
 ('Dizajn baze podataka',3,'Definirati strukturu baze podataka, tablice, relacije i sheme.'),
-('Front-end razvoj',3,'Kodirati korisnièki interfejs koristeæi HTML, CSS, JavaScript i odgovarajuæe front-end framework-e (npr. React, Angular, Vue.js).'),
-('Back-end razvoj',3,'Razviti serversku stranu aplikacije koristeæi odgovarajuæe tehnologije (npr. Node.js, Django, Ruby on Rails) i API-je za komunikaciju izmeğu front-end-a i back-end-a.'),
+('Front-end razvoj',3,'Kodirati korisniÄki interfejs koristeÄ‡i HTML, CSS, JavaScript i odgovarajuÄ‡e front-end framework-e (npr. React, Angular, Vue.js).'),
+('Back-end razvoj',3,'Razviti serversku stranu aplikacije koristeÄ‡i odgovarajuÄ‡e tehnologije (npr. Node.js, Django, Ruby on Rails) i API-je za komunikaciju izmeÄ‘u front-end-a i back-end-a.'),
 ('Integracija baze podataka',3,'Implementirati bazu podataka i integrirati je sa back-end-om'),
-('Sistem testiranje',3,'Testirati kompletnu aplikaciju kako bi se osiguralo da svi delovi funkcionišu zajedno bez problema.'),
-('Deployment',3,'Postaviti aplikaciju na produkciono okruenje. To ukljuèuje konfiguraciju servera, baze podataka i bilo kojih drugih potrebnih servisa.'),
-('Auriranja i unapreğenja',3,'Redovno aurirati aplikaciju novim funkcionalnostima i unapreğenjima na osnovu korisnièkog feedback-a i tehnoloških unapreğenja.');
+('Sistem testiranje',3,'Testirati kompletnu aplikaciju kako bi se osiguralo da svi delovi funkcioniÅ¡u zajedno bez problema.'),
+('Deployment',3,'Postaviti aplikaciju na produkciono okruÅ¾enje. To ukljuÄuje konfiguraciju servera, baze podataka i bilo kojih drugih potrebnih servisa.'),
+('AÅ¾uriranja i unapreÄ‘enja',3,'Redovno aÅ¾urirati aplikaciju novim funkcionalnostima i unapreÄ‘enjima na osnovu korisniÄkog feedback-a i tehnoloÅ¡kih unapreÄ‘enja.');
