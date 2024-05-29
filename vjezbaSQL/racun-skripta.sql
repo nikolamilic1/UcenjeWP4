@@ -1,4 +1,4 @@
-use master;
+ï»¿use master;
 go
 drop database if exists racun;
 go
@@ -25,9 +25,19 @@ popust decimal (5,2)
 alter table stavkeRacuna add foreign key (racun) references racun(sifra);
 
 insert into racun (redniBroj, datum, kupac, placeno) values
-(1000, '2024-01-01', 'Perica Periæ', 0),
-(1001, '2024-01-01', 'Ivica Iviæ', 0),
+(1000, '2024-01-01', 'Perica PeriÄ‡', 0),
+(1001, '2024-01-01', 'Ivica IviÄ‡', 0),
 (1002, '2024-01-02', 'Kamenko d.o.o.', 1),
 (1003, '2024-01-04', 'Dorat j.d.o.o.', 1),
-(1004, '2024-01-06', 'Marija Mariæ', 1),
-(1005, '2024-01-10', 'Luka Lukiæ', 1);
+(1004, '2024-01-06', 'Marija MariÄ‡', 1),
+(1005, '2024-01-10', 'Luka LukiÄ‡', 1);
+
+insert into stavkeRacuna(artikl, cijena, kolicina, popust) values
+('Sapun',3.00,1500,10.00),
+('ÄŒokolada',5.00,500,12.00),
+('Pivo',2.00,2500,5);
+
+--select * from racun;
+
+--select * from stavkeRacuna;
+
