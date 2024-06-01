@@ -1,6 +1,6 @@
 ﻿use master;
 go
-drop database vjezba1;
+drop database if exists vjezba1;
 go
 create database vjezba1;
 go
@@ -80,8 +80,8 @@ suknja varchar(36),
 punac int
 );
 
-alter table sestra_svekara add foreign key (sestra) references sestra(sifra);
-alter table sestra_svekara add foreign key (svekar) references svekar(sifra);
+alter table sestra_svekar add foreign key (sestra) references sestra(sifra);
+alter table sestra_svekar add foreign key (svekar) references svekar(sifra);
 alter table mladic add foreign key (muskarac) references muskarac(sifra);
 alter table muskarac add foreign key (zena) references zena(sifra);
 alter table zena add foreign key (sestra) references sestra(sifra);
