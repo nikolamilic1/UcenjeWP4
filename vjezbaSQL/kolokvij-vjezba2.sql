@@ -50,7 +50,7 @@ zarucnica int not null
 );
 
 create table zarucnica(
-sifra int not null primary key identity(1,1),
+sifra int primary key identity(1,1),
 narukvica int,
 bojakose varchar(37) not null,
 novcica decimal(15,9),
@@ -81,3 +81,34 @@ alter table cura add foreign key (decko) references decko(sifra);
 alter table decko_zarucnica add foreign key (decko) references decko(sifra);
 alter table decko_zarucnica add foreign key (zarucnica) references zarucnica(sifra);
 
+
+--select * from decko;
+
+insert into decko(indiferentno,vesta,asocijalno) values
+(1,'zelena',1),
+(0,'crvena',0),
+(1,'žuta',1);
+
+--select * from cura;
+
+insert into cura (haljina,drugiputa,suknja,narukvica,introvertno,majica,decko) values
+('zelena','2012-01-02','crna',5,1,'sportska',3),
+('crvena','2015-08-31','šarena',6,0,'slim-fit',2),
+('žuta','2020-12-10','toèkasta',7,1,'kratka',1);
+
+--select * from neprijatelj;
+
+insert into neprijatelj(majica,haljina,lipa,modelnaocala,kuna,jmbag,cura) values
+('bijela','šarena',100.00,'Police',200.00,'01235231014',4),
+('crna','dugaèka',300.00,'XOX',900.00,'82310149876',2),
+('žuta','kratka',700.00,'RayBan',9900.00,'99935231014',3);
+
+
+--U tablicu zarucnica treba unijeti podatke kako bi se decko_zarucnica mogla unijeti
+
+--select * from decko_zarucnica;
+
+--insert into decko_zarucnica(decko) values
+--(1),
+--(2),
+--(3);
