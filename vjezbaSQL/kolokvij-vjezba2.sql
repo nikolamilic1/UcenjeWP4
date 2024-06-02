@@ -1,4 +1,4 @@
-use master;
+ï»¿use master;
 go
 drop database if exists vjezba2;
 go
@@ -87,21 +87,21 @@ alter table decko_zarucnica add foreign key (zarucnica) references zarucnica(sif
 insert into decko(indiferentno,vesta,asocijalno) values
 (1,'zelena',1),
 (0,'crvena',0),
-(1,'uta',1);
+(1,'Å¾uta',1);
 
 --select * from cura;
 
 insert into cura (haljina,drugiputa,suknja,narukvica,introvertno,majica,decko) values
 ('zelena','2012-01-02','crna',5,1,'sportska',3),
-('crvena','2015-08-31','šarena',6,0,'slim-fit',2),
-('uta','2020-12-10','toèkasta',7,1,'kratka',1);
+('crvena','2015-08-31','Å¡arena',6,0,'slim-fit',2),
+('Å¾uta','2020-12-10','toÄkasta',7,1,'kratka',1);
 
 --select * from neprijatelj;
 
 insert into neprijatelj(majica,haljina,lipa,modelnaocala,kuna,jmbag,cura) values
-('bijela','šarena',100.00,'Police',200.00,'01235231014',4),
-('crna','dugaèka',300.00,'XOX',900.00,'82310149876',2),
-('uta','kratka',700.00,'RayBan',9900.00,'99935231014',3);
+('bijela','Å¡arena',100.00,'Police',200.00,'01235231014',3),
+('crna','dugaÄka',300.00,'XOX',900.00,'82310149876',2),
+('Å¾uta','kratka',700.00,'RayBan',9900.00,'99935231014',1);
 
 
 --U tablicu zarucnica treba unijeti podatke kako bi se decko_zarucnica mogla unijeti
