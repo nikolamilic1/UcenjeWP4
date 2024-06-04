@@ -83,14 +83,14 @@ alter table prijatelj_brat add foreign key (prijatelj) references prijatelj(sifr
 alter table prijatelj_brat add foreign key (brat) references brat(sifra);
 
 
-select * from ostavljena;
+--select * from ostavljena;
 
 insert into ostavljena(kuna,lipa,majica,modelnaocala) values
-(),
-(),
-();
+(500,400,'plava','xoxo'),
+(400,300,'šarena','Police'),
+(300,200,'žuta','RayBan');
 
-select * from snasa;
+--select * from snasa;
 
 insert into snasa(introvertno,kuna,eura,treciputa,ostavljena) values
 (1,100,100,'2010-01-01',1),
@@ -98,10 +98,23 @@ insert into snasa(introvertno,kuna,eura,treciputa,ostavljena) values
 (1,400,300,'2024-01-01',3);
 
 
+--select * from brat;
 
-select * from prijatelj_brat;
+insert into brat(jmbag,ogrlica,estrovertno) values
+('01236547897',1,1),
+('55555547897',2,1),
+('33336547897',3,1);
 
-insert into prijatelj_brat() values
-(),
-(),
-();
+--select * from prijatelj;
+
+insert into prijatelj(kuna,indiferentno) values
+(100,0),
+(1000,1),
+(100000,1);
+
+--select * from prijatelj_brat;
+
+insert into prijatelj_brat(prijatelj,brat) values
+(1,3),
+(2,2),
+(3,1);
