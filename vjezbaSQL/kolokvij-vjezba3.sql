@@ -46,18 +46,31 @@ snasa int
 
 create table ostavljena(
 sifra int not null primary key identity(1,1),
+kuna decimal(17,5),
+lipa decimal(15,6),
+majica varchar(36),
+modelnaocala varchar(31) not null,
+prijatelj int
 );
 
 create table prijatelj(
 sifra int not null primary key identity(1,1),
+kuna decimal(16,10),
+haljina varchar(37),
+lipa decimal(13,10),
+dukserica varchar(31),
+indiferentno bit not null
 );
 
 create table prijatelj_brat(
 sifra int not null primary key identity(1,1),
-
+prijatelj int not null,
+brat int not null
 );
 
 create table brat(
 sifra int not null primary key identity(1,1),
-
+jmbag char(11),
+ogrlica int not null,
+estrovertno bit not null
 );
