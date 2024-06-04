@@ -74,3 +74,34 @@ jmbag char(11),
 ogrlica int not null,
 estrovertno bit not null
 );
+
+alter table svekar add foreign key (cura) references cura(sifra);
+alter table punica add foreign key (snasa) references snasa(sifra);
+alter table snasa add foreign key (ostavljena) references ostavljena(sifra);
+alter table ostavljena add foreign key (prijatelj) references prijatelj(sifra);
+alter table prijatelj_brat add foreign key (prijatelj) references prijatelj(sifra);
+alter table prijatelj_brat add foreign key (brat) references brat(sifra);
+
+
+select * from ostavljena;
+
+insert into ostavljena(kuna,lipa,majica,modelnaocala) values
+(),
+(),
+();
+
+select * from snasa;
+
+insert into snasa(introvertno,kuna,eura,treciputa,ostavljena) values
+(1,100,100,'2010-01-01',1),
+(0,200,200,'2020-01-01',2),
+(1,400,300,'2024-01-01',3);
+
+
+
+select * from prijatelj_brat;
+
+insert into prijatelj_brat() values
+(),
+(),
+();
