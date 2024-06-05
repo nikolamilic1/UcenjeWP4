@@ -1,4 +1,4 @@
-use master;
+ï»¿use master;
 go
 drop database if exists vjezba3;
 go
@@ -87,8 +87,8 @@ alter table prijatelj_brat add foreign key (brat) references brat(sifra);
 
 insert into ostavljena(kuna,lipa,majica,modelnaocala) values
 (500,400,'plava','xoxo'),
-(400,300,'šarena','Police'),
-(300,200,'žuta','RayBan');
+(400,300,'Å¡arena','Police'),
+(300,200,'Å¾uta','RayBan');
 
 --select * from snasa;
 
