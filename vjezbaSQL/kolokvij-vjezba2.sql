@@ -1,5 +1,7 @@
 ﻿use master;
 go
+alter database vjezba2 set single_user with rollback immediate;
+go
 drop database if exists vjezba2;
 go
 create database vjezba2 collate Croatian_CI_AS;
