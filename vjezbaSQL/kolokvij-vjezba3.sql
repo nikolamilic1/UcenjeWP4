@@ -1,17 +1,11 @@
 ﻿ use master;
  go
-
- --prekidanje konekcija prije dropanja baze
- alter database vjezba3 set single_user with rollback immediate;
- go
-
- drop database if exists vjezba3;
-
---use master;
---go
---drop database if exists vjezba3;
+--prekidanje konekcija prije dropanja baze
+alter database vjezba3 set single_user with rollback immediate;
 go
-create database vjezba3;
+drop database if exists vjezba3;
+go
+create database vjezba3 collate Croatian_CI_AS;
 go
 use vjezba3;
 

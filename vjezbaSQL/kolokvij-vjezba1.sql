@@ -4,7 +4,7 @@ go
  go
 drop database if exists vjezba1;
 go
-create database vjezba1;
+create database vjezba1 collate Croatian_CI_AS;
 go
 use vjezba1;
 
