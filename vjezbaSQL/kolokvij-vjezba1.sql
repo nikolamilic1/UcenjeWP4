@@ -1,5 +1,7 @@
 ﻿use master;
 go
+ alter database vjezba1 set single_user with rollback immediate;
+ go
 drop database if exists vjezba1;
 go
 create database vjezba1;

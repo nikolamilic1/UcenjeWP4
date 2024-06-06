@@ -5,7 +5,7 @@
  alter database vjezba3 set single_user with rollback immediate;
  go
 
- drop database vjezba3;
+ drop database if exists vjezba3;
 
 --use master;
 --go
