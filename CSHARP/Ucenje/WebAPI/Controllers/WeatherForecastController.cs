@@ -41,5 +41,11 @@ namespace WebAPI.Controllers
         {
             return "This is post route";
         }
+        [HttpDelete]
+        [Route("Delete")]
+        public string Delete()
+        {
+            return "This is delete route";
+        }
     }
 }
