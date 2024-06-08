@@ -29,5 +29,17 @@ namespace WebAPI.Controllers
             })
             .ToArray();
         }
+        [HttpGet]
+        [Route("Hello")]
+        public string Hello()
+        {
+            return "Hello world";
+        }
+        [HttpPost]
+        [Route("Post")]
+        public string Post()
+        {
+            return "This is post route";
+        }
     }
 }
