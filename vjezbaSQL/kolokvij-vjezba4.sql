@@ -24,3 +24,11 @@ modelnaocala varchar(43),
 introvertno bit,
 kuna decimal(14,10)
 );
+
+create table snasa(
+sifra int not null primary key identity(1,1),
+introvertno bit,
+treciputa datetime,
+haljina varchar(44) not null,
+zena int not null
+);
