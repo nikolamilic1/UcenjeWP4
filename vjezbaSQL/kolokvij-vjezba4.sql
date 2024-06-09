@@ -1,4 +1,4 @@
-use master;
+﻿use master;
 go
 alter database vjezba4 set single_user with rollback immediate;
 go
