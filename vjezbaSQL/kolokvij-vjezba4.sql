@@ -17,3 +17,10 @@ novcica decimal(18,7) not null,
 maraka decimal(12,6) not null,
 ostavljen int not null
 );
+
+create table ostavljen(
+sifra int not null primary key identity(1,1),
+modelnaocala varchar(43),
+introvertno bit,
+kuna decimal(14,10)
+);
