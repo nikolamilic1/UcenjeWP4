@@ -51,5 +51,24 @@ suknja varchar(47) not null,
 becar int not null
 );
 
+create table zena(
+sifra int not null primary key identity (1,1),
+suknja varchar(39) not null,
+lipa decimal(18,7),
+prstena int not null
+);
 
+create table zena_mladic(
+sifra int not null primary key identity(1,1),
+zena int not null,
+mladic int not null
+);
 
+create table mladic(
+sifra int not null primary key identity(1,1),
+kuna decimal(15,9),
+lipa decimal(18,5),
+nausnica int,
+stilfrizura varchar(49),
+vesta varchar(34) not null
+);
