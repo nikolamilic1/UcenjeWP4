@@ -79,3 +79,38 @@ alter table prijatelj add foreign key (becar) references becar(sifra);
 alter table snasa add foreign key (zena) references zena(sifra);
 alter table zena_mladic add foreign key (zena) references zena(sifra);
 alter table zena_mladic add foreign key (mladic) references mladic(sifra);
+
+--select * from mladic;
+
+insert into mladic(vesta) values
+('crna'),
+('plava'),
+('siva');
+
+--select * from zena;
+
+insert into zena(suknja,prstena) values
+('zelena',1),
+('žuta',2),
+('šarena',3);
+
+--select * from snasa;
+
+insert into snasa(introvertno,treciputa,haljina,zena) values
+(1,'2023-12-12','šarena',1),
+(0,'2020-02-12','crna',1),
+(1,'2015-05-12','siva',1);
+
+--select * from becar;
+
+insert into becar(novcica,kratkamajica,bojaociju,snasa) values
+(1200,'prekratka','plava',1),
+(1500,'omiljena','zelena',2),
+(1900,'bilokakva','crna',3);
+
+--select * from zena_mladic;
+
+insert into zena_mladic(zena,mladic) values
+(1,3),
+(2,2),
+(3,1);
