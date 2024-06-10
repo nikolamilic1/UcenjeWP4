@@ -32,3 +32,24 @@ treciputa datetime,
 haljina varchar(44) not null,
 zena int not null
 );
+
+create table becar(
+sifra int not null primary key identity(1,1),
+novcica decimal(14,8),
+kratkamajica varchar(48) not null,
+bojaociju varchar(36) not null,
+snasa int not null
+);
+
+create table prijatelj(
+sifra int not null primary key identity(1,1),
+eura decimal(16,9),
+prstena int not null,
+gustoca decimal(16,5),
+jmbag char(11) not null,
+suknja varchar(47) not null,
+becar int not null
+);
+
+
+
