@@ -18,7 +18,22 @@ namespace UcenjeCS
 
             Console.WriteLine(uvjet);
 
+            //minimalna if sintaksa
 
+            if (uvjet)
+            {
+                Console.WriteLine("1. Ušao sam u if granu");
+            }
+            // neobavezni dio if grananja
+
+            else
+            {
+                Console.WriteLine("2. Uvjet nije zadovoljen, otišao u else granu");
+            }
+            // uobičajena sintaksa što se tiče uvjeta
+
+            if (i > 2)
+                Console.WriteLine("3. Ušao u if bez vitičastih zagrada");
 
         }
 
