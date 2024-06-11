@@ -14,17 +14,22 @@ namespace UcenjeCS
 
 
 
-            Console.WriteLine("Unesi godine*?");
+            //Console.WriteLine("Unesi godine*?");
 
-            var godine = int.Parse(Console.ReadLine());
-            if (godine >= 18)
-            {
-                Console.WriteLine("osoba je punoljetna");
-            }
-            else
-            {
-                Console.WriteLine("osoba je maloljetna");
-            }
+            //var godine = int.Parse(Console.ReadLine());
+            //if (godine >= 18)
+            //{
+            //    Console.WriteLine("osoba je punoljetna");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("osoba je maloljetna");
+            //}
+
+
+            Console.WriteLine("Unesi broj godina");
+            var godine=int.Parse(Console.ReadLine());
+            Console.WriteLine(godine>=18 ? "Punoljetna" : "Maloljetna");
 
 
         }
