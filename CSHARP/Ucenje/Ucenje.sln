@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UcenjeCS", "UcenjeCS\UcenjeCS.csproj", "{D5F5CA34-AF54-4B19-A1C2-7FB8FE90FA12}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UcenjeCS", "UcenjeCS\UcenjeCS.csproj", "{D5F5CA34-AF54-4B19-A1C2-7FB8FE90FA12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{6D3E11B2-D994-430E-AE5A-D8425E0B2009}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "WebAPI\WebAPI.csproj", "{6D3E11B2-D994-430E-AE5A-D8425E0B2009}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +26,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {ECD20873-25EA-472C-96F0-336CF82BE0E0}
+		SolutionGuid = {421FA6C9-CB28-4BC3-AF5A-DDDBC54FEC75}
 	EndGlobalSection
 EndGlobal
