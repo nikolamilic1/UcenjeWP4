@@ -27,6 +27,32 @@ namespace UcenjeCS
             //drugiBroj = int.Parse(Console.ReadLine());
 
             //Console.WriteLine("Njihov zbroj je: " + (prviBroj + drugiBroj));
+
+
+            decimal prvibroj;
+            Console.WriteLine("Unesi decimalni broj");
+            prvibroj = decimal.Parse(Console.ReadLine());
+
+            decimal drugibroj;
+            Console.WriteLine("Unesi drugi decimalni broj");
+            drugibroj = decimal.Parse(Console.ReadLine());
+
+            if (drugibroj == drugibroj)
+            {
+                Console.WriteLine("Jednaki su brojevi");
+            }
+            else
+            {
+                if (drugibroj > prvibroj)
+                {
+                    Console.WriteLine(drugibroj);
+                }
+                else {
+                    Console.WriteLine(prvibroj);
+                }
+
+            }
+
         }
 
 
