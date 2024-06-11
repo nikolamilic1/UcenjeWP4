@@ -6,7 +6,9 @@
 using UcenjeCS;
 
 
-E01Z2.Izvedi();
+E03UvjetnoGrananjeIf.Izvedi();
+
+//E01Z2.Izvedi();
 // E01Z1.Izvedi();
 
 //E02VarijableTipoviPodatakaOperatori.Izvedi();
