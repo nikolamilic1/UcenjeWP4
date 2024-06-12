@@ -91,10 +91,11 @@ namespace VjezbanjeCS
             }
             else if (ocjena < 1 || ocjena > 5)
             {
-                Console.WriteLine("Netočan unos. Broj mora biti od 1 do 5");
+                Console.WriteLine(" 13. Netočan unos. Broj mora biti od 1 do 5");
             }
 
-
+            // Skraćeno pisanje IF grananja
+            Console.WriteLine(ocjena==4 ? "14. Vrlo dobar si" : "15. Sve si ali samo nisi vrlo dobar :)");
 
 
 
