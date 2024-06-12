@@ -94,8 +94,12 @@ namespace VjezbanjeCS
                 Console.WriteLine(" 13. Netočan unos. Broj mora biti od 1 do 5");
             }
 
-            // Skraćeno pisanje IF grananja
+            // Skraćeno pisanje IF ELSE grananja
             Console.WriteLine(ocjena==4 ? "14. Vrlo dobar si" : "15. Sve si ali samo nisi vrlo dobar :)");
+            // Prvo ide uvjet pa upitnik, nakod upitnika idre TRUE grana, a nakon dvotočke ELSE grana.
+            // Ne može se ovako pisati bez ELSE, dakle mora biti dvotočka i iskaz koji slijedi
+
+            // IF se može gnijezditi ----unutar jednog IF-a može biti drugi IF
 
 
 
