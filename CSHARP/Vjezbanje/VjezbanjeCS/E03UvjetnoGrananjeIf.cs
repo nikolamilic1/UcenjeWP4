@@ -47,13 +47,51 @@ namespace VjezbanjeCS
 
             if (i < 2 && j == 2)
             {
-                Console.WriteLine("5. Logičko &");
+                Console.WriteLine("5. Logičko AND &");
             }
             // & provjerava oba uvjeta bez obzira što je možda prvi FALSE
             // && ukoliko prvi uvjet bude FALSE drugi se ne provjerava
 
+            if (j == 2 || i < 2)
+            {
+                Console.WriteLine("6. Logičko OR | ");
+            }
 
+            //   | (OR) provjerava oba uvjeta bez obzira što prvi bude TRUE
+            //  || (OR OR) Ukoliko prvi uvjet bude TRUE drugi uvjet se ne provjerava
 
+            if (i != 5)
+            {
+                Console.WriteLine("7. i n ema vrijednost 5");
+            }
+
+            
+            int ocjena = Console.ReadLine();
+
+            if (ocjena == 1)
+            {
+                Console.WriteLine("8. Ocjena je NEDOVOLJAN");
+            }
+            else if (ocjena == 2)
+            {
+                Console.WriteLine("9. Ocjena je DOVOLJAN");
+            }
+            else if (ocjena == 3)
+            {
+                Console.WriteLine("10. Ocjena je DOBAR");
+            }
+            else if (ocjena == 4)
+            {
+                Console.WriteLine("11. Ocjena je VRLO DOBAR");
+            }
+            else if (ocjena == 5)
+            {
+                Console.WriteLine("12. Ocjena je ODLIČAN");
+            }
+            else if (ocjena < 1 || ocjena > 5)
+            {
+                Console.WriteLine("Netočan unos. Broj mora biti od 1 do 5");
+            }
 
 
 
