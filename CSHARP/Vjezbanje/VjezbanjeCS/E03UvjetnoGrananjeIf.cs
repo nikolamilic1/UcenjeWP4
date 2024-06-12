@@ -65,8 +65,9 @@ namespace VjezbanjeCS
                 Console.WriteLine("7. i n ema vrijednost 5");
             }
 
-            
-            int ocjena = Console.ReadLine();
+            int ocjena;
+            Console.WriteLine("Unesite ocjenu od 1 do 5");
+            ocjena = int.Parse(Console.ReadLine());
 
             if (ocjena == 1)
             {
