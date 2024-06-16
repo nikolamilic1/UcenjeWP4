@@ -63,6 +63,8 @@ eura decimal(14,5) not null
 
 create table svekar_cura(
 sifra int not null primary key identity(1,1),
+svekar int not null,
+cura int not null
 );
 
 create table cura(
