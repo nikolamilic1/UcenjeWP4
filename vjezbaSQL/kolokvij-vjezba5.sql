@@ -44,13 +44,11 @@ punac int not null
 
 create table ostavljena(
 sifra int not null primary key identity(1,1),
-hlace varchar(43) not null,
-nausnica int not null,
-ogrlica int,
-vesta varchar(49) not null,
-modelnaocala varchar(31) not null,
-treciputa datetime not null,
-punac int not null
+majica varchar(33),
+ogrlica int not null,
+carape varchar(44),
+stilfrizura varchar(42),
+punica int not null
 );
 
 create table svekar(
