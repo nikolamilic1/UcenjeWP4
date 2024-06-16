@@ -18,6 +18,9 @@ zarucnik int
 
 create table zarucnik(
 sifra int not null primary key identity(1,1),
+jmbag char(11),
+lipa decimal(12,8),
+indiferentno bit not null
 );
 
 create table punac(
