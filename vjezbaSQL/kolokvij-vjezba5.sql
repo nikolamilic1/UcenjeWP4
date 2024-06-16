@@ -10,6 +10,10 @@ use vjezba5;
 
 create table mladic(
 sifra int not null primary key identity(1,1),
+kratkamajica varchar(48) not null,
+haljina varchar(30) not null,
+asocijalno bit,
+zarucnik int
 );
 
 create table zarucnik(
