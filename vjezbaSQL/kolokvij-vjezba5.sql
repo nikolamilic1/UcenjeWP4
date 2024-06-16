@@ -69,5 +69,9 @@ cura int not null
 
 create table cura(
 sifra int not null primary key identity(1,1),
+carape varchar(41) not null,
+maraka decimal(17,10) not null,
+asocijalno bit,
+vesta varchar(47) not null
 );
 
