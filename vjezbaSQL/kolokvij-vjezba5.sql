@@ -25,6 +25,10 @@ indiferentno bit not null
 
 create table punac(
 sifra int not null primary key identity(1,1),
+dukserica varchar(33),
+prviputa datetime not null,
+majica varchar(36),
+svekar int not null
 );
 
 create table punica(
