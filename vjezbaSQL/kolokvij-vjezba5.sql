@@ -53,6 +53,12 @@ punica int not null
 
 create table svekar(
 sifra int not null primary key identity(1,1),
+bojakose varchar(33),
+majica varchar(31),
+carape varchar(31) not null,
+haljina varchar(43),
+narukvica int,
+eura decimal(14,5) not null
 );
 
 create table svekar_cura(
