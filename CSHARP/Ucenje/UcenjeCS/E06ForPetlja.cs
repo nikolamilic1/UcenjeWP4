@@ -1,0 +1,107 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Channels;
+using System.Threading.Tasks;
+
+namespace UcenjeCS
+{
+    internal class E06ForPetlja
+    {
+
+
+        internal static void Izvedi()
+        {
+            
+            // ispiši 10 puta osijek
+
+            // i++
+            // ++i
+             //  i +=1
+              //  i=i+1
+
+            for(int i = 0; i < 10; i++)
+            {
+                Console.WriteLine("Osijek");
+            }
+
+            int suma = 0;
+            for (int i = 0; i <= 100; i++)
+            {
+                suma += i;
+            }
+            Console.WriteLine(suma);
+
+            // ispiši sve parne brojeve od 3 do 29
+
+            //loše rješenje
+
+            // for (int i = 4)
+
+            // bolje 
+            // najbolje
+
+            //    int brojOd = 3; // korisnik unosi
+            //int brojDo = 29; // korisnik unosi
+            //for (int i = brojOd; i = brojDo; i ++)
+
+            Console.WriteLine("*************************************");
+
+            int[] niz = { 2, 3, 4, 5, 6, 7, 78, 5, 4, 3, 2 };
+            for (int i = 0; i < niz.Length; i++)
+            {
+                Console.WriteLine(niz[i]);
+
+            }
+
+
+            Console.WriteLine("*************************************");
+
+
+
+            for (int i = 20; i >= 10; i--)
+            {
+                Console.WriteLine(i);
+            }
+
+            Console.WriteLine("*************************************");
+
+            // ispiši sve prim brojeve od 2 do 50
+
+
+            bool prim;
+
+            for (int i = 2; i <= 14; i++)
+            {
+                prim = true;
+                for (int j = 2; j < i; j++) 
+                
+                {
+                  //  Console.WriteLine("{0}%{1}={2}",i,j,i%j);
+                    if(i%j == 0)
+                    {
+                        prim = false;
+                    }
+                }
+                if (prim)
+                {
+                    Console.WriteLine(i);
+
+                }
+                       
+                        
+
+
+            }
+
+
+
+
+
+
+
+
+        }
+    }
+}
