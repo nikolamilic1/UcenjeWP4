@@ -39,8 +39,10 @@ namespace UcenjeCS
 
             // for (int i = 4)
 
-            // bolje 
-            // najbolje
+            // bolje rješenje
+
+
+            // najbolje rješenje
 
             //    int brojOd = 3; // korisnik unosi
             //int brojDo = 29; // korisnik unosi
@@ -94,6 +96,40 @@ namespace UcenjeCS
 
 
             }
+
+
+            Console.WriteLine("*************************************");
+
+
+            // preskakanje petlje
+
+            for(int i = 0;i < 10; i++)
+            {
+                if (i == 3)
+                {
+                    continue;
+                }
+                if(i == 5)
+                {
+                    break;
+                }
+                Console.WriteLine(i);
+            }
+
+
+            for (int i = 0;i < 10; i++)
+            {
+                for (int j = 0; j < 10; j++)
+                {
+                    Console.WriteLine(i*j);
+                    goto labela;
+                }
+
+                
+            }
+
+            labela:
+            Console.WriteLine("=============");
 
 
 
