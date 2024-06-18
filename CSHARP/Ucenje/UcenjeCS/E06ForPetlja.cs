@@ -162,7 +162,7 @@ namespace UcenjeCS
                 }
                 break;
             }
-
+            Console.WriteLine(broj);
 
 
 
