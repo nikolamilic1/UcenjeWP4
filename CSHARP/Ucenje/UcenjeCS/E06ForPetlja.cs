@@ -128,8 +128,48 @@ namespace UcenjeCS
                 
             }
 
-            labela:
+        labela:
             Console.WriteLine("=============");
+
+
+
+            // beskonačna petlja
+            // Unesi broj između 1 i 10
+
+
+            Console.WriteLine( int.MaxValue);
+            int max = int.MaxValue;
+            Console.WriteLine(max+1);
+
+            int broj;
+
+            //OVO NIJE BESKONAČNA PETLJA
+
+            //for (int i = 0; i > -1; i++) 
+            
+            //{ 
+            
+            //}
+
+            for ( ; ; )
+            {
+                Console.WriteLine("Unesi broj od 1 do 10");
+                broj = int.Parse(Console.ReadLine());    
+                if (broj<1 || broj > 10)
+                {
+                    Console.WriteLine("Nisi uni broj u rasponu");
+                    continue;
+                }
+                break;
+            }
+
+
+
+
+
+
+
+
 
 
 
