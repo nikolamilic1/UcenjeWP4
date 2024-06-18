@@ -151,30 +151,59 @@ namespace UcenjeCS
             
             //}
 
-            for ( ; ; )
+            //for ( ; ; )
+            //{
+            //    Console.WriteLine("Unesi broj od 1 do 10");
+            //    broj = int.Parse(Console.ReadLine());    
+            //    if (broj<1 || broj > 10)
+            //    {
+            //        Console.WriteLine("Nisi uni broj u rasponu");
+            //        continue;
+            //    }
+            //    break;
+            //}
+            //Console.WriteLine(broj);
+
+
+
+            niz = PodaciInt.niz;
+
+            Console.WriteLine(niz.Length);
+
+            //for(int i = 0; i < niz.Length; i++)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+
+            for (int i = 0; i < niz.Length; i++)
             {
-                Console.WriteLine("Unesi broj od 1 do 10");
-                broj = int.Parse(Console.ReadLine());    
-                if (broj<1 || broj > 10)
+               if (i % 10000 == 0)  { Console.WriteLine("*"); }
+                for (int j = 0; j < niz.Length; j++)
                 {
-                    Console.WriteLine("Nisi uni broj u rasponu");
-                    continue;
+                    if (niz[i] == niz[j])
+                    {
+                        Console.WriteLine(niz[i]);
+                        goto kraj;
+
+
+
+
+                    }
                 }
-                break;
             }
-            Console.WriteLine(broj);
+
+        kraj:
+            Console.WriteLine("**************************");
 
 
+            string[] imena = PodaciString.Niz;
+            Console.WriteLine(imena.Length);
 
+            string grad = "Osijek";
 
-
-
-
-
-
-
-
-
+            Console.WriteLine(grad[0]);
+            Console.WriteLine(grad[grad.Length-1]);
 
 
 
