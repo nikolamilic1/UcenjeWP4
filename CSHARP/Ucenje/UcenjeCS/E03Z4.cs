@@ -63,9 +63,9 @@ namespace UcenjeCS
                     Console.WriteLine("Istra");
                     break;
 
-                    default 
+                
                     
-                    Console.WriteLine("Ne poznajem regiju");
+                   // Console.WriteLine("Ne poznajem regiju");
 
             }
 
