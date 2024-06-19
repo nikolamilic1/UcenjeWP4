@@ -11,8 +11,14 @@ namespace VjezbanjeCS
         internal static void Izvedi()
         {
             // Program od korisnika učitava dvije rečenice i ispisuje jednu nakon druge u istom retku
-            Console.WriteLine("Unesi prvu rečenicu");
-
+            Console.WriteLine("Unesi prvu rečenicu: ");
+            string recenica1;
+            recenica1 = Console.ReadLine();
+            Console.WriteLine("Unesi drugu rečenicu: ");
+            string recenica2 = Console.ReadLine();
+            // prva varijanta
+            Console.WriteLine(recenica1 + " " + recenica2);
+            // druga varijanta
 
 
         }

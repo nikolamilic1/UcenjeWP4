@@ -3,4 +3,8 @@
 
 using VjezbanjeCS;
 
-E03UvjetnoGrananjeIf.Izvedi();
+
+
+E01Z4.Izvedi();
+
+//E03UvjetnoGrananjeIf.Izvedi();
