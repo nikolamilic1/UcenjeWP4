@@ -5,6 +5,8 @@ using VjezbanjeCS;
 
 
 
-E01Z4.Izvedi();
+E01Z5.Izvedi();
+
+//E01Z4.Izvedi();
 
 //E03UvjetnoGrananjeIf.Izvedi();
