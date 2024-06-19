@@ -24,6 +24,10 @@ namespace VjezbanjeCS
             
             Console.WriteLine(broj);
 
+            // da se ne koristi varijabla broj
+
+            Console.WriteLine("Unesi decimalni broj: ");
+            Console.WriteLine(Math.Sqrt(double.Parse(Console.ReadLine())));
 
         }
     }
