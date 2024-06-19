@@ -18,8 +18,9 @@ namespace VjezbanjeCS
             string recenica2 = Console.ReadLine();
             // prva varijanta
             Console.WriteLine(recenica1 + " " + recenica2);
-            // druga varijanta
 
+            // druga varijanta ---  FORMATIRANO ISPISIVANJE
+            Console.WriteLine("{0} {1}", recenica1,recenica2);
 
         }
     }
