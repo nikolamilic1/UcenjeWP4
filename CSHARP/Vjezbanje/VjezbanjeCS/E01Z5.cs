@@ -12,19 +12,19 @@ namespace VjezbanjeCS
         {
             // Program od korisnika učitava decimalni brojte ispisuje drugi korijen učitanog broja
 
+            double x;
+
             Console.WriteLine("Unesi decimalni broj: ");
 
-            double broj;
+                        x = double.Parse(Console.ReadLine());
 
-            broj = double.Parse(Console.ReadLine());
+            // https://www.geeksforgeeks.org/c-sharp-math-sqrt-method/
 
-        // https://www.geeksforgeeks.org/c-sharp-math-sqrt-method/
-
-            broj = Math.Sqrt(broj);
+            x = Math.Sqrt(x);
             
-            Console.WriteLine(broj);
+            Console.WriteLine(x);
 
-            // da se ne koristi varijabla broj
+            // da se ne koristi varijabla X
 
             Console.WriteLine("Unesi decimalni broj: ");
             Console.WriteLine(Math.Sqrt(double.Parse(Console.ReadLine())));
