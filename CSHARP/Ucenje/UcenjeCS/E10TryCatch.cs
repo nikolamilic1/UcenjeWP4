@@ -11,7 +11,7 @@ namespace UcenjeCS
         internal static void Izvedi()
         {
 
-            
+
 
             int i;
             while (true)
@@ -20,7 +20,7 @@ namespace UcenjeCS
                 try
                 {
                     i = int.Parse(Console.ReadLine());
-                    if (i > 0 && i<100)
+                    if (i > 0 && i < 100)
                     {
                         break;
                     }
