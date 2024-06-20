@@ -1,9 +1,9 @@
 ﻿
 using UcenjeCS;
 
+E07WhilePetlja.Izvedi();
 
-
-E06ForPetlja.Izvedi();
+//E06ForPetlja.Izvedi();
 
 //E05Z3.Izvedi();
 
