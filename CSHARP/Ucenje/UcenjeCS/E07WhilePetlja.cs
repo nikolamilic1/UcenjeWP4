@@ -10,21 +10,21 @@ namespace UcenjeCS
     {
         internal static void Izvedi()
         {
-            int brojDo = 1;
-            for (int i = 0; i < brojDo; i++)
-            {
+            //int brojDo = 1;
+            //for (int i = 0; i < brojDo; i++)
+            //{
 
-                Console.WriteLine("Kod u petlji for ");
-            }
+            //    Console.WriteLine("Kod u petlji for ");
+            //}
 
 
             // U while petlju se ne mora ući
 
-            int b = 0;
-            while (b < brojDo)
-            {
-                Console.WriteLine("kod u petlji while");
-            }
+            //int b = 0;
+            //while (b < brojDo)
+            //{
+            //    Console.WriteLine("kod u petlji while");
+            //}
 
             // while radi s bool tipom podatka
 
@@ -36,18 +36,24 @@ namespace UcenjeCS
 
             // ispiši  prvih 10 brojeva
 
-            while (b<10)
-            {
-                Console.WriteLine(++b);
+            //while (b<10)
+            //{
+            //    Console.WriteLine(++b);
+            //}
+            //Console.WriteLine("Nakon petlje " + b);
+
+
+           //int brojDo = 10;
+           // int b = 1;
+           // int j = 2;
+           // while (j < b && j < brojDo)  // može ići i ||
+           // {
+
+           //     Console.WriteLine(j++);
+
+           // }
+
+
             }
-            Console.WriteLine("Nakon petlje " + b);
-
-
-
-
-
-
-
-        }
     }
 }
