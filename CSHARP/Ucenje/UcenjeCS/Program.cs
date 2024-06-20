@@ -2,7 +2,12 @@
 using UcenjeCS;
 
 
-E09ForEachPetlja.Izvedi();
+
+
+E10TryCatch.Izvedi();
+
+
+//E09ForEachPetlja.Izvedi();
 
 //E08DoWhilePetlja.Izvedi();
 
