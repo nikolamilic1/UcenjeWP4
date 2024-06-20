@@ -28,14 +28,19 @@ namespace UcenjeCS
 
             // while radi s bool tipom podatka
 
-            while (true)
+            //while (true)
+            //{
+            //    Console.WriteLine("Kod u beskonačnoj petlji while");
+            //    break;   // continue radi isto kao i for
+            //}
+
+            // ispiši  prvih 10 brojeva
+
+            while (b<10)
             {
-                Console.WriteLine("Kod u beskonačnoj petlji while");
-                break;
+                Console.WriteLine(++b);
             }
-
-
-
+            Console.WriteLine("Nakon petlje " + b);
 
 
 
