@@ -13,8 +13,8 @@ namespace UcenjeCS
             // do while izdvaja činjenica da će se on barem jednom izvesti
 
 
-            int i =0;
-             do
+            int i = 0;
+            do
             {
                 Console.WriteLine(i);
 
