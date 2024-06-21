@@ -33,3 +33,6 @@ namespace UcenjeCS
                 Console.WriteLine("Kod u beskonačnoj petlji while");
                 break;
             }
+        }
+    }
+}
