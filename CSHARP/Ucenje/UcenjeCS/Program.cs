@@ -5,6 +5,9 @@ using UcenjeCS;
 
 E10Z2.Izvedi();
 
+
+//E10TryCatch.Izvedi();
+
 // E10Z1.Izvedi();
 
 //E10TryCatch.Izvedi();
