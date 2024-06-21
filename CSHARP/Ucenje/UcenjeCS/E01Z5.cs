@@ -11,7 +11,7 @@ namespace UcenjeCS
 
         public static void Izvedi()
         {
-            
+
             Console.WriteLine("Unesi decimalni broj: ");
             // sqrt ne prima decimal, ali prima double
 
@@ -19,7 +19,13 @@ namespace UcenjeCS
             decBroj = Math.Sqrt(decBroj);
             Console.WriteLine("drugi korijen je " + decBroj);
 
+            // bez varijable decBroj
+
+
             Console.WriteLine("Unesi decimalni broj: ");
+            Console.WriteLine(Math.Sqrt(double.Parse(Console.ReadLine())));
+
+
 
 
         }
