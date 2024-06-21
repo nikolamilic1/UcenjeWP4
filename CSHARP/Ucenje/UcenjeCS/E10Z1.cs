@@ -15,12 +15,12 @@ namespace UcenjeCS
 
             for (int i = 0; i < brojevi.Length; i++)
             {
-                Console.WriteLine("Unesi {0}. broj: ", i+1);
+                Console.WriteLine("Unesi {0}. broj: ", i + 1);
                 brojevi[i] = int.Parse(Console.ReadLine());
             }
 
             int zbroj = 0;
-            foreach(var b in brojevi)
+            foreach (var b in brojevi)
             {
                 zbroj += b;
             }
@@ -32,7 +32,7 @@ namespace UcenjeCS
             }
 
 
-           
+
 
 
 
