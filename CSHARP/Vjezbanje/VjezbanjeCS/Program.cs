@@ -3,9 +3,9 @@
 
 using VjezbanjeCS;
 
+E01Z6.Izvedi();
 
-
-E01Z5.Izvedi();
+//E01Z5.Izvedi();
 
 //E01Z4.Izvedi();
 
