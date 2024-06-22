@@ -17,7 +17,7 @@ namespace VjezbanjeCS
             Console.WriteLine("Upiši ime grada: "); 
             string ime = Console.ReadLine();
             Console.WriteLine("Upiši broj stanovnika: ");
-            string broj = Console.ReadLine();
+            int broj = int.Parse(Console.ReadLine());
             // Može ovako
             // Console.WriteLine("Grad " + ime + " ima " + broj + " stanovnika.");
 
