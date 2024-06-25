@@ -18,9 +18,10 @@ namespace VjezbanjeCS
             {
                 Console.WriteLine("Kod u petlji for");
             }
-
+            // WHILE RADI SA BOOL TIPOM PODATKA
             // u WHILE petlju se ne mora ući
-            int b = 1;
+            Console.WriteLine("Unesite broj do kojeg će se izvoditi pelja WHILE: ");
+            int b = int.Parse(Console.ReadLine());
             while (b < brojDo)
             {
                 Console.WriteLine("Kod u petlji while");
