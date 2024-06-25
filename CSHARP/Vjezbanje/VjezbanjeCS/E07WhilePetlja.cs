@@ -18,7 +18,12 @@ namespace VjezbanjeCS
             {
                 Console.WriteLine("Kod u petlji for");
             }
-            // WHILE RADI SA BOOL TIPOM PODATKA
+            // WHILE radi sa BOOL tipom podataka
+            // IF    radi sa BOOL tipom podataka
+
+            // SWITCH radi sa STRING, INT i CHAR tipom podataka
+
+
             // u WHILE petlju se ne mora ući
             Console.WriteLine("Unesite broj do kojeg će se izvoditi pelja WHILE: ");
             int b = int.Parse(Console.ReadLine());
@@ -26,6 +31,26 @@ namespace VjezbanjeCS
             {
                 Console.WriteLine("Kod u petlji while");
             }
+
+
+            while (true)
+            {
+                Console.WriteLine("Kod u beskonačnoj pelji while");
+                break;   // continue radi isto kao i u FOR
+            }
+
+            // ispiši prvih 10 brojeva
+            b = 0;
+            while (b < 10)
+            {
+                Console.WriteLine(++b);
+                ////druga varijanta:
+                //b++;
+                //Console.WriteLine(b);
+            }
+
+
+
         }
     }
 }
