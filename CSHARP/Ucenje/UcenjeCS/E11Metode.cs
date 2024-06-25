@@ -15,16 +15,18 @@ namespace UcenjeCS
             // Tip1();
 
 
-            for (int i = 0; i < 55; i++)
-            {
-                Tip1();
-            }
+            //for (int i = 0; i < 55; i++)
+            //{
+            //    Tip1();
+            //}
 
-            Tip2("Edunova");
-            Tip2(Console.ReadLine);
-            Tip2();
+            //Tip2("Edunova");
+            //Tip2(Console.ReadLine);
+            // Tip2();
+            int broj = Tip3();
+            Console.WriteLine(broj);
 
-
+        }
 
             // Tip 1. metoda ne prima parametre i ne vraća vrijednost
 
@@ -41,16 +43,23 @@ namespace UcenjeCS
                 Console.WriteLine("Hello {0}", ime);
             }
 
-            static void Tip2(string ime, string prezime)
+            //static void Tip2(string ime, string prezime)
+            //{
+            //    Console.WriteLine("Hello {0} {1}", ime, prezime);
+            //}
+
+            // Tip 3. Metoda ne prima parametre i vraća vrijednost
+
+            static int Tip3()
             {
-                Console.WriteLine("Hello {0} {1}", ime, prezime);
+
+                return new Random().Next(20, 30);
+
+                //return '7';
             }
-
-
-
 
 
 
         }
     }
-}
+
