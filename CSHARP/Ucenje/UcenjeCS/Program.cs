@@ -3,7 +3,19 @@ using UcenjeCS;
 
 
 
-E01Z5.Izvedi();
+
+
+
+
+
+
+
+
+
+E11Metode.Izvedi();
+
+
+//E01Z5.Izvedi();
 
 
 //E10TryCatch.Izvedi();
