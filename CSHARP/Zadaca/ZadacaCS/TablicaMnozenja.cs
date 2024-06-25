@@ -24,7 +24,7 @@ namespace ZadacaCS
             // 10  20  30  40  50  60  70  80  90 100
 
             // Rješenje 1.
-
+            var vrijeme1 = DateTime.Now;
             int[] faktor1 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
             int[] faktor2 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
             for (int i = 1; i <= 10; i++)
@@ -35,12 +35,15 @@ namespace ZadacaCS
                     Console.Write($"{j * i,3} ");
                 }
             }
+            Console.WriteLine("\n");
+            Console.Write("Vrijeme izvođenja prve tablice: ");
+            Console.WriteLine(DateTime.Now - vrijeme1);
 
             Console.WriteLine("\n\n");
 
 
             // Rješenje 2.
-
+            var vrijeme2 = DateTime.Now;
             for (int x = 1; x < 11; x++)
             {
                 for (int y = 1; y < 11; y++)
@@ -49,6 +52,9 @@ namespace ZadacaCS
                 }
                 Console.WriteLine();
             }
+            Console.WriteLine();
+            Console.Write("Vrijeme izvođenja druge tablice: ");
+            Console.WriteLine(DateTime.Now - vrijeme2);
 
 
         }

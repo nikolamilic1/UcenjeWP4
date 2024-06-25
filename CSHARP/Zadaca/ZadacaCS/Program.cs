@@ -3,7 +3,7 @@ using System.Reflection.Metadata;
 using ZadacaCS;
 
 
-Radno.Izvedi();
+//Radno.Izvedi();
 
-// TablicaMnozenja.Izvedi();
+TablicaMnozenja.Izvedi();
 
