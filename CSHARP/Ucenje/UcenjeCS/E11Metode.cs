@@ -27,13 +27,18 @@ namespace UcenjeCS
             int broj = Tip3();
             Console.WriteLine(broj);
 
-            Tip4(2, 8);
+            //Tip4(1,99);
+
+            int doBroja = Pomocno.UcitajCijeliBroj("Unesi do broja");
+            int odBroja = Pomocno.UcitajCijeliBroj("Unesi od broja");
+            for (int i = odBroja;
+            i < doBroja; i++) ;
 
         }
 
         // Tip 1. metoda ne prima parametre i ne vraća vrijednost
 
-        static void Tip1()
+        private static void Tip1()
         {
             Console.WriteLine("Hello iz metode koja ne prima parametre i ne vraća vrijednost");
             Console.WriteLine("Drugi red");
@@ -66,10 +71,10 @@ namespace UcenjeCS
 
 
         /// <summary>
-        /// Metoda za dva primljena cijela broja  vraća zvroj svih zbrojeva između njih
+        /// Metoda za dva primljena cijela broja  vraća zbroj svih zbrojeva između njih
         /// </summary>
-        /// <param name="odBroja">Broj od kojeg se kreće uključujeći taj broj</param>
-        /// <param name="doBroja">Broj do kojeg se kreće uključujeći taj broj</param>
+        /// <param name="odBroja">Broj od kojeg se kreće uključujući taj broj</param>
+        /// <param name="doBroja">Broj do kojeg se kreće uključujući taj broj</param>
         /// <returns>Zbroj brojeva između dva primljena broja</returns>
         protected static int Tip4(int odBroja, int doBroja)
         {
@@ -86,13 +91,22 @@ namespace UcenjeCS
             return Suma;
 
 
-
-
-
         }
 
 
+        // primjer metode sa više return izraza
 
+        //static bool primBroj(int broj)
+        //{
+        //    for(int i = 2;  i < broj; i++)
+        //    {
+        //        if(broj % i == 0)
+        //        {
+        //            return false;
+        //        }
+        //        return true;
+        //    }
+        //}
 
 
 
