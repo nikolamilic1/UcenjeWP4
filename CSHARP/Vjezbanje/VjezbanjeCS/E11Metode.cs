@@ -14,7 +14,9 @@ namespace VjezbanjeCS
             // Poziv metode
             Tip1();
             Tip1();
-
+            for (int i = 0; i < 10; i++) {
+                Tip1;
+            }
         }
         // Tip 1. Metoda ne prima parametre i ne vraća vrijednost
         // Ovdje je deklarirana, napisana
