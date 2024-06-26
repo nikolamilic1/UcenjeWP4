@@ -5,8 +5,10 @@ using VjezbanjeCS;
 
 
 
-E07WhilePetlja.Izvedi();
 
+E11Metode.Izvedi();
+
+//E07WhilePetlja.Izvedi();
 
 //E01Z7.Izvedi();
 
