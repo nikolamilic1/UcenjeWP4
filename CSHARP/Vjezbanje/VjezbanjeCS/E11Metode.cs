@@ -16,7 +16,9 @@ namespace VjezbanjeCS
             Tip1();
 
         }
-
+        // Tip 1. Metoda ne prima parametre i ne vraća vrijednost
+        // Ovdje je deklarirana, napisana
+        // private se vidi samo u trenutnoj klasi
         private static void Tip1()
         {
             Console.WriteLine("Hello iz metode koje ne prima parametre i ne vraća vrijednost");
