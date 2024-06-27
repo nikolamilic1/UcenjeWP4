@@ -10,7 +10,7 @@ namespace UcenjeCS.E13KlasaObjekt
     {
         public static void Izvedi()
         {
-            
+            Console.WriteLine("Hello!");
         }
     }
 }
