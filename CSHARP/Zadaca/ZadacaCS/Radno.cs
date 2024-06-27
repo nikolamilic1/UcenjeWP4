@@ -10,18 +10,43 @@ namespace ZadacaCS
     {
         internal static void Izvedi()
         {
-            int[,] numbers = { { 1, 4, 2 }, { 3, 6, 8 } };
+            Console.WriteLine("Unesite broj redova: ");
+            int r = int.Parse(Console.ReadLine());
+            Console.WriteLine("Unesite broj kolona: ");
+            int k = int.Parse(Console.ReadLine());
 
+            int[,] tablica = new int[r, k];
+            int redovi = r;
+            int kolone = k;
+            int pocetakReda = 0;
+            int krajReda = r - 1;
+            int pocetakKolone = 0;
+            int krajKolone = k - 1;
 
-            for (int i = 0; i < numbers.GetLength(0); i++)
+            while (pocetakReda <= krajReda && pocetakKolone <= krajKolone)
             {
-               // Console.Write("Row " + i + ": ");
-                for (int j = 0; j < numbers.GetLength(1); j++)
-                {
-                    Console.Write(numbers[i, j] + " ");
+                for (kolone = pocetakKolone; kolone <= krajKolone; kolone++) {
+                    Console.Write([krajReda,kolone] + " ");
                 }
-                Console.WriteLine();
             }
+
+
+
+
+
+            //for (int i = 0; i < r; i++)
+            //{
+            //    for (int j = 0; j < k; j++)
+            //    {
+
+            //        Console.WriteLine();
+            //    }
+
+            //}
+
+
+
+
 
         }
     }
