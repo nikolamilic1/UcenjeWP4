@@ -16,15 +16,15 @@ namespace UcenjeCS
 
 
 
-        public static void Izvedi()
-        {
-            //LosaMetoda();
-            do
-            {
-                Console.WriteLine(Zbroj(Pomocno.UcitajCijeliBroj("Unesi broj za sumu svih brojeva do tog broja")));
-            } while () { }
+        //public static void Izvedi()
+        //{
+        //    //LosaMetoda();
+        //    do
+        //    {
+        //        Console.WriteLine(Zbroj(Pomocno.UcitajCijeliBroj("Unesi broj za sumu svih brojeva do tog broja")));
+        //    } while () { }
 
-        }
+        //}
 
             private static int Zbroj(int broj)
             {
