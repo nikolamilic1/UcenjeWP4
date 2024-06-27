@@ -40,6 +40,11 @@ namespace UcenjeCS.E13KlasaObjekt
                 Prezime = "Kiš"
             };
 
+
+            o.Mjesto = new() { PostanskiBroj = "31000" }
+
+            Console.WriteLine(o.Mjesto?.Naziv?.ToUpper());
+            Console.WriteLine(o.Mjesto?.Naziv ?? "Nema");
         }
     }
 }
