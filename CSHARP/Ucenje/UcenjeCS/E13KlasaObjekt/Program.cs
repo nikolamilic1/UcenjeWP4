@@ -46,5 +46,8 @@ namespace UcenjeCS.E13KlasaObjekt
             Console.WriteLine(o.Mjesto?.Naziv?.ToUpper());
             Console.WriteLine(o.Mjesto?.Naziv ?? "Nema");
         }
+
+
+        
     }
 }
