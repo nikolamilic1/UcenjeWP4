@@ -26,18 +26,22 @@ namespace VjezbanjeCS
             {
                 Console.WriteLine(prBr);
             }
-            if (drBr < trBr && drBr < prBr)
+            else if (drBr < trBr && drBr < prBr)
             {
                 Console.WriteLine(drBr);
             }
-            if(trBr < prBr && trBr < drBr) 
+            else if(trBr < prBr && trBr < drBr) 
             {
                 Console.WriteLine(trBr); 
             } 
             // Za slučaj da korisnik unese sva tri ista broja: 
-            else {Console.WriteLine(prBr);
+            else {Console.WriteLine("Sva tri broja su ista: Dakle, najmanji je: " + prBr);
             }
-
+            /* Napomena: 
+             * Ukoliko se zadatak riješi samo sa IF naredbom umjesto ELSE IF 
+             * onda ovaj zadnji ELSE uvijek ispisuje (čak i kada su brojevi razčiliti)
+             * dakle, ne radi dobro             
+             */
 
         }
     }
