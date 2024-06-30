@@ -72,7 +72,9 @@ using VjezbanjeCS;
 
 //}
 
-E03Z3.Izvedi();
+E03Z4.Izvedi();
+
+//E03Z3.Izvedi();
 
 //E01Z9.Izvedi();
 
