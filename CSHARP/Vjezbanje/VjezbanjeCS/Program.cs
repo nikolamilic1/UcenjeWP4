@@ -75,9 +75,9 @@ using VjezbanjeCS;
 
 
 
+E04UvjetnoGrananjeSwitch.Izvedi();
 
-
-E03Z1.Izvedi();
+//E03Z1.Izvedi();
 
 //E05Z3.Izvedi();
 

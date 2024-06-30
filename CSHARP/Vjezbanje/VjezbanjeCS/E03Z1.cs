@@ -28,6 +28,11 @@ namespace VjezbanjeCS
 
             Console.WriteLine(broj>=18 ? "Punoljetna" : "Maloljetna");
 
+            // ili još kraće --- BEZ ALOCIRANJA MEMORIJE
+
+            Console.WriteLine("Unesi broj godina");
+            Console.WriteLine(int.Parse(Console.ReadLine()) >= 18 ? "Ponoljetna je" : "Maloljetna je");
+
 
 
 
