@@ -35,14 +35,14 @@ namespace VjezbanjeCS
 
             // uobičajena sintaksa što se tiče uvjeta
 
-            if (i > 2) // ako ne postoje vitičaste zagrade IF se odnosi samo na 1. selijedeću liniju
+            if (i > 2) // ako ne postoje vitičaste zagrade IF se odnosi samo na 1. slijedeću liniju
                 Console.WriteLine("3. Ušao u IF bez vitičastih zagrada");
             Console.WriteLine("4. ovo se izvodi bez obzira na gornji if");
 
             var j = 2;
 
             // dodatni operatori & (and), && (and and), | (or), || (or or), ! (not) 
-            // *** znak | (or) piše se AltGr+W  ***
+            // *** znak | (or) piše se AltGr+W  ***                AltGr = alternate graphic
             // *** čišćenje sintakse ide sa CTRL+K+D ***
 
             if (i < 2 && j == 2)
@@ -62,7 +62,7 @@ namespace VjezbanjeCS
 
             if (i != 5)
             {
-                Console.WriteLine("7. i n ema vrijednost 5");
+                Console.WriteLine("7. i nema vrijednost 5");
             }
 
             int ocjena;
@@ -94,14 +94,26 @@ namespace VjezbanjeCS
                 Console.WriteLine(" 13. Netočan unos. Broj mora biti od 1 do 5");
             }
 
+
+
             // Skraćeno pisanje IF ELSE grananja
-            Console.WriteLine(ocjena==4 ? "14. Vrlo dobar si" : "15. Sve si ali samo nisi vrlo dobar :)");
-            // Prvo ide uvjet pa upitnik, nakod upitnika idre TRUE grana, a nakon dvotočke ELSE grana.
+
+
+            Console.WriteLine(ocjena == 4 ? "14. Vrlo dobar si" : "15. Sve si ali samo nisi vrlo dobar :)");
+
+
+            // Prvo ide uvjet pa upitnik, nakon upitnika ide TRUE grana, a nakon dvotočke ELSE grana.
             // Ne može se ovako pisati bez ELSE, dakle mora biti dvotočka i iskaz koji slijedi
 
             // IF se može gnijezditi ----unutar jednog IF-a može biti drugi IF
 
-
+            if (ocjena > 0)
+            {
+                if (ocjena == 4)
+                {
+                    Console.WriteLine("15. Gnježđenje se može zapravo zamijeniti s &&");
+                }
+            }
 
 
         }
