@@ -20,7 +20,7 @@ namespace VjezbanjeCS
             //};
 
             int[,] niz = new int[,] {
-                 {2,3},
+                 {2,3},   // ne mogu deklarirati prazan niz ???
                  {4,5}
             };
             Console.WriteLine("Unesite prvi element prvog niza: ");
