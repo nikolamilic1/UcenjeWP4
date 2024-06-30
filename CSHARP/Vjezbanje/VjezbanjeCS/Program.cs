@@ -73,9 +73,9 @@ using VjezbanjeCS;
 //}
 
 
+E04Z1.Izvedi();
 
-
-E04UvjetnoGrananjeSwitch.Izvedi();
+//E04UvjetnoGrananjeSwitch.Izvedi();
 
 //E03Z1.Izvedi();
 
