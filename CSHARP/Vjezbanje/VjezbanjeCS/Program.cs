@@ -77,7 +77,7 @@ using VjezbanjeCS;
 
 
 
-
+E03Z1.Izvedi();
 
 //E05Z3.Izvedi();
 
@@ -103,4 +103,4 @@ using VjezbanjeCS;
 
 //E01Z4.Izvedi();
 
-E03UvjetnoGrananjeIf.Izvedi();
+//E03UvjetnoGrananjeIf.Izvedi();
