@@ -14,12 +14,27 @@ namespace VjezbanjeCS
     {
         internal static void Izvedi()
         {
-            int[,] niz = new int[,] {
-                {22,222},
-                {33,333}
-            };
+            //int[,] niz = new int[,] {
+            //    {2,3},
+            //    {4,5},
+            //};
 
-            Console.WriteLine("{0},{1},{2},{3}", niz[0, 0], niz[0, 1], niz[1, 0], niz[1,1]);
+            int[,] niz = new int[,] {
+                 {2,3},
+                 {4,5}
+            };
+            Console.WriteLine("Unesite prvi element prvog niza: ");
+            niz[0, 0] = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Unesite drugi element prvog niza: ");
+            niz[0, 1] = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Unesite prvi element drugog niza: ");
+            niz[1, 0] = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Unesite drugi element drugog niza: ");
+            niz[1, 1] = int.Parse(Console.ReadLine());
+            Console.WriteLine("Vrijednosti nizova su: {0},{1},{2},{3}", niz[0, 0], niz[0, 1], niz[1, 0], niz[1, 1]);
         }
     }
 }
