@@ -73,7 +73,7 @@ using VjezbanjeCS;
 //}
 
 
-E05Z1.Izvedi();
+E05Z2.Izvedi();
 
 //E03Z4.Izvedi();
 
