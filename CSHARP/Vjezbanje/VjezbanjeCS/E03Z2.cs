@@ -34,6 +34,33 @@ namespace VjezbanjeCS
             {
                 Console.WriteLine("Brojevi su jednaki");
             }
+
+            // Drugi način (sa nizom)
+
+            float[] b = new float[2];
+            Console.WriteLine("Unesite prvi broj: ");
+            b[0] = float.Parse(Console.ReadLine());
+            Console.WriteLine("Unesite drugi broj: ");
+            b[1] = float.Parse(Console.ReadLine());
+
+            if (b[1] == b[0])
+            {
+                Console.WriteLine("Jednaki su");
+            }
+            else {
+                Console.WriteLine(b[0] > b[1] ? b[0] : b[1]);
+            }
+            /* može i ovako else izgledati:  DVA UGNJEŽĐENA INLINE TIPA
+             * else {
+                Console.WriteLine(
+                    b[1] == b[0] ? "Jednaki su" :
+                    b[0] > b[1] ? b[0] : b[1]);
+             *  Čitaj: Ako b1 jednako b0 ispiši "jednaki su", 
+             *  ako je b0 veće od b1 ispiši b0,
+             *  inače ispiši b1
+             */
+
+
         }
 
     }
