@@ -12,8 +12,8 @@ namespace VjezbanjeCS
         internal static void Izvedi()
         {
 
-            // Korisnik unosi dva decimalna broja
-            // Program ispisuje veći broj ili "jednaki su"  ako su jednaki
+            //Korisnik unosi dva decimalna broja
+            //Program ispisuje veći broj ili "jednaki su"  ako su jednaki
 
 
             Console.WriteLine("Unesite prvi decimalni broj: ");
@@ -47,7 +47,8 @@ namespace VjezbanjeCS
             {
                 Console.WriteLine("Jednaki su");
             }
-            else {
+            else
+            {
                 Console.WriteLine(b[0] > b[1] ? b[0] : b[1]);
             }
             /* može i ovako else izgledati:  DVA UGNJEŽĐENA INLINE TIPA
@@ -60,9 +61,23 @@ namespace VjezbanjeCS
              *  inače ispiši b1
              */
 
+            
+            //****************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
 
         }
 
     }
-}
 
+}
