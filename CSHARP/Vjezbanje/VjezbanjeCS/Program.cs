@@ -74,9 +74,9 @@ using VjezbanjeCS;
 
 
 
+E03Z2.Izvedi();
 
-
-E05Nizovi.Izvedi();
+//E05Nizovi.Izvedi();
 
 //E04Z1.Izvedi();
 
