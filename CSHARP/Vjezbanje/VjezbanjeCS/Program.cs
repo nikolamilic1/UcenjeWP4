@@ -73,7 +73,12 @@ using VjezbanjeCS;
 //}
 
 
-E04Z1.Izvedi();
+
+
+
+E05Nizovi.Izvedi();
+
+//E04Z1.Izvedi();
 
 //E04UvjetnoGrananjeSwitch.Izvedi();
 
