@@ -13,7 +13,7 @@ namespace UcenjeCS
         public static void Izvedi()
         {
             int b1 = Pomocno.UcitajCijeliBroj("Unesi 1. broj: ");
-            int b2 = Pomocno.UcitajCijeliBroj("Unesi 2. broj: ");
+            int b2 = Pomocno.UcitajCijeliBroj();
             Console.WriteLine(b1+b2);
         }
 
