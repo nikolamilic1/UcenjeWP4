@@ -70,12 +70,12 @@ namespace UcenjeCS
         static int Tip3()
         {
 
-            return new Random().Next(10,30);
+            return new Random().Next(10, 30);
 
 
             return 0;  // <- ovo je dobro staviti da ne pokazuje sintaksnu grešku
-          //  return '7';  // return vraća vrijednost onome tko je pozvao metodu
-            // vraća prema ASCII tablici, pogledati: https://commons.wikimedia.org/wiki/File:ASCII-Table-wide.svg
+                       //  return '7';  // return vraća vrijednost onome tko je pozvao metodu
+                       // vraća prema ASCII tablici, pogledati: https://commons.wikimedia.org/wiki/File:ASCII-Table-wide.svg
         }
 
 
@@ -87,7 +87,7 @@ namespace UcenjeCS
         /// </summary>
         /// <param name="odBroja">Broj od kojeg se kreće uključujući taj broj</param>
         /// <param name="doBroja">Broj do kojeg se kreće uključujući taj broj</param>
-        /// <returns>Zbroj brojeva između dva primljena broja</returns>
+        /// <returns>Zbroj brojeva između dva primljena broja</returns>       
         protected static int Tip4(int odBroja, int doBroja)
         {
 
@@ -95,9 +95,9 @@ namespace UcenjeCS
             int Suma = 0;
 
             for (int i = odBroja; i <= doBroja; i++)
-            {   
+            {
                 // return 0; // ovo stavimo da ne javlja grešku
-               // throw new NotImplementedException();  // <--- a može i ovako
+                // throw new NotImplementedException();  // <--- a može i ovako
                 Suma += i;
             }
 
