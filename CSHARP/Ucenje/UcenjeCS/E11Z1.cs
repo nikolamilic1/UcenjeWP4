@@ -12,8 +12,8 @@ namespace UcenjeCS
         // za dva učitana broja koja unosi korisnik ispiši zbroj
         public static void Izvedi()
         {
-            int b1 = Pomocno.UcitajCijeliBroj("Unesi 1. broj");
-            int b2 = Pomocno.UcitajCijeliBroj();
+            int b1 = Pomocno.UcitajCijeliBroj("Unesi 1. broj: ");
+            int b2 = Pomocno.UcitajCijeliBroj("Unesi 2. broj: ");
             Console.WriteLine(b1+b2);
         }
 
