@@ -16,9 +16,9 @@ namespace UcenjeCS
             {
                 try
                 {
-                    Console.WriteLine("Unesi cijeli broj ");
+                    Console.WriteLine("Unesi cijeli broj: ");
                     return int.Parse(Console.ReadLine());
-
+                    // beskonačna petlja --- prekida je (iz nje se izlazi sa) return
                 }
                 catch // ne mora se staviti Exception
                 {
