@@ -11,8 +11,6 @@ namespace UcenjeCS
         internal static void Izvedi()
         {
 
-
-
             int i;
             while (true)
             {
@@ -24,7 +22,7 @@ namespace UcenjeCS
                     {
                         break;
                     }
-                    Console.WriteLine("Uneseni broj nije veći od nule ");
+                    Console.WriteLine("Uneseni broj nije veći od 0 i manji od 100");
                 }
                 catch (Exception ex)
                 {

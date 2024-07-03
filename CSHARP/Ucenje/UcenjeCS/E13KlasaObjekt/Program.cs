@@ -41,7 +41,7 @@ namespace UcenjeCS.E13KlasaObjekt
             };
 
 
-            o.Mjesto = new() { PostanskiBroj = "31000" }
+            o.Mjesto = new() { PostanskiBroj = "31000" };
 
             Console.WriteLine(o.Mjesto?.Naziv?.ToUpper());
             Console.WriteLine(o.Mjesto?.Naziv ?? "Nema");

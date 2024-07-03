@@ -11,9 +11,9 @@ namespace UcenjeCS
     {
         public static void Izvedi()
         {
-            // poziv metode Tip1()
+            //poziv metode Tip1()
             //Tip1();
-            // Tip1();
+            //Tip1();
 
 
             //for (int i = 0; i < 55; i++)
@@ -22,22 +22,24 @@ namespace UcenjeCS
             //}
 
             //Tip2("Edunova");
-            //Tip2(Console.ReadLine);
-            // Tip2();
+            //Console.WriteLine("Unesi ime:");
+            //Tip2(Console.ReadLine());
+            //Tip2("Pero","Perić");
             int broj = Tip3();
             Console.WriteLine(broj);
 
             //Tip4(1,99);
 
-            int doBroja = Pomocno.UcitajCijeliBroj("Unesi do broja");
-            int odBroja = Pomocno.UcitajCijeliBroj("Unesi od broja");
-            for (int i = odBroja;
-            i < doBroja; i++) ;
+            //int doBroja = Pomocno.UcitajCijeliBroj("Unesi do broja");
+            //int odBroja = Pomocno.UcitajCijeliBroj("Unesi od broja");
+            //for (int i = odBroja;
+            //i < doBroja; i++) ;
 
         }
 
         // Tip 1. metoda ne prima parametre i ne vraća vrijednost
-
+        // Ovdje je deklarirana, napisana
+        // PRIVATE se vidi samo u trenutnoj klasi
         private static void Tip1()
         {
             Console.WriteLine("Hello iz metode koja ne prima parametre i ne vraća vrijednost");
@@ -45,25 +47,32 @@ namespace UcenjeCS
             Console.WriteLine("Treći red");
         }
 
-
+        // Tip 2. metoda prima parametre i ne vraća vrijednost
+        // kada ispred [static] void nema načina pristupa tada je: private
         static void Tip2(string ime)
         {
             Console.WriteLine("Hello {0}", ime);
         }
 
-        //static void Tip2(string ime, string prezime)
-        //{
-        //    Console.WriteLine("Hello {0} {1}", ime, prezime);
-        //}
+        // Potpis metode: naziv + lista parametara
+        // method signature
+        // method overloading
+        // METOD OVERLOADING  ---ime metode može biti isto ali lista parametara mora biti različita
+        // Primjer:
+        static void Tip2(string ime, string prezime)
+        {
+            Console.WriteLine("Hello {0} {1}", ime, prezime);
+        }
 
         // Tip 3. Metoda ne prima parametre i vraća vrijednost
 
         static int Tip3()
         {
+            
+           // return new Random().Next(20, 30);
 
-            return new Random().Next(20, 30);
-
-            //return '7';
+            return '7';  // return vraća vrijednost onome tko je pozvao metodu
+            // vraća prema ASCII tablici, pogledati: https://commons.wikimedia.org/wiki/File:ASCII-Table-wide.svg
         }
 
 
