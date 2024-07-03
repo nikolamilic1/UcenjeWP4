@@ -37,8 +37,13 @@ namespace UcenjeCS
 
             //int doBroja = Pomocno.UcitajCijeliBroj("Unesi do broja");
             //int odBroja = Pomocno.UcitajCijeliBroj("Unesi od broja");
-            //for (int i = odBroja;
-            //i < doBroja; i++) ;
+
+            // ispiši sve prim brojeve od dva unesena broja
+            for (int i = Pomocno.UcitajCijeliBroj("Unesi od broja");
+                i < Pomocno.UcitajCijeliBroj("Unesi do broja"); i++)
+            {if (primBroj(i))
+                { Console.WriteLine(i); }
+            }
 
         }
 
@@ -112,17 +117,18 @@ namespace UcenjeCS
 
         // primjer metode sa više return izraza
 
-        //static bool primBroj(int broj)
-        //{
-        //    for(int i = 2;  i < broj; i++)
-        //    {
-        //        if(broj % i == 0)
-        //        {
-        //            return false;
-        //        }
-        //        return true;
-        //    }
-        //}
+        static bool primBroj(int broj)
+        {
+            for (int i = 2; i < broj; i++)
+            {
+                if (broj % i == 0)
+                {
+                    return false;
+                }
+                
+            }
+            return true;
+        }
 
 
 
