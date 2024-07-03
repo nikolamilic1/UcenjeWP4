@@ -30,7 +30,10 @@ namespace UcenjeCS
             //Console.WriteLine(broj);
 
             //Tip4(1,99);
-            Console.WriteLine(Tip4(2,8));
+            Console.WriteLine(Tip4(5,10));
+            // google:"visual studio focus method description"
+            // ctrl+shift+space --da se pojavi description
+            //  + left/right arrow  --- da se pomjera parametrima
 
             //int doBroja = Pomocno.UcitajCijeliBroj("Unesi do broja");
             //int odBroja = Pomocno.UcitajCijeliBroj("Unesi od broja");
