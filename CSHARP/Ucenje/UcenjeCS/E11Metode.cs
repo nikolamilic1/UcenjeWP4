@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
@@ -68,10 +69,12 @@ namespace UcenjeCS
 
         static int Tip3()
         {
-            
-           // return new Random().Next(20, 30);
 
-            return '7';  // return vraća vrijednost onome tko je pozvao metodu
+            return new Random().Next(10,30);
+
+
+            return 0;  // <- ovo je dobro staviti da ne pokazuje sintaksnu grešku
+          //  return '7';  // return vraća vrijednost onome tko je pozvao metodu
             // vraća prema ASCII tablici, pogledati: https://commons.wikimedia.org/wiki/File:ASCII-Table-wide.svg
         }
 
@@ -92,8 +95,9 @@ namespace UcenjeCS
             int Suma = 0;
 
             for (int i = odBroja; i <= doBroja; i++)
-            {
-
+            {   
+                // return 0; // ovo stavimo da ne javlja grešku
+               // throw new NotImplementedException();  // <--- a može i ovako
                 Suma += i;
             }
 
