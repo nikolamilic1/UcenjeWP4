@@ -46,7 +46,7 @@ namespace UcenjeCS
                     Console.WriteLine(i);
                 }
             }
-
+            
         }
 
         // Tip 1. metoda ne prima parametre i ne vraća vrijednost
