@@ -13,7 +13,7 @@ namespace UcenjeCS.E13KlasaObjekt
     {
         // Klasa sadrži svojstva (property)
         // kratica "prop" i automatski piše svojstvo
-        public string? Ime { get; set; } // OOP princip učahurivanje  --
+        public string? Ime { get; set; } // OOP princip učahurivanje  -- svojstvo gdje klasa sakrije svoja svojstva ali ih ostavi dostupne putem javnih get i set metoda
 
         public string? Prezime { get; set; }
 
