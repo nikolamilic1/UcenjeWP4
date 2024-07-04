@@ -16,7 +16,8 @@ namespace UcenjeCS
         public static void Izvedi()
         {
             //    LosaMetoda();
-            Zbroj(25);
+            //  Console.WriteLine(Zbroj(100));
+            Console.WriteLine(Zbroj(Pomocno.UcitajCijeliBroj("Učitaj broj za sumu svih brojeva: ")));
         }
 
         //static void LosaMetoda()
