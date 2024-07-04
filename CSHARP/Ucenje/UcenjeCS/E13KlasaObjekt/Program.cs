@@ -13,8 +13,8 @@ namespace UcenjeCS.E13KlasaObjekt
         {
             // Klasa je opisnik objekta
             // Objekt je instanca (pojavnost) klase
-            // Osoba je klasa
-            // osoba je instanca klase (objekt, varijabla)
+            // "Osoba" je klasa
+            // "osoba" je instanca klase (objekt, varijabla)
 
             Osoba osoba = new Osoba();
 
