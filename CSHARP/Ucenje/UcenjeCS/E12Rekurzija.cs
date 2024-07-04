@@ -36,6 +36,7 @@ namespace UcenjeCS
 
         private static int Zbroj(int broj)
         {
+            // Uvijek prvo napraviti uvijet prekida rekurzije
             if (broj == 0)
             {
                 return broj;
