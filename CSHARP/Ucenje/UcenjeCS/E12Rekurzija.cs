@@ -17,7 +17,14 @@ namespace UcenjeCS
         {
             //    LosaMetoda();
             //  Console.WriteLine(Zbroj(100));
-            Console.WriteLine(Zbroj(Pomocno.UcitajCijeliBroj("Učitaj broj za sumu svih brojeva do tog broja: ")));
+            //Console.WriteLine(Zbroj(Pomocno.UcitajCijeliBroj("Učitaj broj za sumu svih brojeva do tog broja: ")));
+            do
+            {
+                Console.WriteLine(Zbroj(Pomocno.UcitajCijeliBroj("Unesi broj za sumu svih brojeva do tog broja")));
+            } while (Pomocno.UcitajCijeliBroj("-1 za prekid") != -1);
+            {
+            
+            }
         }
 
         //static void LosaMetoda()
@@ -29,12 +36,9 @@ namespace UcenjeCS
 
 
 
-        //    do
-        //    {
-        //        Console.WriteLine(Zbroj(Pomocno.UcitajCijeliBroj("Unesi broj za sumu svih brojeva do tog broja")));
-        //    } while () { }
+         
 
-        //}
+        
 
 
 
