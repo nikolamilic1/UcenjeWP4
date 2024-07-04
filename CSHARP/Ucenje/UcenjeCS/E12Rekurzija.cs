@@ -11,18 +11,19 @@ namespace UcenjeCS
     {
         //rekurzija je kada metoda poziva samu sebe - nedovoljna definicaja
 
-        /*
+        
         // OVO SE NE RADI ---- Dovodi do pucanja programa stack overflow exception
         public static void Izvedi()
         {
-            LosaMetoda();
+            //    LosaMetoda();
+            Zbroj(25);
         }
 
-        static void LosaMetoda()
-        {
-            LosaMetoda();
-        }
-        */
+        //static void LosaMetoda()
+        //{
+        //    LosaMetoda();
+        //}
+        
 
 
 
@@ -33,6 +34,8 @@ namespace UcenjeCS
         //    } while () { }
 
         //}
+
+
 
         private static int Zbroj(int broj)
         {
