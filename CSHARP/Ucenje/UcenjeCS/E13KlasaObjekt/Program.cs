@@ -11,6 +11,7 @@ namespace UcenjeCS.E13KlasaObjekt
     {
         public static void Izvedi()
         {
+            // Klasa je opisnik objekta
             // Objekt je instanca (pojavnost) klase
             // Osoba je klasa
             // osoba je instanca klase (objekt, varijabla)

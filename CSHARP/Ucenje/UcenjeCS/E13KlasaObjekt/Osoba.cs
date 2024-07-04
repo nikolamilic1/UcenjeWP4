@@ -12,7 +12,8 @@ namespace UcenjeCS.E13KlasaObjekt
     internal class Osoba
     {
         // Klasa sadrži svojstva (property)
-        public string? Ime { get; set; } // OOP princip učahurivanje
+        // kratica "prop" i automatski piše svojstvo
+        public string? Ime { get; set; } // OOP princip učahurivanje  --
 
         public string? Prezime { get; set; }
 

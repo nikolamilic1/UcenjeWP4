@@ -7,9 +7,9 @@ using UcenjeCS;
 
 using UcenjeCS.E13KlasaObjekt;
 
-//UcenjeCS.E13KlasaObjekt.Program.Izvedi();
+UcenjeCS.E13KlasaObjekt.Program.Izvedi();
 
-E12Rekurzija.Izvedi();
+//E12Rekurzija.Izvedi();
 
 
 //E11Z1.Izvedi();
