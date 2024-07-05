@@ -17,7 +17,7 @@ namespace UcenjeCS.E13KlasaObjekt
 
         public string? Prezime { get; set; }
 
-        public int? Sifra { get; set; } // nema upitnika, ne može biti null
+        public int Sifra { get; set; } // ako nema upitnika, ne može biti null
 
 
         public Mjesto? Mjesto { get; set; }

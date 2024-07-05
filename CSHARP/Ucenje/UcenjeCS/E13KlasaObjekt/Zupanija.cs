@@ -11,6 +11,7 @@ namespace UcenjeCS.E13KlasaObjekt
 
         public string? Naziv {  get; set; }
 
+        public Drzava? Drzava { get; set; }
 
     }
 }
