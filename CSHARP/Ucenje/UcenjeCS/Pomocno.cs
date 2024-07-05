@@ -51,5 +51,39 @@ namespace UcenjeCS
         }
 
 
+        public static string UcitajString(string poruka)
+        {
+            while (true)
+            {
+                try
+                {
+                    Console.WriteLine(poruka + ": ");
+                    return Console.ReadLine();
+                }
+                catch
+                {
+                    Console.WriteLine("pogreška prilikom unosa");
+                }
+            }
+        }
+
+        public static string UcitajString()
+        {
+            while (true)
+            {
+                try  
+                {
+                    Console.WriteLine("Unesi string: ");
+                    Console.ReadLine();
+                }
+                catch 
+                {
+                    Console.WriteLine("Pogreška prilikom unosa");
+                }
+            }
+        }
+
+
+
     }
 }
