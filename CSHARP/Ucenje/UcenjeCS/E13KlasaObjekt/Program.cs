@@ -19,11 +19,16 @@ namespace UcenjeCS.E13KlasaObjekt
             Osoba osoba = new Osoba();
 
 
-            osoba.Ime = "Pero"; // DZ: Napraviti metodu Pomocno.UcitajString koja osigurava unos
+            osoba.Ime = "Pero"; // DZ: Napraviti metodu Pomocno.UcitajString koja osigurava unos <--NAPRAVLJENO
 
             osoba.Prezime = "Perić";
 
             Console.WriteLine(osoba.ImePrezime());
+            Console.WriteLine(osoba.PrezimeIme());
+
+
+
+            // Evo drugog objekta klase osoba:
 
             Osoba ravnatelj = new Osoba
             {
@@ -31,8 +36,14 @@ namespace UcenjeCS.E13KlasaObjekt
                 Prezime = "Kuzma"
             };
 
-            var direktor = new Osoba { Prezime = "Kas" };
 
+            // Noraju se postavljati sve vrijednosti objekta
+
+            var direktor = new Osoba { Prezime = "Kas" };
+            direktor.Ime = "Diki";
+
+            // da bi izbjegli: grešku/pucanje programa "System.NullReferenceException"
+            // kraj varijable Ime stavljamo upitnik za slučaj da ime nije postavljeno (kao u našem slučaju):
             Console.WriteLine(direktor.Ime?.ToUpper());
 
             Osoba o = new()
@@ -46,9 +57,16 @@ namespace UcenjeCS.E13KlasaObjekt
 
             Console.WriteLine(o.Mjesto?.Naziv?.ToUpper());
             Console.WriteLine(o.Mjesto?.Naziv ?? "Nema");
-        }
 
 
+            
+
+
+
+
+
+
+        }       
         
     }
 }

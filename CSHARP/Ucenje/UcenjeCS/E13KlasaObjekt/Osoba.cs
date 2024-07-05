@@ -30,5 +30,21 @@ namespace UcenjeCS.E13KlasaObjekt
         {
             return Ime + " " + Prezime;
         }
+
+        public string PrezimeIme()
+        { 
+        return Prezime + " " + Ime;
+        }
+
+
+
+
+
+
+
+
+
+
+
     }
 }
