@@ -5,9 +5,11 @@ using UcenjeCS;
 
 
 
-using UcenjeCS.E13KlasaObjekt;
+using UcenjeCS.E17Subota;
 
-UcenjeCS.E13KlasaObjekt.Program.Izvedi();
+//UcenjeCS.E13KlasaObjekt.Program.Izvedi();
+
+UcenjeCS.E17Subota.Program.Progra();
 
 //E12Rekurzija.Izvedi();
 
