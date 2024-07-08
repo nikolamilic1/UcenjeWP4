@@ -14,7 +14,7 @@ namespace UcenjeCS.Edunova
         public int? Trajanje { get; set; }
         public decimal? Cijena { get; set; }
         public DateTime? IzvodiSeOd { get; set; }
-        public bool? Verificiran { get; set; }
+        public bool Verificiran { get; set; }
 
         // Ovaj gore prop bi u većini drugih programskih jezika (a može i ovdje) izgledao ovako:
         private int broj;
