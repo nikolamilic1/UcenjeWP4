@@ -8,6 +8,39 @@ namespace UcenjeCS.E18KonzolnaAplikacija
 {
     internal class Pomocno
     {
+        internal static bool UcitajBool(string poruka, string trueValue)
+        {
+            Console.Write(poruka);
+            return Console.ReadLine().Trim().ToLower() == "true" ;
+        }
+
+        internal static DateTime? UcitajDatum(string poruka, bool prijeDanasnjegDatuma)
+        {
+
+            DateTime d;
+            while (true)
+            {
+            } try
+            {
+                Console.WriteLine("Format unosa je yyyy-mm-dd, za današnji datum {0}",
+                    DateTime.Now.ToString("yyyy-mm-dd"));
+                Console.WriteLine(poruka);
+                d = DateTime.Parse(Console.ReadLine());
+                if (prijeDanasnjegDatuma && d < DateTime.Now)
+                {
+                    throw new Exception();
+                }
+                return d;
+            }
+
+            catch
+            {
+                Console.WriteLine("Unos datuma nije dobar");
+            }
+
+        }
+        
+
         internal static decimal? UcitajDecimalniBroj(string poruka, int min, float max)
         {
              float b;
@@ -26,7 +59,7 @@ namespace UcenjeCS.E18KonzolnaAplikacija
             }
         }
 
-        internal static int UcitajRasponBroja(string poruka, int min, int max)
+        internal static int UcitajRasponBroja (string poruka, int min, int max)
         {
 
             int b;
