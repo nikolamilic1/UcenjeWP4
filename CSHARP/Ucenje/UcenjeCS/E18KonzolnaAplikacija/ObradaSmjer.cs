@@ -34,11 +34,35 @@ namespace UcenjeCS.E18KonzolnaAplikacija
         {
             switch(Pomocno.UcitajRasponBroja("Odaberite stavku izbornika", 1,5))
             {
+                case 2:
+                    UnosNovogSmjera();
+                    PrikaziIzbornik();
+                    break;
+                
+                
+                
                 case 5:
                    // Console.WriteLine("Gotov rad sa smjerovima");
                     Console.Clear();
                     break;
             }
+        }
+
+
+ 
+
+
+
+        private void UnosNovogSmjera()
+        {
+            Console.WriteLine("**********************************");
+            Console.WriteLine("Unesite tražene podatke o smjeru:");
+            Smjerovi.Add(new()
+            {
+                Sifra = Pomocno.UcitajRasponBroja("Unesi šifru smjera", 1, int.MaxValue),
+                Naziv = Pomocno.UcitajString("Unesi naziv smjera",50, true),
+                Cijena = Pomocno.UcitajDecimalniBroj("Unesi cijenu smjera",0,10000)
+            });
         }
     }
 }
