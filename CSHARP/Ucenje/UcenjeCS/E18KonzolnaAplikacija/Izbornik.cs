@@ -27,7 +27,13 @@ namespace UcenjeCS.E18KonzolnaAplikacija
 
         private void OdabirOpcijeIzbornika()
         {
-            throw new NotImplementedException();
+            switch(Pomocno.UcitajRasponBroja("Odaberite stavku izbornika", 1, 4))
+            {
+                case 1:
+                    Console.WriteLine("Hello");
+                    break;
+                    
+            }
         }
 
         private void PozdravnaPoruka()

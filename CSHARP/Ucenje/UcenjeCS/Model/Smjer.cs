@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UcenjeCS.Model
 {
-    internal class FileName:Entitet
+    internal class Smjer:Entitet
     {
         public  string? Naziv { get; set; }
         public int? Trajanje  { get; set; }
