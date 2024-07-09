@@ -3,13 +3,13 @@ using UcenjeCS;
 
 
 
+new UcenjeCS.E18KonzolnaAplikacija.Izbornik();
 
-
-using UcenjeCS.E17Subota;
+//using UcenjeCS.E17Subota;
 
 //UcenjeCS.E13KlasaObjekt.Program.Izvedi();
 
-UcenjeCS.E17Subota.Program.Progra();
+//UcenjeCS.E17Subota.Program.Progra();
 
 //E12Rekurzija.Izvedi();
 
