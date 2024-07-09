@@ -8,6 +8,8 @@ namespace UcenjeCS.E18KonzolnaAplikacija
 {
     internal class Izbornik
     {
+
+        public ObradaSmjer ObradaSmjer { get; set; } = new ObradaSmjer(); // da ne moram raditi instancu
         public Izbornik() 
         {
             PozdravnaPoruka();
@@ -30,9 +32,15 @@ namespace UcenjeCS.E18KonzolnaAplikacija
             switch(Pomocno.UcitajRasponBroja("Odaberite stavku izbornika", 1, 4))
             {
                 case 1:
-                    Console.WriteLine("Pozivnik izbornika smjera");
+                    Console.Clear();
+                    ObradaSmjer.PrikaziIzbornik();
+                    PrikaziIzbornik();
                     break;
-                    
+
+                case 4:
+                    Console.WriteLine("Hvala na korištenju applikacije! Doviđenja!");
+                    break;
+
             }
         }
 

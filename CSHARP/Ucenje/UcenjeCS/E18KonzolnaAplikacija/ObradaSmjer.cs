@@ -35,7 +35,8 @@ namespace UcenjeCS.E18KonzolnaAplikacija
             switch(Pomocno.UcitajRasponBroja("Odaberite stavku izbornika", 1,5))
             {
                 case 5:
-                    Console.WriteLine("Gotov rad sa smjerovima");
+                   // Console.WriteLine("Gotov rad sa smjerovima");
+                    Console.Clear();
                     break;
             }
         }
