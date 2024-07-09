@@ -30,7 +30,7 @@ namespace UcenjeCS.E18KonzolnaAplikacija
             switch(Pomocno.UcitajRasponBroja("Odaberite stavku izbornika", 1, 4))
             {
                 case 1:
-                    Console.WriteLine("Hello");
+                    Console.WriteLine("Pozivnik izbornika smjera");
                     break;
                     
             }
