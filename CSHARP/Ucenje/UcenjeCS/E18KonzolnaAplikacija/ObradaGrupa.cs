@@ -17,7 +17,7 @@ namespace UcenjeCS.E18KonzolnaAplikacija
         public ObradaGrupa(Izbornik izbornik)
         {
             this.Izbornik = izbornik;
-            Grupe = new List<Grupa>();
+           // Grupe = new List<Grupa>();
         }
 
         public void PrikaziIzbornik()
@@ -75,7 +75,15 @@ namespace UcenjeCS.E18KonzolnaAplikacija
             g.Predavac = Pomocno.UcitajString("Unesi ime i prezime predavača", 50, true);
             g.MaksimalnoPolaznika = Pomocno.UcitajRasponBroja("Unesi maksimalno polaznika", 1, 30);
             // polaznici
+            g.Polaznici = UcitajPolaznike();
             Grupe.Add(g);
+        }
+
+        private List<Polaznik>? UcitajPolaznike()
+        {
+            List<Polaznik> lista = new List<Polaznik>();
+
+            return lista;
         }
     }
 }

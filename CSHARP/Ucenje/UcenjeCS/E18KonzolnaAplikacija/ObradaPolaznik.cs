@@ -6,6 +6,7 @@ namespace UcenjeCS.E18KonzolnaAplikacija
     {
 
         public List<Polaznik>  Polaznici { get; set; }
+        private Izbornik Izbornik { get; set; };
 
         public ObradaPolaznik() 
         { 
@@ -42,7 +43,7 @@ namespace UcenjeCS.E18KonzolnaAplikacija
             }
         }
 
-        private void PrikaziPolaznike()
+        public void PrikaziPolaznike()
         {
             Console.WriteLine("*****************************");
             Console.WriteLine("Polaznici u aplikaciji");
