@@ -9,6 +9,7 @@ namespace UcenjeCS.Model
     internal class Entitet
     {
 
-        public int? Sifra  { get; set; }
+        public int? Sifra { get; set; }
+
     }
 }

@@ -9,11 +9,13 @@ namespace UcenjeCS.E18KonzolnaAplikacija
     internal class Izbornik
     {
 
-        public ObradaSmjer ObradaSmjer { get; set; } = new ObradaSmjer(); // da ne moram raditi instancu
-        public Izbornik() 
+        public ObradaSmjer ObradaSmjer { get; set; } = new ObradaSmjer(); // da ne mora raditi instancu u konstruktoru
+
+        public Izbornik()
         {
             PozdravnaPoruka();
             PrikaziIzbornik();
+
 
         }
 
@@ -29,7 +31,7 @@ namespace UcenjeCS.E18KonzolnaAplikacija
 
         private void OdabirOpcijeIzbornika()
         {
-            switch(Pomocno.UcitajRasponBroja("Odaberite stavku izbornika", 1, 4))
+            switch (Pomocno.UcitajRasponBroja("Odaberite stavku izbornika", 1, 4))
             {
                 case 1:
                     Console.Clear();
@@ -38,19 +40,16 @@ namespace UcenjeCS.E18KonzolnaAplikacija
                     break;
 
                 case 4:
-                    Console.WriteLine("Hvala na korištenju applikacije! Doviđenja!");
+                    Console.WriteLine("Hvala na korištenju aplikacije, doviđenja!");
                     break;
-
             }
         }
 
         private void PozdravnaPoruka()
         {
-            Console.WriteLine("********************************");
-            Console.WriteLine("***Edunova Console App v.1.0.***");
-            Console.WriteLine("********************************");
-
+            Console.WriteLine("*********************************");
+            Console.WriteLine("*** Edunova Console App v 1.0 ***");
+            Console.WriteLine("*********************************");
         }
-
     }
 }
