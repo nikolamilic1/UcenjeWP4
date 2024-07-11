@@ -11,6 +11,18 @@ namespace UcenjeCS.E18KonzolnaAplikacija
         { 
             Smjerovi = new List<Smjer>();
 
+            if (Pomocno.DEV)
+            {
+                UcitajTestnePodatke();
+            }
+
+        }
+
+        private void UcitajTestnePodatke()
+        {
+            Smjerovi.Add(new() { Naziv = "Web Programiranje" });
+            Smjerovi.Add(new() { Naziv = "Web Dizajn" });
+            Smjerovi.Add(new() { Naziv = "Web Serviser" });
         }
 
         public void PrikaziIzbornik()
@@ -46,9 +58,10 @@ namespace UcenjeCS.E18KonzolnaAplikacija
         {
             Console.WriteLine("*****************************");
             Console.WriteLine("Smjerovi u aplikaciji");
+            int rb = 0;
             foreach(var s in Smjerovi)
             {
-                Console.WriteLine(s); // prepisati metodu toString
+                Console.WriteLine(++rb + ". " + s.Naziv); // prepisati metodu toString
             }
             Console.WriteLine("****************************");
         }
