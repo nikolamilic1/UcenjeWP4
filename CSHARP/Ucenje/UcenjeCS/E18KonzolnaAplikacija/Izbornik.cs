@@ -1,4 +1,4 @@
-﻿using UcenjeCS.E13KlasaObjekt.Edunova;
+﻿using UcenjeCS.E13KlasaObjekt;
 
 namespace UcenjeCS.E18KonzolnaAplikacija
 {
@@ -51,7 +51,16 @@ namespace UcenjeCS.E18KonzolnaAplikacija
                     break;
                 case 4:
                     Console.WriteLine("Hvala na korištenju aplikacije, doviđenja!");
+                    SpremiPodatke();
                     break;
+            }
+        }
+
+        private void SpremiPodatke()
+        {
+            if(Pomocno.DEV)
+            {
+                return;
             }
         }
 
