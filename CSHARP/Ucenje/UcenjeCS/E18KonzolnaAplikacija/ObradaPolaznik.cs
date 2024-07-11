@@ -1,4 +1,5 @@
-﻿using UcenjeCS.E18KonzolnaAplikacija.Model;
+﻿using System.Security.Cryptography;
+using UcenjeCS.E18KonzolnaAplikacija.Model;
 
 namespace UcenjeCS.E18KonzolnaAplikacija
 {
@@ -51,10 +52,29 @@ namespace UcenjeCS.E18KonzolnaAplikacija
                     UnosNovogPolaznika();
                     PrikaziIzbornik();
                     break;
+                case 3:
+                    PromijeniPodatakPolaznika();
+                        PrikaziIzbornik();
+                    break;
                 case 5:                    
                     Console.Clear();
                     break;
             }
+        }
+
+        private void PromijeniPodatakPolaznika()
+        {
+            PrikaziPolaznike();
+            var odabrani = Polaznici[
+                Pomocno.UcitajRasponBroja("Odaberi redni broj polaznika za promjenu",
+                1,Polaznici.Count)-1
+                ];
+            odabrani.Sifra = Pomocno.UcitajRasponBroja("Unesi šifru polaznika", 1, int.MaxValue);
+            odabrani.Ime = Pomocno.UcitajString("Unesi ime polaznika", 50, true);
+            odabrani.Prezime = Pomocno.UcitajString("Unesi prezime polaznika", 50, true);
+            odabrani.Email = Pomocno.UcitajString("Unesi email polaznika", 50, true);
+            odabrani.OIB = Pomocno.UcitajString("Unesi OIB polaznika", 50, true);
+            
         }
 
         public void PrikaziPolaznike()
