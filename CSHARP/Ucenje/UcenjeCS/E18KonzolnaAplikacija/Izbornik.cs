@@ -1,22 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace UcenjeCS.E18KonzolnaAplikacija
+﻿namespace UcenjeCS.E18KonzolnaAplikacija
 {
     internal class Izbornik
     {
 
         public ObradaSmjer ObradaSmjer { get; set; } = new ObradaSmjer(); // da ne mora raditi instancu u konstruktoru
+        public ObradaPolaznik ObradaPolaznik { get; set; } = new ObradaPolaznik(); 
+        public ObradaGrupa ObradaGrupa { get; set; } = new ObradaGrupa(); 
 
-        public Izbornik()
+        public Izbornik() 
         {
             PozdravnaPoruka();
             PrikaziIzbornik();
-
-
         }
 
         private void PrikaziIzbornik()
@@ -31,14 +25,23 @@ namespace UcenjeCS.E18KonzolnaAplikacija
 
         private void OdabirOpcijeIzbornika()
         {
-            switch (Pomocno.UcitajRasponBroja("Odaberite stavku izbornika", 1, 4))
+            switch(Pomocno.UcitajRasponBroja("Odaberite stavku izbornika", 1, 4))
             {
                 case 1:
                     Console.Clear();
                     ObradaSmjer.PrikaziIzbornik();
                     PrikaziIzbornik();
                     break;
-
+                case 2:
+                    Console.Clear();
+                    ObradaPolaznik.PrikaziIzbornik();
+                    PrikaziIzbornik();
+                    break;
+                case 3:
+                    Console.Clear();
+                    ObradaGrupa.PrikaziIzbornik();
+                    PrikaziIzbornik();
+                    break;
                 case 4:
                     Console.WriteLine("Hvala na korištenju aplikacije, doviđenja!");
                     break;

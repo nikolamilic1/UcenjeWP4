@@ -1,18 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UcenjeCS.Edunova;
+﻿using UcenjeCS.E18KonzolnaAplikacija.Model;
 
 namespace UcenjeCS.E18KonzolnaAplikacija
 {
     internal class ObradaSmjer
     {
-        public List<Smjer> Smjerovi { get; set; }
 
-        public ObradaSmjer()
-        {
+        public List<Smjer>  Smjerovi { get; set; }
+
+        public ObradaSmjer() 
+        { 
             Smjerovi = new List<Smjer>();
 
         }
@@ -30,7 +26,7 @@ namespace UcenjeCS.E18KonzolnaAplikacija
 
         private void OdabirOpcijeIzbornika()
         {
-            switch (Pomocno.UcitajRasponBroja("Odaberite stavku izbornika", 1, 5))
+           switch(Pomocno.UcitajRasponBroja("Odaberite stavku izbornika", 1, 5))
             {
                 case 1:
                     PrikaziSmjerove();
@@ -40,7 +36,7 @@ namespace UcenjeCS.E18KonzolnaAplikacija
                     UnosNovogSmjera();
                     PrikaziIzbornik();
                     break;
-                case 5:
+                case 5:                    
                     Console.Clear();
                     break;
             }
@@ -50,7 +46,7 @@ namespace UcenjeCS.E18KonzolnaAplikacija
         {
             Console.WriteLine("*****************************");
             Console.WriteLine("Smjerovi u aplikaciji");
-            foreach (var s in Smjerovi)
+            foreach(var s in Smjerovi)
             {
                 Console.WriteLine(s); // prepisati metodu toString
             }
@@ -68,10 +64,8 @@ namespace UcenjeCS.E18KonzolnaAplikacija
                 Trajanje = Pomocno.UcitajRasponBroja("Unesi trajanje smjera", 1, 500),
                 Cijena = Pomocno.UcitajDecimalniBroj("Unesi cijenu smjera", 0, 10000),
                 IzvodiSeOd = Pomocno.UcitajDatum("Unesi datum od kada se izvodi smjer", true),
-                Verificiran = Pomocno.UcitajBool("Da li je smjer verificiran (DA/NE)", "da")
+                Verificiran = Pomocno.UcitajBool("Da li je smjer verificiran (DA/NE)","da")
             });
         }
-
-
     }
 }
