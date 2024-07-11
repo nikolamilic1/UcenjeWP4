@@ -1,4 +1,4 @@
-﻿using UcenjeCS.E13KlasaObjekt;
+﻿//using UcenjeCS.E13KlasaObjekt;
 
 namespace UcenjeCS.E18KonzolnaAplikacija
 {
