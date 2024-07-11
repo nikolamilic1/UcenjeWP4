@@ -1,18 +1,20 @@
-﻿namespace UcenjeCS.E18KonzolnaAplikacija
+﻿using UcenjeCS.E13KlasaObjekt.Edunova;
+
+namespace UcenjeCS.E18KonzolnaAplikacija
 {
     internal class Izbornik
     {
 
-        public ObradaSmjer ObradaSmjer { get; set; } // = new ObradaSmjer(); // da ne mora raditi instancu u konstruktoru
-        public ObradaPolaznik ObradaPolaznik { get; set; } // = new ObradaPolaznik(); 
-        public ObradaGrupa ObradaGrupa { get; set; } // = new ObradaGrupa(); 
+        public ObradaSmjer ObradaSmjer { get; set; }  // da ne mora raditi instancu u konstruktoru
+        public ObradaPolaznik ObradaPolaznik { get; set; } 
+        public ObradaGrupa ObradaGrupa { get; set; } 
 
         public Izbornik() 
         {
             Pomocno.DEV = true;
-            ObradaSmjer = new ObradaSmjer();           
+            ObradaSmjer = new ObradaSmjer();
             ObradaPolaznik = new ObradaPolaznik();
-            ObradaGrupa = new ObradaGrupa();
+            ObradaGrupa = new ObradaGrupa(this); 
             PozdravnaPoruka();
             PrikaziIzbornik();
         }
@@ -29,6 +31,7 @@
 
         private void OdabirOpcijeIzbornika()
         {
+            
             switch(Pomocno.UcitajRasponBroja("Odaberite stavku izbornika", 1, 4))
             {
                 case 1:

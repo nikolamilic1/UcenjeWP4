@@ -6,12 +6,26 @@ namespace UcenjeCS.E18KonzolnaAplikacija
     {
 
         public List<Polaznik>  Polaznici { get; set; }
-        private Izbornik Izbornik { get; set; };
 
         public ObradaPolaznik() 
         { 
             Polaznici = new List<Polaznik>();
+            if (Pomocno.DEV)
+            {
+                UcitajTestnePodatke();
+            }
+        }
 
+        private void UcitajTestnePodatke()
+        {
+            for(int i = 0; i < 10; i++)
+            {
+                Polaznici.Add(new()
+                {
+                    Ime = Faker.Name.First(),
+                    Prezime = Faker.Name.Last()
+                });
+            }
         }
 
         public void PrikaziIzbornik()
@@ -47,9 +61,10 @@ namespace UcenjeCS.E18KonzolnaAplikacija
         {
             Console.WriteLine("*****************************");
             Console.WriteLine("Polaznici u aplikaciji");
-            foreach(var p in Polaznici)
+            int rb = 0;
+            foreach (var p in Polaznici)
             {
-                Console.WriteLine(p); // prepisati metodu toString
+                Console.WriteLine(++rb + ". " + p.Ime + " " + p.Prezime); // prepisati metodu toString
             }
             Console.WriteLine("****************************");
         }
@@ -60,7 +75,7 @@ namespace UcenjeCS.E18KonzolnaAplikacija
             Console.WriteLine("Unesite tražene podatke o polazniku");
             Polaznici.Add(new()
             {
-                Sifra = Pomocno.UcitajRasponBroja("Unesi šifru smjera", 1, int.MaxValue),
+                Sifra = Pomocno.UcitajRasponBroja("Unesi šifru polaznika", 1, int.MaxValue),
                 Ime = Pomocno.UcitajString("Unesi ime polaznika", 50, true),
                 Prezime = Pomocno.UcitajString("Unesi prezime polaznika", 50, true),
                 Email = Pomocno.UcitajString("Unesi email polaznika", 50, true),
