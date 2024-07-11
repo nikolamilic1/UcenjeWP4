@@ -55,7 +55,7 @@ namespace UcenjeCS.E18KonzolnaAplikacija
             Console.WriteLine("Smjerovi u aplikaciji");
             foreach(var g in Grupe)
             {
-                Console.WriteLine(g); // prepisati metodu toString
+                Console.WriteLine(g.Naziv + " (" + g.Smjer?.Naziv + ")"); // prepisati metodu toString
             }
             Console.WriteLine("****************************");
         }
