@@ -54,7 +54,7 @@ namespace UcenjeCS.E18KonzolnaAplikacija
             }
         }
 
-        private void PrikaziSmjerove()
+        public void PrikaziSmjerove()
         {
             Console.WriteLine("*****************************");
             Console.WriteLine("Smjerovi u aplikaciji");

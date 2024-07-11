@@ -69,6 +69,9 @@ namespace UcenjeCS.E18KonzolnaAplikacija
             g.Sifra = Pomocno.UcitajRasponBroja("Unesi šifru grupe", 1, int.MaxValue);
             g.Naziv = Pomocno.UcitajString("Unesi naziv grupe", 50, true);
             //smjer
+            Izbornik.ObradaSmjer.PrikaziSmjerove();
+            g.Smjer = Izbornik.ObradaSmjer.Smjerovi[Pomocno.UcitajRasponBroja("Odaberi redni broj smjera",
+                0,Izbornik.ObradaSmjer.Smjerovi.Count) - 1];
             g.Predavac = Pomocno.UcitajString("Unesi ime i prezime predavača", 50, true);
             g.MaksimalnoPolaznika = Pomocno.UcitajRasponBroja("Unesi maksimalno polaznika", 1, 30);
             // polaznici

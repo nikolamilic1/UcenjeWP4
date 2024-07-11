@@ -10,9 +10,9 @@
         public Izbornik() 
         {
             Pomocno.DEV = true;
-            ObradaSmjer = new ObradaSmjer();
-            ObradaGrupa = new ObradaGrupa();
+            ObradaSmjer = new ObradaSmjer();           
             ObradaPolaznik = new ObradaPolaznik();
+            ObradaGrupa = new ObradaGrupa();
             PozdravnaPoruka();
             PrikaziIzbornik();
         }
