@@ -41,10 +41,20 @@ namespace UcenjeCS.E18KonzolnaAplikacija
                     UnosNoveGrupe();
                     PrikaziIzbornik();
                     break;
+                case 3:
+                    PromjeniPodatkeGrupe();
+                    PrikaziIzbornik();
+                    break;
                 case 5:                    
                     Console.Clear();
                     break;
             }
+        }
+
+        private void PromjeniPodatkeGrupe()
+        {
+            PrikaziGrupe();
+
         }
 
         private void PrikaziGrupe()
