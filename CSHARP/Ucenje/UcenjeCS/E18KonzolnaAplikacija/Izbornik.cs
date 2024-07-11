@@ -4,13 +4,15 @@
     {
 
         public ObradaSmjer ObradaSmjer { get; set; } // = new ObradaSmjer(); // da ne mora raditi instancu u konstruktoru
-        public ObradaPolaznik ObradaPolaznik { get; set; } = new ObradaPolaznik(); 
-        public ObradaGrupa ObradaGrupa { get; set; } = new ObradaGrupa(); 
+        public ObradaPolaznik ObradaPolaznik { get; set; } // = new ObradaPolaznik(); 
+        public ObradaGrupa ObradaGrupa { get; set; } // = new ObradaGrupa(); 
 
         public Izbornik() 
         {
             Pomocno.DEV = true;
             ObradaSmjer = new ObradaSmjer();
+            ObradaGrupa = new ObradaGrupa();
+            ObradaPolaznik = new ObradaPolaznik();
             PozdravnaPoruka();
             PrikaziIzbornik();
         }

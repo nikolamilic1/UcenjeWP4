@@ -6,11 +6,18 @@ namespace UcenjeCS.E18KonzolnaAplikacija
     {
 
         public List<Grupa>  Grupe { get; set; }
+        private Izbornik Izbornik;
 
         public ObradaGrupa() 
         {
             Grupe = new List<Grupa>();
 
+        }
+
+        public ObradaGrupa(Izbornik izbornik)
+        {
+            this.Izbornik = izbornik;
+            Grupe = new List<Grupa>();
         }
 
         public void PrikaziIzbornik()
