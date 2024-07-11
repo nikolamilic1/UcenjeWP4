@@ -50,10 +50,20 @@ namespace UcenjeCS.E18KonzolnaAplikacija
                     PromjeniPostojeciSmjer();
                     PrikaziIzbornik();
                     break;
+                    case 4:
+                    ObrisiPostojeciSmjer();
+                    PrikaziIzbornik();
+                    break;
                 case 5:                    
                     Console.Clear();
                     break;
             }
+        }
+
+        private void ObrisiPostojeciSmjer()
+        {
+            PrikaziSmjerove();
+            var odabrani = Smjerovi[Pomocno.UcitajRasponBroja(("Odaberi redni broj smjera za promjenu"), 1 , Smjerovi.Count)-1];
         }
 
         private void PromjeniPostojeciSmjer()
