@@ -1,5 +1,6 @@
 ﻿//using UcenjeCS.E13KlasaObjekt;
 
+
 namespace UcenjeCS.E18KonzolnaAplikacija
 {
     internal class Izbornik
@@ -14,9 +15,15 @@ namespace UcenjeCS.E18KonzolnaAplikacija
             Pomocno.DEV = true;
             ObradaSmjer = new ObradaSmjer();
             ObradaPolaznik = new ObradaPolaznik();
-            ObradaGrupa = new ObradaGrupa(this); 
+            ObradaGrupa = new ObradaGrupa(this);
+            UcitajPodatke();
             PozdravnaPoruka();
             PrikaziIzbornik();
+        }
+
+        private void UcitajPodatke()
+        {
+          //  if (File.Exists(Path.Combine)) ;  ******** DOVRŠITI OVO
         }
 
         private void PrikaziIzbornik()
