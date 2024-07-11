@@ -40,7 +40,7 @@ namespace UcenjeCS.E13KlasaObjekt
             // Noraju se postavljati sve vrijednosti objekta
 
             var direktor = new Osoba { Prezime = "Kas" };
-            direktor.Ime = "Diki";
+            
 
             // da bi izbjegli: grešku/pucanje programa "System.NullReferenceException"
             // kraj varijable Ime stavljamo upitnik za slučaj da ime nije postavljeno (kao u našem slučaju):
