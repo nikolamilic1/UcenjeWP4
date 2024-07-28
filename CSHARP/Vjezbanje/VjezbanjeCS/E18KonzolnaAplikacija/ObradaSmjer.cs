@@ -24,6 +24,7 @@ namespace VjezbanjeCS.E18KonzolnaAplikacija
             Console.WriteLine("2. Unos novog smjera");
             Console.WriteLine("3. Promjena podataka postojećeg smjera");
             Console.WriteLine("4. Brisanje smjera");
+            Console.WriteLine("5. Povratak na glavni izbornik");
         }
     }
 }
