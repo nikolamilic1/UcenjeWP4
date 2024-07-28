@@ -6,6 +6,8 @@
 
 using VjezbanjeCS;
 
+new VjezbanjeCS.E18KonzolnaAplikacija.Izbornik();
+
 
 //internal class MatrixTraversal
 //{
@@ -74,7 +76,7 @@ using VjezbanjeCS;
 
 
 
-E03Z2.Izvedi();
+//E03Z2.Izvedi();
 
 //E05Nizovi.Izvedi();
 
