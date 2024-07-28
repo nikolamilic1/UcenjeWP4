@@ -10,10 +10,13 @@ namespace VjezbanjeCS.E18KonzolnaAplikacija
     {
         public Izbornik() 
         {
-            Console.WriteLine("Hello!");
+            PozdravnaPoruka();
 
         }
 
-
+        private void PozdravnaPoruka()
+        {
+            
+        }
     }
 }
