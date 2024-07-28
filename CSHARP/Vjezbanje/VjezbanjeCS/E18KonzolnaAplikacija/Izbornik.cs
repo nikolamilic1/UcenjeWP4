@@ -25,6 +25,11 @@ namespace VjezbanjeCS.E18KonzolnaAplikacija
             OdabirOpcijeIzbornika();
         }
 
+        private void OdabirOpcijeIzbornika()
+        {
+            throw new NotImplementedException();
+        }
+
         private void PozdravnaPoruka()
         {
             Console.WriteLine("*********************************");
