@@ -11,7 +11,13 @@ namespace VjezbanjeCS.E18KonzolnaAplikacija
         public Izbornik() 
         {
             PozdravnaPoruka();
+            PrikaziIzbornik();
 
+        }
+
+        private void PrikaziIzbornik()
+        {
+            throw new NotImplementedException();
         }
 
         private void PozdravnaPoruka()
