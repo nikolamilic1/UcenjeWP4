@@ -19,7 +19,7 @@ namespace VjezbanjeCS.E18KonzolnaAplikacija
 
         public void PrikaziIzbornik()
         {
-            
+            Console.WriteLine("Izbornik za rad sa smjerovima");
         }
     }
 }
