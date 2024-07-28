@@ -18,6 +18,7 @@ namespace VjezbanjeCS.E18KonzolnaAplikacija
         {
             Console.WriteLine("*********************************");
             Console.WriteLine("*** Edunova Console App v 1.0 ***");
+            Console.WriteLine("*********************************");
 
         }
     }
