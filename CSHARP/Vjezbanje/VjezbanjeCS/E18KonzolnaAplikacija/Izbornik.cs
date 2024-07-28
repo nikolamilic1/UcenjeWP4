@@ -17,7 +17,7 @@ namespace VjezbanjeCS.E18KonzolnaAplikacija
 
         private void PrikaziIzbornik()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Glavni izbornik");
         }
 
         private void PozdravnaPoruka()
