@@ -15,8 +15,11 @@ namespace VjezbanjeCS.E18KonzolnaAplikacija
         public ObradaSmjer() 
         {
             Smjerovi = new List<Smjer>();
+        }
 
-
+        public void PrikaziIzbornik()
+        {
+            
         }
     }
 }
