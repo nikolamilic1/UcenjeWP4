@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using VjezbanjeCS.E18KonzolnaAplikacija.Model;
 
 namespace VjezbanjeCS.E18KonzolnaAplikacija
 {
@@ -27,7 +28,12 @@ namespace VjezbanjeCS.E18KonzolnaAplikacija
 
         private void OdabirOpcijeIzbornika()
         {
-            throw new NotImplementedException();
+            switch(Pomocno.UcitajRasponBroja("Odaberite stavku izbornika", 1, 4))
+            {
+                case 1:
+                    Console.WriteLine("Hello");
+                    break;
+            }
         }
 
         private void PozdravnaPoruka()
