@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using VjezbanjeCS.E18KonzolnaAplikacija.Model;
 
 namespace VjezbanjeCS.E18KonzolnaAplikacija
 {
     internal class ObradaSmjer
     {
+
+        public List<Smjer> Smjerovi { get; set; }
 
         public ObradaSmjer() 
         {
