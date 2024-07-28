@@ -19,6 +19,7 @@ namespace VjezbanjeCS.E18KonzolnaAplikacija
         {
             Console.WriteLine("Glavni izbornik");
             Console.WriteLine("1. Smjerovi");
+            Console.WriteLine("2. Polaznici");
         }
 
         private void PozdravnaPoruka()
