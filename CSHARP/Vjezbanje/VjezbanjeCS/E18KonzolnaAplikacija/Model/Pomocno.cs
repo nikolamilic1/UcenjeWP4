@@ -16,6 +16,10 @@ namespace VjezbanjeCS.E18KonzolnaAplikacija.Model
                 {
                     Console.WriteLine(poruka);
                     b=int.Parse(Console.ReadLine());
+                    if(b < min || b > max)
+                    {
+                        throw new Exception();
+                    }
                 }
                 catch
                 {
