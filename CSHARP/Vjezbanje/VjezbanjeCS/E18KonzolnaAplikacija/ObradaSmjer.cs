@@ -8,5 +8,12 @@ namespace VjezbanjeCS.E18KonzolnaAplikacija
 {
     internal class ObradaSmjer
     {
+
+        public ObradaSmjer() 
+        {
+
+
+
+        }
     }
 }
