@@ -8,9 +8,22 @@ namespace VjezbanjeCS.E18KonzolnaAplikacija.Model
 {
     internal class Pomocno
     {
-        internal static int UcitajRasponBroja(string v1, int v2, int v3)
+        internal static int UcitajRasponBroja(string poruka, int min, int max)
         {
-            throw new NotImplementedException();
+            int b;
+            while(true) {
+                try
+                {
+                    Console.WriteLine(poruka);
+                    b=int.Parse(Console.ReadLine());
+                }
+                catch
+                {
+                    Console.WriteLine("Unos nije dobar, unos mora biti u rasponu {0} do {1}",min,max);
+                }
+
+
+            return 0;
         }
     }
 }
