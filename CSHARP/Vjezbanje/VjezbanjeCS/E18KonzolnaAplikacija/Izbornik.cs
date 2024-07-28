@@ -22,6 +22,7 @@ namespace VjezbanjeCS.E18KonzolnaAplikacija
             Console.WriteLine("2. Polaznici");
             Console.WriteLine("3. Grupe");
             Console.WriteLine("4. Izlaz iz programa");
+            Console.WriteLine("4. Izlaz iz programa");
         }
 
         private void PozdravnaPoruka()
