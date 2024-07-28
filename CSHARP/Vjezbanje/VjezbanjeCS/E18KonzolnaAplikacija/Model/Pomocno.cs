@@ -11,23 +11,26 @@ namespace VjezbanjeCS.E18KonzolnaAplikacija.Model
         internal static int UcitajRasponBroja(string poruka, int min, int max)
         {
             int b;
-            while(true) {
+            while (true)
+            {
                 try
                 {
                     Console.WriteLine(poruka);
-                    b=int.Parse(Console.ReadLine());
-                    if(b < min || b > max)
+                    b = int.Parse(Console.ReadLine());
+                    if (b < min || b > max)
                     {
                         throw new Exception();
                     }
+                    return b;
                 }
                 catch
                 {
-                    Console.WriteLine("Unos nije dobar, unos mora biti u rasponu {0} do {1}",min,max);
+                    Console.WriteLine("Unos nije dobar, unos mora biti u rasponu {0} do {1}", min, max);
                 }
 
 
-            return 0;
+
+            }
         }
     }
 }
