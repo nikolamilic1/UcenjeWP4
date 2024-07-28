@@ -31,7 +31,7 @@ namespace VjezbanjeCS.E18KonzolnaAplikacija
             switch(Pomocno.UcitajRasponBroja("Odaberite stavku izbornika", 1, 4))
             {
                 case 1:
-                    Console.WriteLine("Hello");
+                    Console.WriteLine("Poziv izbornika smjera");
                     break;
             }
         }
