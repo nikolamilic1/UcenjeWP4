@@ -21,6 +21,7 @@ namespace VjezbanjeCS.E18KonzolnaAplikacija
         {
             Console.WriteLine("Izbornik za rad sa smjerovima");
             Console.WriteLine("1. Pregled svih smjerova");
+            Console.WriteLine("2. Unos novog smjera");
         }
     }
 }
