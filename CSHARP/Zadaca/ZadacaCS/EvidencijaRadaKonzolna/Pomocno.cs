@@ -15,7 +15,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             while (true) {
                 try
                 {
-                    Console.WriteLine(poruka);
+                    Console.Write(poruka + ": ");
                     b = int.Parse(Console.ReadLine());
                     if(b<min || b>max)            // ako je b manje od minimalnog ili veći od maximalnog unosa
                     {
