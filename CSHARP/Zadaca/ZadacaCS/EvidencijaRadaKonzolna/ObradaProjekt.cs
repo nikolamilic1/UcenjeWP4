@@ -34,6 +34,10 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             switch(Pomocno.UcitajRasponBroja("Odaberite stavku izbornika", 1, 5))
             {
 
+                case 1:
+                    PrikaziProjekte();
+                    PrikaziIzbornik();
+                    break;
                 case 2:
                     UnosNovogProjekta();
                     PrikaziIzbornik();
@@ -42,6 +46,17 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
                     //Console.WriteLine("Gotov rad s projektima");  // Ovo se ne vidi jer naredba ispod odmah briše konzolu
                     Console.Clear();
                     break;
+            }
+        }
+
+        private void PrikaziProjekte()
+        {
+            Console.WriteLine("------------------------------");
+            Console.WriteLine("--- Projekti u aplikaciji: ---");
+            Console.WriteLine("------------------------------");
+            foreach(var s in Projekti)
+            {
+                Console.WriteLine(s.ToString);
             }
         }
 

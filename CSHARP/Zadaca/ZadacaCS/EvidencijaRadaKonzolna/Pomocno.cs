@@ -8,6 +8,29 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 {
     internal class Pomocno
     {
+        internal static object UcitajDatum(string poruka, bool prijeDanasnjegDatuma)
+        {
+            DateTime d;
+            while (true)
+            {
+                try
+                {
+                    Console.WriteLine("Format unosa je yyyy-mm-dd, za današnji datum {0}", DateTime.Now.ToString("yyyy-MM-dd"));
+                    Console.WriteLine(poruka);
+                    d = DateTime.Parse(Console.ReadLine());
+                }
+                catch
+                {
+
+                }
+            }
+
+
+
+
+
+        }
+
         internal static int UcitajRasponBroja(string poruka, int min, int max)
         {
             int b;
