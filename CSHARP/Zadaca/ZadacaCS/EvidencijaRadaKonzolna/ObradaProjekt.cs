@@ -56,7 +56,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             Console.WriteLine("------------------------------");
             foreach(var s in Projekti)
             {
-                Console.WriteLine(s.ToString);
+                Console.WriteLine(s);  // prepisati metodu toString
             }
         }
 
@@ -69,7 +69,9 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             {
                 Sifra = Pomocno.UcitajRasponBroja("Unesi šifru smjera", 1, int.MaxValue),
                 Naziv = Pomocno.UcitajString("Unesi naziv projekta", 50, true),
-                Klijent = Pomocno.UcitajString("Unesi ime klijenta", 50, true)
+                Klijent = Pomocno.UcitajString("Unesi ime klijenta", 50, true),
+                // ovo će ići u klasu Zadatak
+                //Pocetak = Pomocno.UcitajDatum("Unesi datum početka zadatka",true)
 
             }
                 );

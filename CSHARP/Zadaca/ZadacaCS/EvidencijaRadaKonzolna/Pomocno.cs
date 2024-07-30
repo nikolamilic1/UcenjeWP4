@@ -8,7 +8,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 {
     internal class Pomocno
     {
-        internal static object UcitajDatum(string poruka, bool prijeDanasnjegDatuma)
+        internal static object UcitajDatum(string poruka, bool kontrolaPrijeDanasnjegDatuma)
         {
             DateTime d;
             while (true)
@@ -16,12 +16,22 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
                 try
                 {
                     Console.WriteLine("Format unosa je yyyy-mm-dd, za današnji datum {0}", DateTime.Now.ToString("yyyy-MM-dd"));
-                    Console.WriteLine(poruka);
+                    if (kontrolaPrijeDanasnjegDatuma)
+                    {
+                        Console.WriteLine("Uneseni datum ne smije biti prije današnjeg datuma!");
+                    }
+                    
+                    Console.WriteLine(poruka + ": ");
                     d = DateTime.Parse(Console.ReadLine());
+                    if (kontrolaPrijeDanasnjegDatuma && d < DateTime.Now)
+                    {
+                        throw new Exception();
+                    }
+                    return d;
                 }
                 catch
                 {
-
+                    Console.WriteLine("Unos datuma nije dobar");
                 }
             }
 

@@ -12,5 +12,10 @@ namespace ZadacaCS.EvidencijaRadaKonzolna.Model
         public string? Naziv { get; set; }
         public string? Klijent { get; set; }
 
+        public override string ToString()
+        {
+            return "Sifra=" + Sifra + ", Naziv=" + Naziv + ", Klijent=" + Klijent + ".";
+        }
+
     }
 }
