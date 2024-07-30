@@ -34,7 +34,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             switch(Pomocno.UcitajRasponBroja("Odaberite stavku izbornika", 1, 5))
             {
 
-                case 1:
+                case 2:
                     UnosNovogProjekta();
                     PrikaziIzbornik();
                     break;
@@ -47,10 +47,15 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 
         private void UnosNovogProjekta()
         {
+            Console.WriteLine("------------------------------------------");
+            Console.WriteLine("--- Unesite tražene podatke o projektu ---");
+            Console.WriteLine("------------------------------------------");
             Projekti.Add(new()
             {
-                Sifra = Pomocno.UcitajRasponBroja("Unesi šifru smjera",1,int.MaxValue),
-                Naziv = Pomocno.UcitajString("Unesi naziv projekta",50, true)
+                Sifra = Pomocno.UcitajRasponBroja("Unesi šifru smjera", 1, int.MaxValue),
+                Naziv = Pomocno.UcitajString("Unesi naziv projekta", 50, true),
+                Klijent = Pomocno.UcitajString("Unesi ime klijenta", 50, true)
+
             }
                 );
         }
