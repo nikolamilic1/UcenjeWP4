@@ -8,7 +8,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 {
     internal class Izbornik
     {
-
+        public ObradaProjekt ObradaProjekt { get; set; } = new ObradaProjekt();  // da se ne mora raditi instanca u konstruktoru
         public Izbornik() {
 
             //Console.WriteLine("Hello!");
@@ -33,7 +33,8 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             switch(Pomocno.UcitajRasponBroja("Odaberite stavku izbornika", 1, 4))
             {
                 case 1:
-                    Console.WriteLine("Poziv izbornika projekta");
+                    ObradaProjekt.PrikaziIzbornik();
+                    PrikaziIzbornik();
                     break;
             }
         }

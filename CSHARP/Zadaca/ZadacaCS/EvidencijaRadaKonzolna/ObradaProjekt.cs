@@ -24,7 +24,17 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             Console.WriteLine("3. Promjena podataka postojećeg projekta");
             Console.WriteLine("4. Brisanje projekta");
             Console.WriteLine("5. Povratak na glavni izbornik");
+            OdabirOpcijeIzbornika();
         }
 
+        private void OdabirOpcijeIzbornika()
+        {
+            switch(Pomocno.UcitajRasponBroja("Odaberite stavku izbornika", 1, 5))
+            {
+                case 5:
+                    Console.WriteLine("Gotov rad s projektima");
+                    break;
+            }
+        }
     }
 }
