@@ -18,7 +18,9 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 
         public void PrikaziIzbornik()
         {
-            Console.WriteLine("Izbornik za rad sa projektima");
+            Console.WriteLine("=====================================");
+            Console.WriteLine("=== Izbornik za rad sa projektima ===");
+            Console.WriteLine("=====================================");
             Console.WriteLine("1. Pregled svih projekata");
             Console.WriteLine("2. Unos novog projekta");
             Console.WriteLine("3. Promjena podataka postojećeg projekta");
@@ -33,6 +35,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             {
                 case 5:
                     Console.WriteLine("Gotov rad s projektima");
+                    Console.Clear();
                     break;
             }
         }

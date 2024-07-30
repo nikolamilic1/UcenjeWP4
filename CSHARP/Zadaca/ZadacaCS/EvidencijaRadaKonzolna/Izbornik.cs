@@ -20,7 +20,9 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 
         private void PrikaziIzbornik()
         {
-            Console.WriteLine("Glavni izbornik");
+            Console.WriteLine("=======================");
+            Console.WriteLine("=== Glavni izbornik ===");
+            Console.WriteLine("=======================");
             Console.WriteLine("1. Projekt");
             Console.WriteLine("2. Djelatnik");
             Console.WriteLine("3. Zadatak");
@@ -33,17 +35,23 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             switch(Pomocno.UcitajRasponBroja("Odaberite stavku izbornika", 1, 4))
             {
                 case 1:
+                    Console.Clear();
                     ObradaProjekt.PrikaziIzbornik();
                     PrikaziIzbornik();
                     break;
+                case 4:
+                    Console.WriteLine("Hvala na korištenju aplikacije! Doviđenja!");
+                    break;
+
             }
         }
 
         private void PozdravnaPoruka()
         {
-            Console.WriteLine("*****************************************");
-            Console.WriteLine("*** Evidencija Rada Console App v 1.0 ***");
-            Console.WriteLine("*****************************************");
+            Console.WriteLine("*******************************************");
+            Console.WriteLine("*** Evidencija Rada - Console App v 1.0 ***");
+            Console.WriteLine("*******************************************");
+            Console.WriteLine();
         }
     }
 }
