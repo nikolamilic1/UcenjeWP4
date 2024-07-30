@@ -50,7 +50,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             Projekti.Add(new()
             {
                 Sifra = Pomocno.UcitajRasponBroja("Unesi šifru smjera",1,int.MaxValue),
-                Naziv = Pomocno.UcitajString("Unesi naziv projekta",50)
+                Naziv = Pomocno.UcitajString("Unesi naziv projekta",50, true)
             }
                 );
         }

@@ -36,14 +36,14 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
         /// <param name="poruka"></param>
         /// <param name="max"></param>
         /// <returns></returns>
-        internal static string UcitajString(string poruka, int max)
+        internal static string UcitajString(string poruka, int max, bool obavezno)
         {
             string s;
             while (true)
             {
                 Console.WriteLine(poruka);
                 s = Console.ReadLine().Trim();
-                if (s.Length==0 || s.Length > max)
+                if (obavezno && s.Length==0 || s.Length > max)
                 {
                     Console.WriteLine("Unos obavezan! Maksimalno dozvoljeno {0} znakova", max);
                     continue;   // ovo znači da neće vratiti nazad već će tražiti ponovni unos
