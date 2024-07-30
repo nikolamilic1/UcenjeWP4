@@ -14,7 +14,23 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             //Console.WriteLine("Hello!");
 
             PozdravnaPoruka();
+            PrikaziIzbornik();
 
+        }
+
+        private void PrikaziIzbornik()
+        {
+            Console.WriteLine("Glavni izbornik");
+            Console.WriteLine("1. Projekt");
+            Console.WriteLine("2. Djelatnik");
+            Console.WriteLine("3. Zadatak");
+            Console.WriteLine("4. Izlaz iz programa");
+            OdabirOpcijeIzbornika();
+        }
+
+        private void OdabirOpcijeIzbornika()
+        {
+            
         }
 
         private void PozdravnaPoruka()
