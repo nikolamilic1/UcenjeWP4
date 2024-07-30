@@ -2,12 +2,14 @@
 using System.Reflection.Metadata;
 using ZadacaCS;
 
+//using ZadacaCS.EvidencijaRadaKonzolna;
 
 
 
 
 
 
+new ZadacaCS.EvidencijaRadaKonzolna.Izbornik();
 
 //CiklicnaTablica.Izvedi();
 
