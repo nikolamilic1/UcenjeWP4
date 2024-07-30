@@ -30,7 +30,12 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 
         private void OdabirOpcijeIzbornika()
         {
-            
+            switch(Pomocno.UcitajRasponBroja("Odaberite stavku izbornika", 1, 4))
+            {
+                case 1:
+                    Console.WriteLine("Poziv izbornika projekta");
+                    break;
+            }
         }
 
         private void PozdravnaPoruka()
