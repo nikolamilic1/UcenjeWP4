@@ -33,11 +33,26 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
         {
             switch(Pomocno.UcitajRasponBroja("Odaberite stavku izbornika", 1, 5))
             {
+
+                case 1:
+                    UnosNovogProjekta();
+                    PrikaziIzbornik();
+                    break;
                 case 5:
-                    Console.WriteLine("Gotov rad s projektima");
+                    //Console.WriteLine("Gotov rad s projektima");  // Ovo se ne vidi jer naredba ispod odmah briše konzolu
                     Console.Clear();
                     break;
             }
+        }
+
+        private void UnosNovogProjekta()
+        {
+            Projekti.Add(new()
+            {
+                Sifra = Pomocno.UcitajRasponBroja("Unesi šifru smjera",1,int.MaxValue),
+                Naziv = Pomocno.UcitajString("Unesi naziv projekta",50)
+            }
+                );
         }
     }
 }
