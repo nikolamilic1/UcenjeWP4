@@ -3,8 +3,14 @@ using System.Reflection.Metadata;
 using ZadacaCS;
 
 
-//Radno.Izvedi();
+
+
+
+
+
+
+//CiklicnaTablica.Izvedi();
 
 //TablicaMnozenja.Izvedi();
 
-CiklicnaTablica.Izvedi();
+//Radno.Izvedi();
