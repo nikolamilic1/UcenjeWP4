@@ -11,9 +11,17 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 
         public Izbornik() {
 
-            Console.WriteLine("Hello!");
+            //Console.WriteLine("Hello!");
 
-        }   
+            PozdravnaPoruka();
 
+        }
+
+        private void PozdravnaPoruka()
+        {
+            Console.WriteLine("*****************************************");
+            Console.WriteLine("*** Evidencija Rada Console App v 1.0 ***");
+            Console.WriteLine("*****************************************");
+        }
     }
 }

@@ -17,7 +17,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna.Model
 
         public string? Opis { get; set; }
 
-        // Što sa ostalim kolonama entiteta evidencija_rada??? Jel treba u ovom slučaju napraviti  posebnu tablicu?
+        // Što sa ostalim kolonama entiteta evidencija_rada??? Jel treba u ovom slučaju napraviti  posebnu klasu za tu tablicu?
         public List<Djelatnik>? Djelatnici { get; set; }
 
     }
