@@ -65,10 +65,12 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             Console.WriteLine("------------------------------");
             Console.WriteLine("--- Projekti u aplikaciji: ---");
             Console.WriteLine("------------------------------");
+            int rb = 0;
             foreach(var s in Projekti)
             {
-                Console.WriteLine(s);  // prepisati metodu toString
+                Console.WriteLine(++rb + ". " + s.Naziv);  // prepisati metodu toString
             }
+            Console.WriteLine("------------------------------");
         }
 
         private void UnosNovogProjekta()
