@@ -13,6 +13,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 
             //Console.WriteLine("Hello!");
 
+            Pomocno.DEV=true;
             PozdravnaPoruka();
             PrikaziIzbornik();
 

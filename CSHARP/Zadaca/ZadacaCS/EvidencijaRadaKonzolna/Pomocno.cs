@@ -8,6 +8,8 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 {
     internal class Pomocno
     {
+
+        public static bool DEV=false;
         internal static object UcitajDatum(string poruka, bool kontrolaPrijeDanasnjegDatuma)
         {
             DateTime d;

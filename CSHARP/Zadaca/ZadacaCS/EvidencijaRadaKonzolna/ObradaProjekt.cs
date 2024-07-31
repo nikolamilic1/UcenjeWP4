@@ -14,6 +14,17 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
         public ObradaProjekt()
         {
             Projekti = new List<Projekt>();
+            if (Pomocno.DEV)
+            {
+                UcitajTestnePodatke();
+            }
+        }
+
+        private void UcitajTestnePodatke()
+        {
+            Projekti.Add(new() { Naziv = "Web stranica"});
+            Projekti.Add(new() { Naziv = "Google app"});
+            Projekti.Add(new() { Naziv = "Guide app"});
         }
 
         public void PrikaziIzbornik()
