@@ -8,5 +8,9 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 {
     internal class ObradaZadatak
     {
+        internal static void PrikaziIzbornik()
+        {
+            
+        }
     }
 }
