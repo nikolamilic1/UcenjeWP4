@@ -41,6 +41,11 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
                     ObradaProjekt.PrikaziIzbornik();
                     PrikaziIzbornik();
                     break;
+                case 2:
+                    Console.Clear();
+                    ObradaDjelatnik.PrikaziIzbornik();
+                    PrikaziIzbornik();
+                    break;
                 case 4:
                     Console.WriteLine("Hvala na korištenju aplikacije! Doviđenja!");
                     break;
