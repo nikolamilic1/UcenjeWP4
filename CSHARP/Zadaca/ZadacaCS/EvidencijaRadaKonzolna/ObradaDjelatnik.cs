@@ -37,5 +37,15 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             
             }
         }
+
+        private static void UnosNovogDjelatnika()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void PrikaziDjelatnike()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
