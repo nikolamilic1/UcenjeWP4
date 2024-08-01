@@ -3,11 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ZadacaCS.EvidencijaRadaKonzolna.Model;
 
 namespace ZadacaCS.EvidencijaRadaKonzolna
 {
     internal class ObradaDjelatnik
     {
+
+        public List<Djelatnik> Djelatnici { get; set; } 
+        public ObradaDjelatnik()
+        {
+            Djelatnici = new List<Djelatnik>();
+        }
         internal static void PrikaziIzbornik()
         {
             Console.WriteLine("Izbornik za rad sa djelatnicima");
@@ -40,12 +47,18 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 
         private static void UnosNovogDjelatnika()
         {
-            throw new NotImplementedException();
+            
         }
 
         private static void PrikaziDjelatnike()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("-------------------------------");
+            Console.WriteLine("--- Djelatnici u aplikaciji ---");
+            Console.WriteLine("-------------------------------");
+            foreach (var p in ) 
+            { 
+
+            }
         }
     }
 }
