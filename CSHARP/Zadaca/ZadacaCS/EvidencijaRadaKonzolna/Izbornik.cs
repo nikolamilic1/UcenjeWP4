@@ -9,6 +9,10 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
     internal class Izbornik
     {
         public ObradaProjekt ObradaProjekt { get; set; } // = new ObradaProjekt();  // da se ne mora raditi instanca u konstruktoru
+
+        public ObradaDjelatnik ObradaPolaznik { get; set; } = new ObradaDjelatnik();
+
+
         public Izbornik() {
 
             //Console.WriteLine("Hello!");
