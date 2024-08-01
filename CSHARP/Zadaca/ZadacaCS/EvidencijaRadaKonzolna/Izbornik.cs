@@ -12,6 +12,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 
         public ObradaDjelatnik ObradaPolaznik { get; set; } = new ObradaDjelatnik();
 
+        public ObradaZadatak ObradaGrupa { get; set; } = new ObradaZadatak();
 
         public Izbornik() {
 
