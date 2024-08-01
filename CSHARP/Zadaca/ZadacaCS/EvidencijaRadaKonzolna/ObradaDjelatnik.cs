@@ -55,10 +55,11 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             Console.WriteLine("-------------------------------");
             Console.WriteLine("--- Djelatnici u aplikaciji ---");
             Console.WriteLine("-------------------------------");
-            foreach (var p in ) 
-            { 
-
+            foreach (var p in Djelatnici) 
+            {
+                Console.WriteLine(p);  //prepisati metodu to string
             }
+            Console.WriteLine("-------------------------------");
         }
     }
 }
