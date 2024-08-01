@@ -18,5 +18,24 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             Console.WriteLine("5. Povratak na glavni izbornik");
             OdabirOpcijeIzbornika();
         }
+
+        private static void OdabirOpcijeIzbornika()
+        {
+            switch(Pomocno.UcitajRasponBroja("Odaberite stavku izbornika",1,5))
+            {
+                case 1:
+                    PrikaziDjelatnike();
+                    PrikaziIzbornik();
+                    break;
+                    case 2:
+                    UnosNovogDjelatnika();
+                    PrikaziIzbornik();
+                    break;
+                    case 5:
+                    Console.Clear();
+                    break;
+            
+            }
+        }
     }
 }
