@@ -10,7 +10,8 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
     {
         internal static void PrikaziIzbornik()
         {
-            
+            Console.WriteLine("Izbornik za rad sa zadacima");
+
         }
     }
 }
