@@ -12,6 +12,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
         {
             Console.WriteLine("Izbornik za rad sa zadacima");
             Console.WriteLine("1. Pregled svih zadataka");
+            Console.WriteLine("2. Unos novog zadatka");
 
         }
     }
