@@ -28,6 +28,9 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
                     PrikaziIzbornik();
                     break;
                     case 2:
+                    UnosNovogZadatka();
+                    PrikaziIzbornik();
+                    break;
 
             }
         }
