@@ -21,7 +21,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 
         private static void OdabirOpcijeIzbornika()
         {
-            throw new NotImplementedException();
+            
         }
     }
 }
