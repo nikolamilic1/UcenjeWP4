@@ -50,7 +50,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             Console.WriteLine("--------------------------------------------");
             Console.WriteLine("--- Unesite tražene podatke o djelatniku ---");
             Console.WriteLine("--------------------------------------------");
-
+            Djelatnici
         }
 
         private static void PrikaziDjelatnike()
