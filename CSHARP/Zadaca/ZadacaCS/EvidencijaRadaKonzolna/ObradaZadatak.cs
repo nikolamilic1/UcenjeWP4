@@ -18,5 +18,10 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             Console.WriteLine("5. Povratak na glavni izbornik");
             OdabirOpcijeIzbornika();
         }
+
+        private static void OdabirOpcijeIzbornika()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
