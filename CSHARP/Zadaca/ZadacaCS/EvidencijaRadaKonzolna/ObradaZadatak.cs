@@ -11,6 +11,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
         internal static void PrikaziIzbornik()
         {
             Console.WriteLine("Izbornik za rad sa zadacima");
+            Console.WriteLine("1. Pregled svih zadataka");
 
         }
     }
