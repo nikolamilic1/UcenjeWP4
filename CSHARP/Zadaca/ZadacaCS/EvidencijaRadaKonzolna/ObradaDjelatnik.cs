@@ -53,8 +53,8 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             Djelatnici.Add(new()
             {
                 Sifra = Pomocno.UcitajRasponBroja("Unesi šifru djelatnika",1,int.MaxValue),
-                Ime = Pomocno.UcitajString("Unesi ime polaznika",50,true),
-                Prezime = Pomocno.UcitajString("Unesi prezime polaznika",50,true),
+                Ime = Pomocno.UcitajString("Unesi ime djelatnika",50,true),
+                Prezime = Pomocno.UcitajString("Unesi prezime djelatnika",50,true),
                 Email = Pomocno.UcitajString("Unesi email djelatnika",50,true)
             } 
                 );
