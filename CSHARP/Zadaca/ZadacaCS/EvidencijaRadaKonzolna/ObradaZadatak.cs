@@ -34,7 +34,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 
         private static void PrikaziZadatak()
         {
-            throw new NotImplementedException();
+            
         }
     }
 }
