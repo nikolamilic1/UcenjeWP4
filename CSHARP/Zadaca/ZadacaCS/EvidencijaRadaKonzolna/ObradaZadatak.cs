@@ -40,7 +40,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 
         private static void UnosNovogZadatka()
         {
-            throw new NotImplementedException();
+            
         }
 
         private static void PrikaziZadatak()
