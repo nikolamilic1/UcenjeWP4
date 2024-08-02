@@ -31,6 +31,9 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
                     UnosNovogZadatka();
                     PrikaziIzbornik();
                     break;
+                case 5:
+                    Console.Clear();
+                    break;
 
             }
         }
