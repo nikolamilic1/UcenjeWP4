@@ -47,7 +47,10 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 
         private static void UnosNovogDjelatnika()
         {
-            
+            Console.WriteLine("--------------------------------------------");
+            Console.WriteLine("--- Unesite tražene podatke o djelatniku ---");
+            Console.WriteLine("--------------------------------------------");
+
         }
 
         private static void PrikaziDjelatnike()
