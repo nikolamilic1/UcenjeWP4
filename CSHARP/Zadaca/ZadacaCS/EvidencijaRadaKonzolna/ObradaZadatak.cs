@@ -21,7 +21,10 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 
         private static void OdabirOpcijeIzbornika()
         {
-            
+            switch(Pomocno.UcitajRasponBroja("Odaberite stavku",1,5))
+            {
+
+            }
         }
     }
 }
