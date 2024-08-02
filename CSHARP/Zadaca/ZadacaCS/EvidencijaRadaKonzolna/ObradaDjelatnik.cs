@@ -50,7 +50,13 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             Console.WriteLine("--------------------------------------------");
             Console.WriteLine("--- Unesite tražene podatke o djelatniku ---");
             Console.WriteLine("--------------------------------------------");
-            Djelatnici
+            Djelatnici.Add(new()
+            {
+                Sifra = Pomocno.UcitajRasponBroja("Unesi šifru djelatnika",1,int.MaxValue),
+                Ime = Pomocno.UcitajRasponBroja("Unesi ime polaznika",50,true),
+
+            } 
+                );
         }
 
         private static void PrikaziDjelatnike()
