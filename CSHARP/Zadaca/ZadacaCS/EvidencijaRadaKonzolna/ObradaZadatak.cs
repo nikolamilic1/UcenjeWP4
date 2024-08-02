@@ -23,6 +23,11 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
         {
             switch(Pomocno.UcitajRasponBroja("Odaberite stavku",1,5))
             {
+                case 1:
+                    PrikaziZadatak();
+                    PrikaziIzbornik();
+                    break;
+                    case 2:
 
             }
         }
