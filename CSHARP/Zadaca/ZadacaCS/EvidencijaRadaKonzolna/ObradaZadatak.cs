@@ -15,7 +15,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             Console.WriteLine("2. Unos novog zadatka");
             Console.WriteLine("3. Promjena podataka postojećeg zadatka");
             Console.WriteLine("4. Brisanje zadatka");
-
+            Console.WriteLine("5. Povratak na glavni izbornik");
 
         }
     }
