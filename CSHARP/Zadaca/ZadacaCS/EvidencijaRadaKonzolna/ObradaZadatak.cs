@@ -51,7 +51,10 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 
             Zadatak g = new Zadatak();
             g.Sifra = Pomocno.UcitajRasponBroja("Unesi šifru zadatka", 1, int.MaxValue);
-            g.Pocetak = Pomocno.UcitajDatum("Unesite datum početka", true); 
+            g.Pocetak = Pomocno.UcitajDatum("Unesite datum početka zadatka", true);
+            g.Zavrsetak = Pomocno.UcitajDatum("Unesite datum završetka zadatka", true)
+           // g.Projekt
+                g.Opis = Pomocno.UcitajString("Unesite opis zadatka", 255, true);
         }
 
         private void PrikaziZadatak()
