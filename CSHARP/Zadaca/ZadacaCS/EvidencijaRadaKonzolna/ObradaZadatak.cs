@@ -47,6 +47,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
         {
             Console.WriteLine("---------------------------");
             Console.WriteLine("--- Zadaci u aplikaciji ---");
+            Console.WriteLine("---------------------------");
         }
     }
 }
