@@ -8,6 +8,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 {
     internal class ObradaZadatak
     {
+        
         internal static void PrikaziIzbornik()
         {
             Console.WriteLine("Izbornik za rad sa zadacima");
@@ -48,6 +49,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             Console.WriteLine("---------------------------");
             Console.WriteLine("--- Zadaci u aplikaciji ---");
             Console.WriteLine("---------------------------");
+            foreach(var g in Zad)
         }
     }
 }
