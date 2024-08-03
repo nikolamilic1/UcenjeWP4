@@ -32,7 +32,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
                     PrikaziZadatak();
                     PrikaziIzbornik();
                     break;
-                    case 2:
+                case 2:
                     UnosNovogZadatka();
                     PrikaziIzbornik();
                     break;
