@@ -45,7 +45,13 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 
         private static void UnosNovogZadatka()
         {
-            
+            Console.WriteLine("-----------------------------------------");
+            Console.WriteLine("--- Unesite tražene podatke o zadatku ---");
+            Console.WriteLine("-----------------------------------------");
+
+            Zadatak g = new Zadatak();
+            g.Sifra = Pomocno.UcitajRasponBroja("Unesi šifru zadatka", 1, int.MaxValue);
+
         }
 
         private void PrikaziZadatak()
@@ -58,6 +64,8 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
                 Console.WriteLine(g); //prepisati metodu toString
 
             }
+            Console.WriteLine("---------------------------");
+
         }
     }
 }
