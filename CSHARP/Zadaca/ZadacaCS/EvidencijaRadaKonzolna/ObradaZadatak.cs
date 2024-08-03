@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ZadacaCS.EvidencijaRadaKonzolna.Model;
 
 namespace ZadacaCS.EvidencijaRadaKonzolna
 {
     internal class ObradaZadatak
     {
-        
+        public List<Zadatak> Zadaci { get; set; }
+        public ObradaZadatak() {
+        Zadaci = new List<Zadatak>();
+        }
         internal static void PrikaziIzbornik()
         {
             Console.WriteLine("Izbornik za rad sa zadacima");
