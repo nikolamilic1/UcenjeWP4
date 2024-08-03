@@ -45,7 +45,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 
         private void PrikaziZadatak()
         {
-            
+            Console.WriteLine("------------");
         }
     }
 }
