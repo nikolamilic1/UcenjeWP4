@@ -43,7 +43,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             
         }
 
-        private static void PrikaziZadatak()
+        private void PrikaziZadatak()
         {
             
         }
