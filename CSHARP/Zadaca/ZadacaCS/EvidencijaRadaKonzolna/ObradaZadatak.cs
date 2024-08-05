@@ -87,9 +87,10 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             Console.WriteLine("---------------------------");
             Console.WriteLine("--- Zadaci u aplikaciji ---");
             Console.WriteLine("---------------------------");
+            int rb = 0;
             foreach(var g in Zadaci)
             {
-                Console.WriteLine(g.Opis + " (" + g.Projekt?.Naziv + ")"); //prepisati metodu toString
+                Console.WriteLine(++rb + ". " + g.Opis + " (" + g.Projekt?.Naziv + ")"); //prepisati metodu toString
             }
             Console.WriteLine("---------------------------");
 
