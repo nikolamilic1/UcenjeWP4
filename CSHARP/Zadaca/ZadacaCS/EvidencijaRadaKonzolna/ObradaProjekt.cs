@@ -36,6 +36,8 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             Console.WriteLine("2. Unos novog projekta");
             Console.WriteLine("3. Promjena podataka postojećeg projekta");
             Console.WriteLine("4. Brisanje projekta");
+            // ubaciti opciju 5. Detalji projekta
+            // kad se uđe u detalje projekta prvo pokaže sve smjerove a ti odabereš broj projekta da bi pokazao detalje
             Console.WriteLine("5. Povratak na glavni izbornik");
             OdabirOpcijeIzbornika();
         }
