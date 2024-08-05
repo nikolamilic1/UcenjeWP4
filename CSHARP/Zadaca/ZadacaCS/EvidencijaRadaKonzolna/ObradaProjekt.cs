@@ -80,7 +80,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             Console.WriteLine("------------------------------------------");
             Projekti.Add(new()
             {
-                Sifra = Pomocno.UcitajRasponBroja("Unesi šifru smjera", 1, int.MaxValue),
+                Sifra = Pomocno.UcitajRasponBroja("Unesi šifru projekta", 1, int.MaxValue),
                 Naziv = Pomocno.UcitajString("Unesi naziv projekta", 50, true),
                 Klijent = Pomocno.UcitajString("Unesi ime klijenta", 50, true),
                 // ovo će ići u klasu Zadatak
