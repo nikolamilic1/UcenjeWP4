@@ -28,24 +28,25 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 
         private void OdabirOpcijeIzbornika()
         {
-            switch(Pomocno.UcitajRasponBroja("Odaberite stavku izbornika",1,5))
+            switch (Pomocno.UcitajRasponBroja("Odaberite stavku izbornika", 1, 5))
             {
                 case 1:
                     PrikaziDjelatnike();
                     PrikaziIzbornik();
                     break;
-                    case 2:
+                case 2:
                     UnosNovogDjelatnika();
                     PrikaziIzbornik();
                     break;
-                    case 5:
+                case 5:
                     Console.Clear();
                     break;
-            
+
             }
         }
 
-        private void UnosNovogDjelatnika()
+
+            private void UnosNovogDjelatnika()
         {
             Console.WriteLine("--------------------------------------------");
             Console.WriteLine("--- Unesite tražene podatke o djelatniku ---");
@@ -71,5 +72,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             }
             Console.WriteLine("-------------------------------");
         }
+
+
     }
 }

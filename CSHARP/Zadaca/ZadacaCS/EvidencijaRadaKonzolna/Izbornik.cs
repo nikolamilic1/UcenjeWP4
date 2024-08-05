@@ -10,9 +10,9 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
     {
         public ObradaProjekt ObradaProjekt { get; set; } // = new ObradaProjekt();  // da se ne mora raditi instanca u konstruktoru
 
-        public ObradaDjelatnik ObradaPolaznik { get; set; } = new ObradaDjelatnik();
+        public ObradaDjelatnik ObradaPolaznik { get; set; } // = new ObradaDjelatnik();
 
-        public ObradaZadatak ObradaZadatak { get; set; } = new ObradaZadatak();
+        public ObradaZadatak ObradaZadatak { get; set; } // = new ObradaZadatak();
 
         public Izbornik() {
 
@@ -20,6 +20,8 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 
             Pomocno.DEV=true;
             ObradaProjekt = new ObradaProjekt();
+            ObradaDjelatnik = new ObradaDjelatnik();
+            ObradaZadatak = new ObradaZadatak();
             PozdravnaPoruka();
             PrikaziIzbornik();
 
@@ -37,7 +39,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             OdabirOpcijeIzbornika();
         }
 
-        private void OdabirOpcijeIzbornika()
+        public void OdabirOpcijeIzbornika()
         {
             switch(Pomocno.UcitajRasponBroja("Odaberite stavku izbornika", 1, 4))
             {
