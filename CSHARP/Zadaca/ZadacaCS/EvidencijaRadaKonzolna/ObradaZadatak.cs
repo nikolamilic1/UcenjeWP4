@@ -15,7 +15,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
         public ObradaZadatak() {
         Zadaci = new List<Zadatak>();
         }
-        internal static void PrikaziIzbornik()
+        public void PrikaziIzbornik()
         {
             Console.WriteLine("Izbornik za rad sa zadacima");
             Console.WriteLine("1. Pregled svih zadataka");
@@ -26,7 +26,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             OdabirOpcijeIzbornika();
         }
 
-        private static void OdabirOpcijeIzbornika()
+        private void OdabirOpcijeIzbornika()
         {
             switch(Pomocno.UcitajRasponBroja("Odaberite stavku",1,5))
             {
