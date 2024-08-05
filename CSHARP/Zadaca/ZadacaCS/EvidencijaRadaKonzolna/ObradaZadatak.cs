@@ -73,8 +73,8 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             Izbornik.ObradaProjekt.PrikaziProjekte();
             g.Projekt = Izbornik.ObradaProjekt.Projekti[Pomocno.UcitajRasponBroja("Odaberite redni broj projekta kojem dodjeljujete zadatak", 1, Izbornik.ObradaProjekt.Projekti.Count) - 1];
             g.Opis = Pomocno.UcitajString("Unesite opis zadatka", 255, true);
-            g.Pocetak = Pomocno.UcitajDatum("Unesite datum početka zadatka",true);
-            g.Zavrsetak = Pomocno.UcitajDatum("Unesite datum završetka zadatka",true);
+            g.Pocetak = Pomocno.UcitajDatum("Unesite datum početka zadatka",false);
+            g.Zavrsetak = Pomocno.UcitajDatum("Unesite datum završetka zadatka", false);
             Console.WriteLine("-----------------------------");
             Console.WriteLine("Uspješno ste unijeli zadatak!");
             Console.WriteLine("-----------------------------");
