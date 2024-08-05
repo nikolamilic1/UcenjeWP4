@@ -21,7 +21,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             Pomocno.DEV=true;
             ObradaProjekt = new ObradaProjekt();
             ObradaDjelatnik = new ObradaDjelatnik();
-            ObradaZadatak = new ObradaZadatak();
+            ObradaZadatak = new ObradaZadatak(this);
             PozdravnaPoruka();
             PrikaziIzbornik();
 

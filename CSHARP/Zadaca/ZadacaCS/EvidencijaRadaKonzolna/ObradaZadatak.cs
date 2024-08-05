@@ -31,7 +31,9 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 
         public void PrikaziIzbornik()
         {
-            Console.WriteLine("Izbornik za rad sa zadacima");
+            Console.WriteLine("===================================");
+            Console.WriteLine("=== Izbornik za rad sa zadacima ===");
+            Console.WriteLine("===================================");
             Console.WriteLine("1. Pregled svih zadataka");
             Console.WriteLine("2. Unos novog zadatka");
             Console.WriteLine("3. Promjena podataka postojećeg zadatka");
@@ -67,12 +69,17 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 
             Zadatak g = new Zadatak();
             g.Sifra = Pomocno.UcitajRasponBroja("Unesi šifru zadatka", 1, int.MaxValue);
-            g.Pocetak = Pomocno.UcitajDatum("Unesite datum početka zadatka",true);
-            g.Zavrsetak = Pomocno.UcitajDatum("Unesite datum završetka zadatka",true);
             // g.Projekt
             Izbornik.ObradaProjekt.PrikaziProjekte();
-            g.Projekt = Izbornik.ObradaProjekt.Projekti[Pomocno.UcitajRasponBroja("Odaberi redni broj projekta", 1, Izbornik.ObradaProjekt.Projekti.Count) - 1];
+            g.Projekt = Izbornik.ObradaProjekt.Projekti[Pomocno.UcitajRasponBroja("Odaberite redni broj projekta kojem dodjeljujete zadatak", 1, Izbornik.ObradaProjekt.Projekti.Count) - 1];
             g.Opis = Pomocno.UcitajString("Unesite opis zadatka", 255, true);
+            g.Pocetak = Pomocno.UcitajDatum("Unesite datum početka zadatka",true);
+            g.Zavrsetak = Pomocno.UcitajDatum("Unesite datum završetka zadatka",true);
+            Console.WriteLine("-----------------------------");
+            Console.WriteLine("Uspješno ste unijeli zadatak!");
+            Console.WriteLine("-----------------------------");
+            Console.WriteLine();
+
         }
 
         private void PrikaziZadatak()
@@ -82,8 +89,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             Console.WriteLine("---------------------------");
             foreach(var g in Zadaci)
             {
-                Console.WriteLine(g); //prepisati metodu toString
-
+                Console.WriteLine(g.Opis + " (" + g.Projekt?.Naziv + ")"); //prepisati metodu toString
             }
             Console.WriteLine("---------------------------");
 
