@@ -10,11 +10,25 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
     internal class ObradaZadatak
     {
         public List<Zadatak> Zadaci { get; set; }
-        
-        //konstruktor navedene liste:
+
+        private Izbornik Izbornik;  // zbog "this" u  izborniku u new ObradaZadatak(this) plus linije koda 24-28
+
+
+
+        //konstruktor gore navedene liste:
         public ObradaZadatak() {
         Zadaci = new List<Zadatak>();
         }
+
+
+        public ObradaZadatak(Izbornik izbornik)
+        {
+            this.Izbornik = izbornik;
+            Zadaci = new List<Zadatak>();
+        }
+
+
+
         public void PrikaziIzbornik()
         {
             Console.WriteLine("Izbornik za rad sa zadacima");
