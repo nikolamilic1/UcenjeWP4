@@ -62,7 +62,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             }
         }
 
-        private void PrikaziProjekte()
+        public void PrikaziProjekte()
         {
             Console.WriteLine("------------------------------");
             Console.WriteLine("--- Projekti u aplikaciji: ---");
