@@ -9,8 +9,14 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
     internal class Pomocno
     {
 
-        public static bool DEV=false;
-        internal static object UcitajDatum(string poruka, bool kontrolaPrijeDanasnjegDatuma)
+       public static bool DEV=false;
+
+        internal static bool UcitajBool(string poruka, string trueValue)
+        {
+            Console.WriteLine(poruka + ": ");
+            return Console.ReadLine().Trim().ToLower() == trueValue;
+        }
+        internal static DateTime UcitajDatum(string poruka, bool kontrolaPrijeDanasnjegDatuma)
         {
             DateTime d;
             while (true)

@@ -15,7 +15,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
         {
             Djelatnici = new List<Djelatnik>();
         }
-        internal static void PrikaziIzbornik()
+        public void PrikaziIzbornik()
         {
             Console.WriteLine("Izbornik za rad sa djelatnicima");
             Console.WriteLine("1. Pregled svih djelatnika");
@@ -26,7 +26,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             OdabirOpcijeIzbornika();
         }
 
-        private static void OdabirOpcijeIzbornika()
+        private void OdabirOpcijeIzbornika()
         {
             switch(Pomocno.UcitajRasponBroja("Odaberite stavku izbornika",1,5))
             {
@@ -45,7 +45,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             }
         }
 
-        private static void UnosNovogDjelatnika()
+        private void UnosNovogDjelatnika()
         {
             Console.WriteLine("--------------------------------------------");
             Console.WriteLine("--- Unesite tražene podatke o djelatniku ---");
@@ -60,7 +60,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
                 );
         }
 
-        private static void PrikaziDjelatnike()
+        private void PrikaziDjelatnike()
         {
             Console.WriteLine("-------------------------------");
             Console.WriteLine("--- Djelatnici u aplikaciji ---");
