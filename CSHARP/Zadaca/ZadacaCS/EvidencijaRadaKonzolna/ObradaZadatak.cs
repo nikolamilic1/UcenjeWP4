@@ -69,7 +69,9 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             g.Sifra = Pomocno.UcitajRasponBroja("Unesi šifru zadatka", 1, int.MaxValue);
             g.Pocetak = Pomocno.UcitajDatum("Unesite datum početka zadatka",true);
             g.Zavrsetak = Pomocno.UcitajDatum("Unesite datum završetka zadatka",true);
-           // g.Projekt
+            // g.Projekt
+            Izbornik.ObradaProjekt.PrikaziProjekte();
+            g.Projekt = Izbornik.ObradaProjekt.Projekti[Pomocno.UcitajRasponBroja("Odaberi redni broj projekta", 1, Izbornik.ObradaProjekt.Projekti.Count) - 1];
             g.Opis = Pomocno.UcitajString("Unesite opis zadatka", 255, true);
         }
 
