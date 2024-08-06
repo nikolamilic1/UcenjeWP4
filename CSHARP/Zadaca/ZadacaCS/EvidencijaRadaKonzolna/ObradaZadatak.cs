@@ -112,6 +112,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             {
                 Console.WriteLine(++rb + ". " + g.Opis + " (" + g.Projekt?.Naziv + "), " + g.Djelatnici?.Count + " djelatnika"); //prepisati metodu toString
                 rbd = 0;
+                g.Djelatnici.Sort();
                 foreach (var d in g.Djelatnici)
                 {
                     Console.WriteLine("\t" + ++rbd + d.Ime + " " + d.Prezime );
