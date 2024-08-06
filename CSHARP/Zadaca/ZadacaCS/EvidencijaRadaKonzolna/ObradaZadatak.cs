@@ -16,7 +16,8 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 
 
         //konstruktor gore navedene liste:
-        public ObradaZadatak() {
+        public ObradaZadatak() 
+        {
         Zadaci = new List<Zadatak>();
         }
 
@@ -69,7 +70,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 
             Zadatak g = new Zadatak();
             g.Sifra = Pomocno.UcitajRasponBroja("Unesi šifru zadatka", 1, int.MaxValue);
-            // g.Projekt
+            // Projekt
             Izbornik.ObradaProjekt.PrikaziProjekte();
             g.Projekt = Izbornik.ObradaProjekt.Projekti[Pomocno.UcitajRasponBroja("Odaberite redni broj projekta kojem dodjeljujete zadatak", 1, Izbornik.ObradaProjekt.Projekti.Count) - 1];
             g.Opis = Pomocno.UcitajString("Unesite opis zadatka", 255, true);
@@ -82,6 +83,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 
             // djelatnici
             g.Djelatnici = UcitajDjelatnike();
+            Zadaci.Add(g);
         }
 
         private List<Djelatnik>? UcitajDjelatnike()
@@ -113,9 +115,9 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
                 Console.WriteLine(++rb + ". " + g.Opis + " (" + g.Projekt?.Naziv + "), " + g.Djelatnici?.Count + " djelatnika"); //prepisati metodu toString
                 rbd = 0;
                 g.Djelatnici.Sort();
-                foreach (var d in g.Djelatnici)
+                foreach (var p in g.Djelatnici)
                 {
-                    Console.WriteLine("\t" + ++rbd + d.Ime + " " + d.Prezime );
+                    Console.WriteLine("\t" + ++rbd + p.Ime + " " + p.Prezime );
                 }
             }
             Console.WriteLine("---------------------------");
