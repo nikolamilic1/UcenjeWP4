@@ -80,6 +80,8 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             Console.WriteLine("-----------------------------");
             Console.WriteLine();
 
+            // djelatnici
+            g.Djelatnici = UcitajDjelatnike();
         }
 
         private void PrikaziZadatak()
