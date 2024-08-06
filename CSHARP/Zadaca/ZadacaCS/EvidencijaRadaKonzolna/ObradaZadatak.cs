@@ -91,6 +91,12 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             while(Pomocno.UcitajBool("Za unos polaznika unesi DA", "da"))
             {
                 Izbornik.ObradaDjelatnik.PrikaziDjelatnike();
+                lista.Add(
+                    Izbornik.ObradaDjelatnik.Djelatnici[
+                        Pomocno.UcitajRasponBroja("Odaberi redni broj polaznika",1,
+                        Izbornik.ObradaDjelatnik.Djelatnici.Count)-1
+                        ]
+                    );
             }
 
             return lista;
