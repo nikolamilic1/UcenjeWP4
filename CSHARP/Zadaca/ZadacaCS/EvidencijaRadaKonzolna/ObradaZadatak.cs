@@ -84,6 +84,11 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             g.Djelatnici = UcitajDjelatnike();
         }
 
+        private List<Djelatnik>? UcitajDjelatnike()
+        {
+            throw new NotImplementedException();
+        }
+
         private void PrikaziZadatak()
         {
             Console.WriteLine("---------------------------");
