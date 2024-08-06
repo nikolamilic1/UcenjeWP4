@@ -17,7 +17,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna.Model
 
         public int CompareTo(Djelatnik? other)
         {
-            
+            return Prezime.CompareTo(other.Prezime);
         }
     }
 }
