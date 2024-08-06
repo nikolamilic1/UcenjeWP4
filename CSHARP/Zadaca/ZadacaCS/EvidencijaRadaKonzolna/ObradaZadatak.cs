@@ -21,10 +21,10 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
         }
 
 
-        public ObradaZadatak(Izbornik izbornik)
+        public ObradaZadatak(Izbornik izbornik) : this()
         {
             this.Izbornik = izbornik;
-            Zadaci = new List<Zadatak>();
+          //  Zadaci = new List<Zadatak>();   // ne treba ovo ide samo " : this()" gore
         }
 
 
