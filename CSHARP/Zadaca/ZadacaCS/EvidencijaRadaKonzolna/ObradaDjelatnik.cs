@@ -15,7 +15,24 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
         public ObradaDjelatnik()
         {
             Djelatnici = new List<Djelatnik>();
+            if (Pomocno.DEV)
+            {
+                UcitajTestnePodatke();
+            }
         }
+
+        private void UcitajTestnePodatke()
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                Djelatnici.Add(new()
+                {
+                    Ime = Faker.Name.First(),
+                    Prezime = Faker.Name.Last()
+                });
+            }
+        }
+
         public void PrikaziIzbornik()
         {
             Console.WriteLine("Izbornik za rad sa djelatnicima");
