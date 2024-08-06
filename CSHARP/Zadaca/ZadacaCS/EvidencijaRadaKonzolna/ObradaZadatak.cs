@@ -88,6 +88,11 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
         {
            List<Djelatnik?> lista = new List<Djelatnik?>();
 
+            while(Pomocno.UcitajBool("Za unos polaznika unesi DA", "da"))
+            {
+                Izbornik.ObradaDjelatnik.PrikaziDjelatnike();
+            }
+
             return lista;
         }
 

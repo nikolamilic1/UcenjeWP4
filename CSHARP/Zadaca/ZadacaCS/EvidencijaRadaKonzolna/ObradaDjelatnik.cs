@@ -62,7 +62,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
                 );
         }
 
-        private void PrikaziDjelatnike()
+        public void PrikaziDjelatnike()
         {
             Console.WriteLine("-------------------------------");
             Console.WriteLine("--- Djelatnici u aplikaciji ---");
