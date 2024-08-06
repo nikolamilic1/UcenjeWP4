@@ -107,10 +107,15 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             Console.WriteLine("---------------------------");
             Console.WriteLine("--- Zadaci u aplikaciji ---");
             Console.WriteLine("---------------------------");
-            int rb = 0;
+            int rb = 0, rbd;   // u app edunova stoji rbp = redni broj polaznika (u ovoj app je redni broj grupe)
             foreach(var g in Zadaci)
             {
                 Console.WriteLine(++rb + ". " + g.Opis + " (" + g.Projekt?.Naziv + "), " + g.Djelatnici?.Count + " djelatnika"); //prepisati metodu toString
+                rbd = 0;
+                foreach (var d in g.Djelatnici)
+                {
+                    Console.WriteLine("\t" + ++rbd + d.Ime + " " + d.Prezime );
+                }
             }
             Console.WriteLine("---------------------------");
 
