@@ -10,7 +10,8 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
     internal class ObradaDjelatnik
     {
 
-        public List<Djelatnik> Djelatnici { get; set; } 
+        public List<Djelatnik> Djelatnici { get; set; }
+        private Izbornik Izbornik;
         public ObradaDjelatnik()
         {
             Djelatnici = new List<Djelatnik>();
