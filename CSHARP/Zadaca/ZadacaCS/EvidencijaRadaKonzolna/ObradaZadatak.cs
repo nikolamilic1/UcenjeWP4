@@ -86,7 +86,9 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 
         private List<Djelatnik>? UcitajDjelatnike()
         {
-            throw new NotImplementedException();
+           List<Djelatnik?> lista = new List<Djelatnik?>();
+
+            return lista;
         }
 
         private void PrikaziZadatak()
