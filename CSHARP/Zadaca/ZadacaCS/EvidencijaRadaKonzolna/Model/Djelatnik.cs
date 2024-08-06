@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ZadacaCS.EvidencijaRadaKonzolna.Model
 {
-    internal class Djelatnik:Entitet
+    internal class Djelatnik:Entitet, IComparable<Djelatnik>
     {
 
         public string? Ime { get; set; }
@@ -15,5 +15,9 @@ namespace ZadacaCS.EvidencijaRadaKonzolna.Model
 
         public string? Email { get; set; }
 
+        public int CompareTo(Djelatnik? other)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
