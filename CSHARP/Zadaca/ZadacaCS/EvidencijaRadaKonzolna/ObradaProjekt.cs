@@ -68,7 +68,8 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 
         private void PromijeniPostojeciProjekt()
         {
-            
+            PrikaziProjekte();
+            var odabrani = Projekti[Pomocno.UcitajRasponBroja("Odaberi redni broj projekta za promjenu", 1, Projekti.Count) - 1];
         }
 
         public void PrikaziProjekte()
