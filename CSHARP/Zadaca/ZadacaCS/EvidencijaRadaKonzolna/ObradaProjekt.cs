@@ -68,7 +68,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 
         private void PromijeniPostojeciProjekt()
         {
-            throw new NotImplementedException();
+            
         }
 
         public void PrikaziProjekte()
