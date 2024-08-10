@@ -117,7 +117,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
                 g.Djelatnici.Sort();
                 foreach (var p in g.Djelatnici)
                 {
-                    Console.WriteLine("\t" + ++rbd + p.Ime + " " + p.Prezime );
+                    Console.WriteLine("\t" + ++rbd +". " + p.Ime + " " + p.Prezime );
                 }
             }
             Console.WriteLine("---------------------------");
