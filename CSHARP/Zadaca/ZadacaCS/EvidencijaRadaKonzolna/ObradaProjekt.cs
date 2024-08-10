@@ -55,6 +55,10 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
                     UnosNovogProjekta();
                     PrikaziIzbornik();
                     break;
+                case 3:
+                    PromijeniPostojeciProjekt();
+                    PrikaziIzbornik();
+                    break;
                 case 5:
                     //Console.WriteLine("Gotov rad s projektima");  // Ovo se ne vidi jer naredba ispod odmah briše konzolu
                     Console.Clear();
