@@ -112,7 +112,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             int rb = 0, rbd;   // u app edunova stoji rbp = redni broj polaznika (u ovoj app je redni broj grupe)
             foreach(var g in Zadaci)
             {
-                Console.WriteLine(++rb + ". (Opis zadatka) " + g.Opis + " (" + g.Projekt?.Naziv + "), " + g.Djelatnici?.Count + " djelatnika"); //prepisati metodu toString
+                Console.WriteLine(++rb + ". Naziv projekta: " + g.Projekt?.Naziv + "\n \t Opis zadatka " + g.Opis + ", \n" + g.Djelatnici?.Count + " djelatnika"); //prepisati metodu toString
                 rbd = 0;
                 g.Djelatnici.Sort();
                 foreach (var p in g.Djelatnici)
