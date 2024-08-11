@@ -35,7 +35,9 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 
         public void PrikaziIzbornik()
         {
-            Console.WriteLine("Izbornik za rad sa djelatnicima");
+            Console.WriteLine("=======================================");
+            Console.WriteLine("=== Izbornik za rad sa djelatnicima ===");
+            Console.WriteLine("=======================================");
             Console.WriteLine("1. Pregled svih djelatnika");
             Console.WriteLine("2. Unos novog djelatnika");
             Console.WriteLine("3. Promjena podataka postojećeg djelatnika");
