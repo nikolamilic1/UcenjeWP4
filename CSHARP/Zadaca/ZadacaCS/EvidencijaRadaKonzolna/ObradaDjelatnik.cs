@@ -75,7 +75,14 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 
         private void ObisiDjelatnika()
         {
-            
+            PrikaziDjelatnike();
+            var odabrani = Djelatnici[Pomocno.UcitajRasponBroja("Odaberi redni broj djelatnika za brisanje", 1, Djelatnici.Count) - 1];
+            if(Pomocno.UcitajBool("Sigurno obrisati " + odabrani.Ime + " " + odabrani.Prezime + "? (DA/NE)","da"))
+                {
+                Djelatnici.Remove(odabrani);
+               Console.WriteLine("Djelatnik/ca {0} {1} uspješno obrisan/a.", odabrani.Ime, odabrani.Prezime);
+               // Console.WriteLine("Djelatnik {0} uspješno obrisan", odabrani);  --- ovako ne prikazuje ime i prezime već alocirano mjesto u memoriji
+            }
         }
 
         private void PromjeniPodatkeDjelatnika()
