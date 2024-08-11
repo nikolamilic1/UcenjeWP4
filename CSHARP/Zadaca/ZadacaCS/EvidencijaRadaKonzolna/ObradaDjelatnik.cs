@@ -56,6 +56,10 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
                     UnosNovogDjelatnika();
                     PrikaziIzbornik();
                     break;
+                case 3:
+                    PromjeniPodatkeDjelatnika();
+                    PrikaziIzbornik();
+                    break;
                 case 5:
                     Console.Clear();
                     break;

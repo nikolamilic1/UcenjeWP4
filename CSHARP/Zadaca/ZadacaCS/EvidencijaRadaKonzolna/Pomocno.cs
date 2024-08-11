@@ -82,7 +82,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             string s;
             while (true)
             {
-                Console.WriteLine(poruka);
+                Console.Write(poruka + ": ");
                 s = Console.ReadLine().Trim();
                 if (obavezno && s.Length==0 || s.Length > max)
                 {
