@@ -72,7 +72,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 
         private void ObrisiZadatak()
         {
-            
+            PrikaziZadatak();
         }
 
         private void PromjeniPodatkeZadatka()
