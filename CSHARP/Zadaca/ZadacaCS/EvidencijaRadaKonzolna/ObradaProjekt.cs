@@ -73,6 +73,10 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
         private void ObrisiPostojeciProjekt()
         {
             var odabrani = Projekti[Pomocno.UcitajRasponBroja("Odaberi redni broj projekta za brisanje", 1, Projekti.Count) - 1];
+            if (Pomocno.UcitajBool("Sigurno obrisati " + odabrani.Naziv + "? (DA/NE)", "da"))
+            {
+                Projekti.Remove(odabrani);
+            }
         }
 
         private void PromijeniPostojeciProjekt()
