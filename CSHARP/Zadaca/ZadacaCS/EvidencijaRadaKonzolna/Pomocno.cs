@@ -98,7 +98,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             string s;
             while (true)
             {
-                Console.Write(poruka + ": ");
+                Console.Write(poruka + " (" + stara + "): ");
                 s = Console.ReadLine().Trim();
                 if (s.Length == 0)
                 {
