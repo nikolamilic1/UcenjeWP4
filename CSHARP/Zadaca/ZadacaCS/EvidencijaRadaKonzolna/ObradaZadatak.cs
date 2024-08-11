@@ -59,6 +59,10 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
                     PromjeniPodatkeZadatka();
                     PrikaziIzbornik();
                     break;
+                case 4:
+                    ObrisiZadatak();
+                    PrikaziIzbornik();
+                    break;
                 case 5:
                     Console.Clear();
                     break;
