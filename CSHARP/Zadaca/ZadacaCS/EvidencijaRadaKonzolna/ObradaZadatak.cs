@@ -72,7 +72,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 
         private void ObrisiZadatak()
         {
-            throw new NotImplementedException();
+            
         }
 
         private void PromjeniPodatkeZadatka()
