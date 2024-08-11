@@ -77,6 +77,22 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
         /// <param name="poruka"></param>
         /// <param name="max"></param>
         /// <returns></returns>
+        internal static string UcitajString(string poruka, int max, bool obavezno)
+        {
+            string s;
+            while (true)
+            {
+                Console.Write(poruka + ": ");
+                s = Console.ReadLine().Trim();             
+                if (obavezno && s.Length==0 || s.Length > max)
+                {
+                    Console.WriteLine("Unos obavezan! Maksimalno dozvoljeno {0} znakova", max);
+                    continue;   // ovo znači da neće vratiti nazad već će tražiti ponovni unos
+                }
+                return s;
+            }
+        }
+
         internal static string UcitajString(string stara, string poruka, int max, bool obavezno)
         {
             string s;
@@ -84,11 +100,11 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             {
                 Console.Write(poruka + ": ");
                 s = Console.ReadLine().Trim();
-             if (s.Length == 0)
+                if (s.Length == 0)
                 {
                     return stara;
                 }
-                if (obavezno && s.Length==0 || s.Length > max)
+                if (obavezno && s.Length == 0 || s.Length > max)
                 {
                     Console.WriteLine("Unos obavezan! Maksimalno dozvoljeno {0} znakova", max);
                     continue;   // ovo znači da neće vratiti nazad već će tražiti ponovni unos
