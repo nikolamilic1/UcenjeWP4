@@ -68,7 +68,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 
         private void SpremiPodatke()
         {
-            throw new NotImplementedException();
+            
         }
 
         private void PozdravnaPoruka()
