@@ -77,13 +77,17 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
         /// <param name="poruka"></param>
         /// <param name="max"></param>
         /// <returns></returns>
-        internal static string UcitajString(string poruka, int max, bool obavezno)
+        internal static string UcitajString(string stara, string poruka, int max, bool obavezno)
         {
             string s;
             while (true)
             {
                 Console.Write(poruka + ": ");
                 s = Console.ReadLine().Trim();
+             if (s.Length == 0)
+                {
+                    return stara;
+                }
                 if (obavezno && s.Length==0 || s.Length > max)
                 {
                     Console.WriteLine("Unos obavezan! Maksimalno dozvoljeno {0} znakova", max);
