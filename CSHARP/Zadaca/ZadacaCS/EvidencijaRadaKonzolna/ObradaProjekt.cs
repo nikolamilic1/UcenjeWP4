@@ -59,11 +59,20 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
                     PromijeniPostojeciProjekt();
                     PrikaziIzbornik();
                     break;
+                case 4:
+                    ObrisiPostojeciProjekt();
+                    PrikaziIzbornik();
+                    break;
                 case 5:
                     //Console.WriteLine("Gotov rad s projektima");  // Ovo se ne vidi jer naredba ispod odmah briše konzolu
                     Console.Clear();
                     break;
             }
+        }
+
+        private void ObrisiPostojeciProjekt()
+        {
+            var odabrani = Projekti[Pomocno.UcitajRasponBroja("Odaberi redni broj projekta za brisanje", 1, Projekti.Count) - 1];
         }
 
         private void PromijeniPostojeciProjekt()

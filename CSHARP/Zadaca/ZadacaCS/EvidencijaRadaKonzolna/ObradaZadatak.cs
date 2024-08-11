@@ -68,7 +68,12 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 
         private void PromjeniPodatkeZadatka()
         {
-            
+            var g = Zadaci[Pomocno.UcitajRasponBroja("Odaberi redni broj zadatka za promjenu",1,Zadaci.Count)-1];
+            // copy paste sa linije 90-92  -- izvući u metodu!!!
+            // nazvao je umjesto odabrana isto kao i dolje (linije 90-92) "g"
+            g.Opis = Pomocno.UcitajString(g.Opis, "Unesite opis zadatka", 255, true);
+            g.Pocetak = Pomocno.UcitajDatum("Unesite datum početka zadatka", false);
+            g.Zavrsetak = Pomocno.UcitajDatum("Unesite datum završetka zadatka", false);
         }
 
         private void UnosNovogZadatka()
