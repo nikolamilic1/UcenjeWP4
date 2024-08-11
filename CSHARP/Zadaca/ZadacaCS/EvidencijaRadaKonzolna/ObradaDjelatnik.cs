@@ -72,9 +72,9 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             PrikaziDjelatnike();
             var odabrani = Djelatnici[Pomocno.UcitajRasponBroja("Odaberi redni broj djelatnika za promjenu", 1, Djelatnici.Count) - 1];
             odabrani.Sifra = Pomocno.UcitajRasponBroja("Unesi šifru djelatnika", 1, int.MaxValue);
-            odabrani.Ime = Pomocno.UcitajString("Unesi ime djelatnika", 50, true);
-            odabrani.Prezime = Pomocno.UcitajString("Unesi prezime djelatnika", 50, true);
-            odabrani.Email = Pomocno.UcitajString("Unesi email djelatnika", 50, true);
+            odabrani.Ime = Pomocno.UcitajString(odabrani.Ime, "Unesi ime djelatnika", 50, true);
+            odabrani.Prezime = Pomocno.UcitajString(odabrani.Prezime, "Unesi prezime djelatnika", 50, true);
+            odabrani.Email = Pomocno.UcitajString(odabrani.Email, "Unesi email djelatnika", 50, true);
         }
 
         private void UnosNovogDjelatnika()
