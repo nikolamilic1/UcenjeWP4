@@ -73,6 +73,11 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             }
         }
 
+        private void ObisiDjelatnika()
+        {
+            
+        }
+
         private void PromjeniPodatkeDjelatnika()
         {
             PrikaziDjelatnike();
