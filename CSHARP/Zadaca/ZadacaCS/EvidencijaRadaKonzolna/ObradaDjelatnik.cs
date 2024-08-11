@@ -69,7 +69,8 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 
         private void PromjeniPodatkeDjelatnika()
         {
-            
+            PrikaziDjelatnike();
+            var odabrani = Djelatnici[Pomocno.UcitajRasponBroja("Odaberi redni broj djelatnika za promjenu", 1, Djelatnici.Count) - 1];
         }
 
         private void UnosNovogDjelatnika()
