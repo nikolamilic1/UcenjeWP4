@@ -60,6 +60,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
                     break;
                 case 4:
                     Console.WriteLine("Hvala na korištenju aplikacije! Doviđenja!");
+                    SpremiPodatke();
                     break;
 
             }
