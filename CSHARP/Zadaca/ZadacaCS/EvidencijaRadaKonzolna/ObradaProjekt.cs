@@ -29,9 +29,9 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 
         public void PrikaziIzbornik()
         {
-            Console.WriteLine("=====================================");
-            Console.WriteLine("=== Izbornik za rad sa projektima ===");
-            Console.WriteLine("=====================================");
+            Console.WriteLine("========================================");
+            Console.WriteLine("===   Izbornik za rad sa projektima  ===");
+            Console.WriteLine("========================================");
             Console.WriteLine("1. Pregled svih projekata");
             Console.WriteLine("2. Unos novog projekta");
             Console.WriteLine("3. Promjena podataka postojećeg projekta");
@@ -71,8 +71,8 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             PrikaziProjekte();
             var odabrani = Projekti[Pomocno.UcitajRasponBroja("Odaberi redni broj projekta za promjenu", 1, Projekti.Count) - 1];
             odabrani.Sifra = Pomocno.UcitajRasponBroja("Unesi šifru projekta", 1, int.MaxValue);
-                odabrani.Naziv = Pomocno.UcitajString("Unesi naziv projekta", 50, true);
-                odabrani.Klijent = Pomocno.UcitajString("Unesi ime klijenta", 50, true);
+                odabrani.Naziv = Pomocno.UcitajString(odabrani.Naziv, "Unesi naziv projekta", 50, true);
+                odabrani.Klijent = Pomocno.UcitajString(odabrani.Klijent, "Unesi ime klijenta", 50, true);
             //  napraviti metodu za izmjenu postojećeg elementa niza koju pozivamo barem dva puta (koja radi isti posao)
         }
 
