@@ -70,6 +70,11 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             }
         }
 
+        private void ObrisiZadatak()
+        {
+            throw new NotImplementedException();
+        }
+
         private void PromjeniPodatkeZadatka()
         {
             var g = Zadaci[Pomocno.UcitajRasponBroja("Odaberi redni broj zadatka za promjenu",1,Zadaci.Count)-1];
