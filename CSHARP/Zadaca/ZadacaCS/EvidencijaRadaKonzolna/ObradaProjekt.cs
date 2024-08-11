@@ -72,10 +72,12 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 
         private void ObrisiPostojeciProjekt()
         {
+            PrikaziProjekte();
             var odabrani = Projekti[Pomocno.UcitajRasponBroja("Odaberi redni broj projekta za brisanje", 1, Projekti.Count) - 1];
-            if (Pomocno.UcitajBool("Sigurno obrisati " + odabrani.Naziv + "? (DA/NE)", "da"))
+            if (Pomocno.UcitajBool("Sigurno obrisati projekt: " + odabrani.Naziv + "? (DA/NE)", "da"))
             {
                 Projekti.Remove(odabrani);
+                Console.WriteLine("Projekt {0} uspješno obrisan.", odabrani);
             }
         }
 
