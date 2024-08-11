@@ -66,6 +66,11 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             }
         }
 
+        private void PromjeniPodatkeZadatka()
+        {
+            
+        }
+
         private void UnosNovogZadatka()
         {
             Console.WriteLine("-----------------------------------------");
