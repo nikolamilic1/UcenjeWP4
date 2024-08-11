@@ -73,6 +73,11 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
         private void ObrisiZadatak()
         {
             PrikaziZadatak();
+            var g = Zadaci[Pomocno.UcitajRasponBroja("Odaberi redni broj zadatka za brisanje",1,Zadaci.Count)-1];
+            if (Pomocno.UcitajBool("Sigurno obrisati zadatak: " + g.Opis + "? (DA/NE)", "da"))
+            {
+                Zadaci.Remove(g);
+            }
         }
 
         private void PromjeniPodatkeZadatka()
