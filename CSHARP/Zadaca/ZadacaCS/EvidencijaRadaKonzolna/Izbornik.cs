@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -68,7 +69,13 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 
         private void SpremiPodatke()
         {
-            
+            if (Pomocno.DEV)
+            {
+                return;
+            }
+
+            Console.WriteLine(JsonConvert.SerializeObject(ObradaProjekt.Projekti);
+
         }
 
         private void PozdravnaPoruka()
