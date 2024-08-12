@@ -31,7 +31,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 
         private void UcitajPodatke()
         {
-            
+            string docPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
         }
 
         private void PrikaziIzbornik()
