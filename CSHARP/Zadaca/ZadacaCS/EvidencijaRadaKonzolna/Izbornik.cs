@@ -77,6 +77,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             //Console.WriteLine(JsonConvert.SerializeObject(ObradaProjekt.Projekti));
 
             // Ispisuje u file u JSON formatu
+            string docPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             StreamWriter outputFile = new StreamWriter(Path.Combine(docPath, "projekti.json"));
             outputFile.WriteLine(JsonConvert.SerializeObject(ObradaProjekt.Projekti);
 
