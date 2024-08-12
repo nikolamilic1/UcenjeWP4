@@ -73,7 +73,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             {
                 return;
             }
-
+            // Ispisat će u konzolu
             Console.WriteLine(JsonConvert.SerializeObject(ObradaProjekt.Projekti));
 
         }
