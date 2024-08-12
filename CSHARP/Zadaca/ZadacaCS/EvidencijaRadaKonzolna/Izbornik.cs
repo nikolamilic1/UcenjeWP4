@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ZadacaCS.EvidencijaRadaKonzolna.Model;
 
 namespace ZadacaCS.EvidencijaRadaKonzolna
 {
@@ -35,6 +36,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             if(File.Exists(Path.Combine(docPath, "projekti.json")))
             {
                 StreamReader file = File.OpenText(Path.Combine(docPath, "projekti.json"));
+                ObradaProjekt.Projekti = JsonConvert.DeserializeObject<List<Projekt>>(file.ReadToEnd());
             }
         }
 
