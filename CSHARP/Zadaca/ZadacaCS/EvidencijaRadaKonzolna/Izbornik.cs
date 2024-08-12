@@ -74,7 +74,11 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
                 return;
             }
             // Ispisat će u konzolu
-            Console.WriteLine(JsonConvert.SerializeObject(ObradaProjekt.Projekti));
+            //Console.WriteLine(JsonConvert.SerializeObject(ObradaProjekt.Projekti));
+
+            // Ispisuje u file u JSON formatu
+            StreamWriter outputFile = new StreamWriter(Path.Combine(docPath, "projekti.json"));
+            outputFile.WriteLine(JsonConvert.SerializeObject(ObradaProjekt.Projekti);
 
         }
 
