@@ -23,6 +23,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             ObradaProjekt = new ObradaProjekt();
             ObradaDjelatnik = new ObradaDjelatnik();
             ObradaZadatak = new ObradaZadatak(this);
+            UcitajPodatke();
             PozdravnaPoruka();
             PrikaziIzbornik();
 
