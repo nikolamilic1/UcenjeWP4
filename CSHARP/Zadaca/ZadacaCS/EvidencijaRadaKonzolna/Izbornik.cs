@@ -32,6 +32,10 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
         private void UcitajPodatke()
         {
             string docPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            if(File.Exists(Path.Combine(docPath, "projekti.json")))
+            {
+                StreamReader file = File.OpenText(Path.Combine(docPath, "projekti.json"));
+            }
         }
 
         private void PrikaziIzbornik()
