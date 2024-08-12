@@ -19,7 +19,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 
             //Console.WriteLine("Hello!");
 
-            Pomocno.DEV=true;
+            //Pomocno.DEV=true;
             ObradaProjekt = new ObradaProjekt();
             ObradaDjelatnik = new ObradaDjelatnik();
             ObradaZadatak = new ObradaZadatak(this);
