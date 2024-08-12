@@ -29,6 +29,11 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 
         }
 
+        private void UcitajPodatke()
+        {
+            throw new NotImplementedException();
+        }
+
         private void PrikaziIzbornik()
         {
             Console.WriteLine("=======================");
