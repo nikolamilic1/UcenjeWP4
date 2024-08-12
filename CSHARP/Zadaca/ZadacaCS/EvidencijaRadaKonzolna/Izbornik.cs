@@ -69,7 +69,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
 
         private void SpremiPodatke()
         {
-            if (Pomocno.DEV)
+            if (Pomocno.DEV)     // ako je DEV uključen neće upisivati u fajl
             {
                 return;
             }
