@@ -74,7 +74,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
                 return;
             }
 
-            Console.WriteLine(JsonConvert.SerializeObject(ObradaProjekt.Projekti);
+            Console.WriteLine(JsonConvert.SerializeObject(ObradaProjekt.Projekti));
 
         }
 
