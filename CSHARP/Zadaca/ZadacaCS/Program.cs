@@ -5,11 +5,11 @@ using ZadacaCS;
 //using ZadacaCS.EvidencijaRadaKonzolna;
 
 
+new ZadacaCS.passGEn();
 
+//passGEn();
 
-
-
-new ZadacaCS.EvidencijaRadaKonzolna.Izbornik();
+//new ZadacaCS.EvidencijaRadaKonzolna.Izbornik();
 
 //CiklicnaTablica.Izvedi();
 
