@@ -13,6 +13,7 @@ namespace ZadacaCS
         public static string Generate(int length = 10)
         {
             const string lower = "asdf";
+            const string upper = "ASDF";
         }
         
     }
