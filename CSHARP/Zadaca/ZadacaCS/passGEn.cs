@@ -10,7 +10,10 @@ namespace ZadacaCS
     {
         public static Random rand = new Random();
 
+        public static string Generate(int length = 10)
+        {
 
+        }
         
     }
 }
