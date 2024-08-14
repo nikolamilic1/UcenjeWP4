@@ -8,7 +8,9 @@ namespace ZadacaCS
 {
     internal class passGEn
     {
-        
+        public static Random rand = new Random();
+
+
         
     }
 }
