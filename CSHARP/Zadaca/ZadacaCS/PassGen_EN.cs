@@ -79,6 +79,27 @@ namespace ZadacaCS
         static string GeneratePassword(int length, bool caps, bool lowerCase, bool numbers, bool punctuation, bool startWithNumber, bool endWithPunctuation, bool noRepeatingChars, char[] chars, Random rand)
         {
             StringBuilder password = new StringBuilder();
+
+            // Filter characters based on flags
+            var filteredChars = new List<char>();
+            foreach (char c in chars)
+            {
+                if ((Char.IsUpper(c) && caps) || (Char.IsLower(c) && lowerCase) || (Char.IsDigit(c) && numbers) || (!Char.IsLetterOrDigit(c) && punctuation))
+                {
+                    filteredChars.Add(c);
+                }
+            }
+            // Shuffle the filtered character set if no repeating characters are allowed
+            if (noRepeatingChars)
+            {
+                Shuffle(filteredChars, rand);
+            }
+            // Handle starting with a number
+            if (startWithNumber)
+            {
+                password.Append(rand.Next(0, 10));
+            }
+
         }
     }
 }
