@@ -151,6 +151,11 @@ namespace ZadacaCS
         }
         static void Shuffle<T>(List<T> list, Random rng)
         {
+            int n = list.Count;
+            while (n > 1)
+            {
+
+            }
 
         }
     }
