@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace ZadacaCS
 {
-    internal class PassGen_EN
+    public class PassGen_EN
     {
-        private static void Password(string[] args)
+        internal static void Password()
         {
             Console.WriteLine("Enter password length:");
             int length = Convert.ToInt32(Console.ReadLine());
@@ -73,6 +73,7 @@ namespace ZadacaCS
 
 
         }
+
 
         static string GeneratePassword(int length, bool caps, bool lowerCase, bool numbers, bool punctuation, bool startWithNumber, bool endWithPunctuation, bool noRepeatingChars, char[] chars, Random rand)
         {
