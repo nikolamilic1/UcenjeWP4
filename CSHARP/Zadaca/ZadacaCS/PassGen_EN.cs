@@ -99,6 +99,13 @@ namespace ZadacaCS
             {
                 password.Append(rand.Next(0, 10));
             }
+            // Generate the rest of the password
+            int remainingLength = length - password.Length - (endWithPunctuation ? 1 : 0); // Adjust for ending punctuation if needed
+            for (int i = 0; i < remainingLength && i < filteredChars.Count; i++) // Ensure we don't exceed the bounds of filteredChars
+            {
+                char nextChar = filteredChars[i]; // Take characters sequentially from shuffled list
+                password.Append(nextChar);
+            }
 
         }
     }
