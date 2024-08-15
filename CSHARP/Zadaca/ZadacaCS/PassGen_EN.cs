@@ -23,7 +23,7 @@ namespace ZadacaCS
             bool noRepeatingChars = true;
             int numberOfPasswords = 1;
 
-
+            // Prompt the user for each option
             Console.WriteLine("Caps on/off (true/false):");
             caps = Convert.ToBoolean(Console.ReadLine());
             Console.WriteLine("Lower case on/off (true/false):");
@@ -51,9 +51,7 @@ namespace ZadacaCS
             {
                 Console.WriteLine("End with a punctuation mark (true/false):");
                 endWithPunctuation = Convert.ToBoolean(Console.ReadLine());
-            }
-
-            // Prompt the user for each option
+            }            
             Console.WriteLine("No repeating characters (true/false):");
             noRepeatingChars = Convert.ToBoolean(Console.ReadLine());
             Console.WriteLine("Number of passwords to generate:");
