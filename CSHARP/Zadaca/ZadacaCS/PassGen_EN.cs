@@ -59,6 +59,12 @@ namespace ZadacaCS
             Console.WriteLine("Number of passwords to generate:");
             numberOfPasswords = Convert.ToInt32(Console.ReadLine());
 
+            Random rand = new Random();
+            string chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+<>?";
+            List<string> passwords = new List<string>();
+
+
+
         }
 
     }
