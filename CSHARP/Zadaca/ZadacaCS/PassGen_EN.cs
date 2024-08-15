@@ -147,7 +147,7 @@ namespace ZadacaCS
                         break;
                 }
             }
-
+            return password.ToString();
         }
     }
 }
