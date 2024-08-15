@@ -106,6 +106,15 @@ namespace ZadacaCS
                 char nextChar = filteredChars[i]; // Take characters sequentially from shuffled list
                 password.Append(nextChar);
             }
+            // Handle ending with punctuation
+            if (endWithPunctuation && punctuation)
+            {
+                char endingPunctuationMark = filteredChars.FirstOrDefault(c => !Char.IsLetterOrDigit(c));
+                if (endingPunctuationMark != '\0') // Ensure we found a punctuation mark
+                {
+                    password.Append(endingPunctuationMark);
+                }
+            }
 
         }
     }
