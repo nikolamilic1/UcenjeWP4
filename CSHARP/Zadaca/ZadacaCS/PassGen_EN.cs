@@ -149,5 +149,10 @@ namespace ZadacaCS
             }
             return password.ToString();
         }
+        static void Shuffle<T>(List<T> list, Random rng)
+        {
+
+        }
     }
+
 }
