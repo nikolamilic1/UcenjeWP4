@@ -76,9 +76,9 @@ namespace ZadacaCS
 
         }
 
-        private static string GeneratePassword(int length, bool caps, bool lowerCase, bool numbers, bool punctuation, bool startWithNumber, bool endWithPunctuation, bool noRepeatingChars, char[] chars, Random rand)
+        static string GeneratePassword(int length, bool caps, bool lowerCase, bool numbers, bool punctuation, bool startWithNumber, bool endWithPunctuation, bool noRepeatingChars, char[] chars, Random rand)
         {
-            throw new NotImplementedException();
+            StringBuilder password = new StringBuilder();
         }
     }
 }
