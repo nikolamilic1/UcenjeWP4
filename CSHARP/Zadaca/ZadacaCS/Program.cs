@@ -5,7 +5,7 @@ using ZadacaCS;
 //using ZadacaCS.EvidencijaRadaKonzolna;
 
 
-new ZadacaCS.passGEn();
+new ZadacaCS.PassGen_EN();
 
 //passGEn();
 
