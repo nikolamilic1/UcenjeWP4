@@ -63,9 +63,22 @@ namespace ZadacaCS
             string chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+<>?";
             List<string> passwords = new List<string>();
 
+            for (int i = 0; i < numberOfPasswords; i++)
+            {
+                string password = GeneratePassword(length, caps, lowerCase, numbers, punctuation, startWithNumber, endWithPunctuation, noRepeatingChars, chars.ToCharArray(), rand);
+                passwords.Add(password);
+            }
+            foreach (var password in passwords)
+            {
+                Console.WriteLine($"Generated Password: {password}");
+            }
 
 
         }
 
+        private static string GeneratePassword(int length, bool caps, bool lowerCase, bool numbers, bool punctuation, bool startWithNumber, bool endWithPunctuation, bool noRepeatingChars, char[] chars, Random rand)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
