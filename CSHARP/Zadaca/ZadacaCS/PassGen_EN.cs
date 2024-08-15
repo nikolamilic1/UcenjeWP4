@@ -14,7 +14,7 @@ namespace ZadacaCS
             Console.WriteLine("Enter password length:");
             int length = Convert.ToInt32(Console.ReadLine());
 
-            bool caps = true;
+            bool caps = true; // Assuming caps are on by default
             bool lowerCase = true;
             bool numbers = true;
             bool punctuation = true;
