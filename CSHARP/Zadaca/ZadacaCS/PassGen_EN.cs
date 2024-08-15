@@ -32,6 +32,7 @@ namespace ZadacaCS
             numbers = Convert.ToBoolean(Console.ReadLine());
             Console.WriteLine("Punctuation on/off (true/false):");
             punctuation = Convert.ToBoolean(Console.ReadLine());
+            // esure case if user chose "false" for numbers
             if (numbers == false)
             {
                 startWithNumber = false;
@@ -41,6 +42,7 @@ namespace ZadacaCS
                 Console.WriteLine("Start with a number (true/false):");
                 startWithNumber = Convert.ToBoolean(Console.ReadLine());
             }
+            // esure case if user chose "false" for punctuation
             if (punctuation == false)
             {
                 endWithPunctuation = false;
@@ -51,6 +53,7 @@ namespace ZadacaCS
                 endWithPunctuation = Convert.ToBoolean(Console.ReadLine());
             }
 
+            // Prompt the user for each option
             Console.WriteLine("No repeating characters (true/false):");
             noRepeatingChars = Convert.ToBoolean(Console.ReadLine());
             Console.WriteLine("Number of passwords to generate:");
