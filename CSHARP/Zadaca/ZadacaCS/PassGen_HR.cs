@@ -31,7 +31,7 @@ namespace ZadacaCS
             int numberOfPasswords = 1;
 
             // Prompt the user for each option
-            Console.WriteLine("Caps on/off (true/false):");
+            Console.WriteLine("Velika slova uključeno/isključeno (DA/NE):");
             caps = Convert.ToBoolean(Console.ReadLine());
             Console.WriteLine("Lower case on/off (true/false):");
             lowerCase = Convert.ToBoolean(Console.ReadLine());
