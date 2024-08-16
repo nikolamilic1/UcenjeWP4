@@ -56,7 +56,7 @@ namespace ZadacaCS
             }
             else
             {
-                Console.WriteLine("End with a punctuation mark (true/false):");
+                Console.WriteLine("End with a punctuation mark (DA/NE):");
                 endWithPunctuation = Convert.ToBoolean(Console.ReadLine());
             }
             Console.WriteLine("No repeating characters (true/false):");
