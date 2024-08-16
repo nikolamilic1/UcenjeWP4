@@ -46,7 +46,7 @@ namespace ZadacaCS
             }
             else
             {
-                Console.WriteLine("Start with a number (true/false):");
+                Console.WriteLine("Počni sa brojem (DA/NE):");
                 startWithNumber = Convert.ToBoolean(Console.ReadLine());
             }
             // esure case if user chose "false" for punctuation
