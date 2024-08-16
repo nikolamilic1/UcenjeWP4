@@ -11,9 +11,9 @@ namespace ZadacaCS
         internal static void Password()
         {
 
-            Console.WriteLine("************************************************");
-            Console.WriteLine("*** Welcome to Password Generator app. v 1.0 ***");
-            Console.WriteLine("************************************************");
+            Console.WriteLine("*************************************************");
+            Console.WriteLine("*** Dobrodošli u Generator lozinki app. v 1.0 ***");
+            Console.WriteLine("*************************************************");
             // Exiting console app message
             Console.WriteLine("Press (Ctrl+C) for terminating the application in any time");
 
