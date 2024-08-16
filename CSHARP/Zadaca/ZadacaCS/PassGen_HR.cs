@@ -15,10 +15,10 @@ namespace ZadacaCS
             Console.WriteLine("*** Dobrodošli u Generator lozinki app. v 1.0 ***");
             Console.WriteLine("*************************************************");
             // Exiting console app message
-            Console.WriteLine("Press (Ctrl+C) for terminating the application in any time");
+            Console.WriteLine("Odaberite (Ctrl+C) za izlazak iz programa");
 
 
-            Console.WriteLine("Enter password length:");
+            Console.WriteLine("Unesite dužinu lozinke:");
             int length = Convert.ToInt32(Console.ReadLine());
 
             bool caps = true; // Assuming caps are on by default
