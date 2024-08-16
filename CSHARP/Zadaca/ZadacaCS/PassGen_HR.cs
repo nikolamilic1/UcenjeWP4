@@ -35,7 +35,7 @@ namespace ZadacaCS
             caps = Convert.ToBoolean(Console.ReadLine());
             Console.WriteLine("Lower case uključeno/isključeno (DA/NE):");
             lowerCase = Convert.ToBoolean(Console.ReadLine());
-            Console.WriteLine("Numbers on/off (true/false):");
+            Console.WriteLine("Numbers uključeno/isključeno (DA/NE):");
             numbers = Convert.ToBoolean(Console.ReadLine());
             Console.WriteLine("Punctuation on/off (true/false):");
             punctuation = Convert.ToBoolean(Console.ReadLine());
