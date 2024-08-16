@@ -56,10 +56,10 @@ namespace ZadacaCS
             }
             else
             {
-                Console.WriteLine("End with a punctuation mark (DA/NE):");
+                Console.WriteLine("Završi sa dijakritčkim znakom (DA/NE):");
                 endWithPunctuation = Convert.ToBoolean(Console.ReadLine());
             }
-            Console.WriteLine("No repeating characters (DA/NE):");
+            Console.WriteLine("Znakovi se ne ponavljaju (DA/NE):");
             noRepeatingChars = Convert.ToBoolean(Console.ReadLine());
             Console.WriteLine("Number of passwords to generate:");
             numberOfPasswords = Convert.ToInt32(Console.ReadLine());
