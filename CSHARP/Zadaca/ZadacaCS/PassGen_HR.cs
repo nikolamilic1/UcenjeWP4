@@ -61,7 +61,7 @@ namespace ZadacaCS
             }
             Console.WriteLine("Znakovi se ne ponavljaju (DA/NE):");
             noRepeatingChars = Convert.ToBoolean(Console.ReadLine());
-            Console.WriteLine("Number of passwords to generate:");
+            Console.WriteLine("Odaberite broj zaporki za generiranje:");
             numberOfPasswords = Convert.ToInt32(Console.ReadLine());
 
             Random rand = new Random();
