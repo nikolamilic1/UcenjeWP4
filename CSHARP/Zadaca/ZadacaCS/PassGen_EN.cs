@@ -11,7 +11,7 @@ namespace ZadacaCS
     {
         internal static void Password()
         {
-          
+            
             Console.WriteLine("************************************************");
             Console.WriteLine("*** Welcome to Password Generator app. v 1.0 ***");
             Console.WriteLine("************************************************");
