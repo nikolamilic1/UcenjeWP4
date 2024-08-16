@@ -129,7 +129,7 @@ namespace ZadacaCS
                 // Prompt user for their choice
                 Console.WriteLine("Što želite uraditi? Odaberite opciju:");
                 Console.WriteLine("1. Promijeniti postavke na način da dozvolite ponavljanje znakova ili smanjiti dužinu zaporke.");
-                Console.WriteLine("2. Automatically adjust the password length to match the generated password length.");
+                Console.WriteLine("2. Program će automatski promijeniti dužinu zaporke i zadovoljiti ostale odabrane parametre");
 
                 string choice = Console.ReadLine();
 
