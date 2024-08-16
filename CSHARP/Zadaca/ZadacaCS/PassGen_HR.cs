@@ -127,8 +127,8 @@ namespace ZadacaCS
                 Console.WriteLine("Upozornje: Tražena zaporka ima prevelik broj znameniki i ne može se generirati jer ste odabrali opciju \"Znakovi se ne ponavljaju\".");
 
                 // Prompt user for their choice
-                Console.WriteLine("Would you like to:");
-                Console.WriteLine("1. Adjust your settings to allow for character repetition or reduce the desired password length.");
+                Console.WriteLine("Što želite uraditi? Odaberite opciju:");
+                Console.WriteLine("1. Promijeniti postavke na način da dozvolite ponavljanje znakova ili smanjiti dužinu zaporke.");
                 Console.WriteLine("2. Automatically adjust the password length to match the generated password length.");
 
                 string choice = Console.ReadLine();
