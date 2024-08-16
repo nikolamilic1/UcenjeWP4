@@ -124,7 +124,7 @@ namespace ZadacaCS
             if (password.Length < length)
             {
                 // Display warning message
-                Console.WriteLine("Warning: The requested password length cannot be achieved with the current settings without repeating characters.");
+                Console.WriteLine("Upozornje: Tražena zaporka ima prevelik broj znameniki i ne može se generirati jer ste odabrali opciju \"Znakovi se ne ponavljaju\".");
 
                 // Prompt user for their choice
                 Console.WriteLine("Would you like to:");
