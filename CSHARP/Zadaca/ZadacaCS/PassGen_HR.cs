@@ -33,7 +33,7 @@ namespace ZadacaCS
             // Prompt the user for each option
             Console.WriteLine("Velika slova uključeno/isključeno (DA/NE):");
             caps = Convert.ToBoolean(Console.ReadLine());
-            Console.WriteLine("Lower case on/off (true/false):");
+            Console.WriteLine("Lower case uključeno/isključeno (DA/NE):");
             lowerCase = Convert.ToBoolean(Console.ReadLine());
             Console.WriteLine("Numbers on/off (true/false):");
             numbers = Convert.ToBoolean(Console.ReadLine());
