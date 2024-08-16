@@ -59,7 +59,7 @@ namespace ZadacaCS
                 Console.WriteLine("End with a punctuation mark (DA/NE):");
                 endWithPunctuation = Convert.ToBoolean(Console.ReadLine());
             }
-            Console.WriteLine("No repeating characters (true/false):");
+            Console.WriteLine("No repeating characters (DA/NE):");
             noRepeatingChars = Convert.ToBoolean(Console.ReadLine());
             Console.WriteLine("Number of passwords to generate:");
             numberOfPasswords = Convert.ToInt32(Console.ReadLine());
