@@ -37,7 +37,7 @@ namespace ZadacaCS
             lowerCase = Convert.ToBoolean(Console.ReadLine());
             Console.WriteLine("Numbers uključeno/isključeno (DA/NE):");
             numbers = Convert.ToBoolean(Console.ReadLine());
-            Console.WriteLine("Punctuation on/off (true/false):");
+            Console.WriteLine("Punctuation uključeno/isključeno (DA/NE):");
             punctuation = Convert.ToBoolean(Console.ReadLine());
             // esure case if user chose "false" for numbers
             if (numbers == false)
