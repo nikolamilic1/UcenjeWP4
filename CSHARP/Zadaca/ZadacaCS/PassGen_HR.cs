@@ -12,13 +12,13 @@ namespace ZadacaCS
         {
 
             Console.WriteLine("*************************************************");
-            Console.WriteLine("*** Dobrodošli u Generator lozinki app. v 1.0 ***");
+            Console.WriteLine("*** Dobrodošli u Generator zaporki app. v 1.0 ***");
             Console.WriteLine("*************************************************");
             // Exiting console app message
             Console.WriteLine("Odaberite (Ctrl+C) za izlazak iz programa");
 
 
-            Console.WriteLine("Unesite dužinu lozinke:");
+            Console.WriteLine("Unesite dužinu zaporke:");
             int length = Convert.ToInt32(Console.ReadLine());
 
             bool caps = true; // Assuming caps are on by default
