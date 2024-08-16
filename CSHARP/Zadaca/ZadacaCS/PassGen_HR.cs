@@ -127,7 +127,7 @@ namespace ZadacaCS
                 Console.WriteLine("Upozornje: Tražena zaporka ima prevelik broj znameniki i ne može se generirati jer ste odabrali opciju \"Znakovi se ne ponavljaju\".");
 
                 // Prompt user for their choice
-                Console.WriteLine("Što želite uraditi? Odaberite opciju:");
+                Console.WriteLine("Što želite uraditi? Odaberite opciju (1 ili 2):");
                 Console.WriteLine("1. Promijeniti postavke na način da dozvolite ponavljanje znakova ili smanjiti dužinu zaporke.");
                 Console.WriteLine("2. Program će automatski promijeniti dužinu zaporke i zadovoljiti ostale odabrane parametre");
 
@@ -144,11 +144,11 @@ namespace ZadacaCS
                         // Option 2: Automatically adjust settings (example: reduce password length)
                         // Note: This is a simplistic approach and may not always be desirable
                         length = Math.Min(length, password.Length);
-                        Console.WriteLine("The password length has been automatically adjusted to match the generated password length.");
+                        Console.WriteLine("Duljina zaporka je automatski podešena kako bi ostali parametri bili zadovoljeni.");
                         break;
 
                     default:
-                        Console.WriteLine("Invalid choice. Please try again.");
+                        Console.WriteLine("Pogreška odabira. Molimo pokušajte ponovo.");
                         break;
                 }
             }
