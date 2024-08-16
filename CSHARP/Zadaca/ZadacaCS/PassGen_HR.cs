@@ -137,7 +137,7 @@ namespace ZadacaCS
                 {
                     case "1":
                         // Option 1: Prompt user to adjust settings
-                        Console.WriteLine("Please adjust your settings to allow for character repetition or reduce the desired password length.");
+                        Console.WriteLine("Molimo promijenite postavke i dozvolite ponavljanje znakova ili smanjite smanjite broj znakova.");
                         break;
 
                     case "2":
@@ -154,6 +154,19 @@ namespace ZadacaCS
             }
             return password.ToString();
         }
+        static void Shuffle<T>(List<T> list, Random rng)
+        {
+            int n = list.Count;
+            while (n > 1)
+            {
+                n--;
+                int k = rng.Next(n + 1);
+                T value = list[k];
+                list[k] = list[n];
+                list[n] = value;
 
+            }
+
+        }
     }
 }
