@@ -11,6 +11,14 @@ namespace ZadacaCS
     {
         internal static void Password()
         {
+          
+            Console.WriteLine("************************************************");
+            Console.WriteLine("*** Welcome to Password Generator app. v 1.0 ***");
+            Console.WriteLine("************************************************");
+            // Exiting console app message
+            Console.WriteLine("Press (Ctrl+C) for terminating the application in any time");
+                 
+           
             Console.WriteLine("Enter password length:");
             int length = Convert.ToInt32(Console.ReadLine());
 
@@ -74,7 +82,7 @@ namespace ZadacaCS
 
         }
 
-
+        
         static string GeneratePassword(int length, bool caps, bool lowerCase, bool numbers, bool punctuation, bool startWithNumber, bool endWithPunctuation, bool noRepeatingChars, char[] chars, Random rand)
         {
             StringBuilder password = new StringBuilder();
