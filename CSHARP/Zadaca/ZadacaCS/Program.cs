@@ -6,11 +6,13 @@ using ZadacaCS;
 
 
 
+LjubavniKalkulator.Ljubav();
+
 //PassGen_EN2.Password();
 
 //PassGen_EN.Password();
 
-PassGen_HR.Password();
+//PassGen_HR.Password();
 
 //passGEn();
 
