@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading.Tasks.Dataflow;
 
 namespace ZadacaCS
 {
     internal class LjubavniKalkulator
     {
-        internal static void Ljubav()
+        public void Ljubav1()
         {
             var ime1 = "Ivica";
             var ime2 = "Marica";
@@ -23,7 +24,7 @@ namespace ZadacaCS
             Console.WriteLine(s);
 
             int[] brojevi = new int[s.Length];
-            int u;
+            //int u;
             //ivicamarica
             for (int i = 0; i < s.Length; i++)
             {
@@ -41,7 +42,25 @@ namespace ZadacaCS
                 brojevi[i] = s.Count(znak => znak == s[i]);
             }
             Console.WriteLine(string.Join(",",brojevi));
+
+            Console.WriteLine("{0} i {1} se vole {2} %",ime1,ime2,ljubav2(brojevi));
         }
+
+
+        private int ljubav2(int[] brojevi)
+        {
+            var broj = int.Parse(string.Join(",", brojevi));
+            if (broj <= 100)
+            {
+                return broj;
+            }
+
+            //algoritam zbrajanja
+            return j(brojevi);
+
+        }
+
+
 
 
 

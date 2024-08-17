@@ -6,7 +6,8 @@ using ZadacaCS;
 
 
 
-LjubavniKalkulator.Ljubav();
+
+new ZadacaCS.LjubavniKalkulator.ljubav1();
 
 //PassGen_EN2.Password();
 
