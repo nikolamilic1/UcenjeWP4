@@ -11,14 +11,13 @@ namespace ZadacaCS.LjubavniKalkulator
 
         public Program()
         {
-
             pozdravna();
             var ime1 = "";
             var ime2 = "";
-            //Console.Write("Unesite prvo ime:");
-            //ime1 = Console.ReadLine();
-            //Console.Write("Unesite drugo ime:");
-            //ime2 = Console.ReadLine();
+            Console.Write("Unesite prvo ime:");
+            ime1 = Console.ReadLine();
+            Console.Write("Unesite drugo ime:");
+            ime2 = Console.ReadLine();
             //Provjera ispravnog unosa znaka
             bool ispravno = true;
             foreach (var z in ime1)
