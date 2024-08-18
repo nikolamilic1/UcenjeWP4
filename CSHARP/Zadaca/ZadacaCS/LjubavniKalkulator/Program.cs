@@ -9,7 +9,7 @@ namespace ZadacaCS.LjubavniKalkulator
     internal class Program
     {
 
-        public Program() 
+        public Program()
         {
 
             pozdravna();
@@ -39,19 +39,37 @@ namespace ZadacaCS.LjubavniKalkulator
 
             Console.WriteLine(s);
 
+            int[] brojevi = new int[s.Length];
+            //ivicamarica
+
+            int u;
+            for (int i = 0; i < s.Length; i++)
+            {
+                u = 0;
+                for (int j = 0; j < s.Length; j++)
+                {
+                    if (s[i] == s[j])
+                    {
+                        u++;
+                    }
+                }
+                brojevi[i] = u;
 
 
+            }
         }
 
-        private void pozdravna()
-        {
-            Console.WriteLine("**********************************");
-            Console.WriteLine("*** Ovo je Ljubavni kalkulator ***");
-            Console.WriteLine("**********************************");
-            Console.WriteLine();
-            Console.WriteLine("Program na jedinstven način \"računa\" koliko se 2 osobe vole.");
-            Console.WriteLine("Ako ste spremni, unesite imena osoba");
 
+
+            private void pozdravna()
+            {
+                Console.WriteLine("**********************************");
+                Console.WriteLine("*** Ovo je Ljubavni kalkulator ***");
+                Console.WriteLine("**********************************");
+                Console.WriteLine();
+                Console.WriteLine("Program na jedinstven način \"računa\" koliko se 2 osobe vole.");
+                Console.WriteLine("Ako ste spremni, unesite imena osoba");
+
+            }
         }
     }
-}
