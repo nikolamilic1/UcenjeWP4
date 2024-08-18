@@ -85,6 +85,10 @@ namespace ZadacaCS.LjubavniKalkulator
 
             int[] novi = new int[brojevi.Length % 2 == 0 ? brojevi.Length / 2 : brojevi.Length / 2 + 1];
 
+            for (int i = 0; i < brojevi.Length / 2; i++)
+            {
+                novi[i] = brojevi[i] + brojevi[brojevi.Length - 1 - i];
+            }
 
 
 
