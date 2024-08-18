@@ -13,8 +13,8 @@ namespace ZadacaCS.LjubavniKalkulator
         {
 
             pozdravna();
-            var ime1 = "bobo";
-            var ime2 = "boba";
+            var ime1 = "";
+            var ime2 = "";
             //Console.Write("Unesite prvo ime:");
             //ime1 = Console.ReadLine();
             //Console.Write("Unesite drugo ime:");
@@ -111,19 +111,20 @@ namespace ZadacaCS.LjubavniKalkulator
             {
                 brojevi[i] = int.Parse(niz[i].ToString());
             }
+            return brojevi;
 
         }
 
 
         private void pozdravna()
-            {
-                Console.WriteLine("**********************************");
-                Console.WriteLine("*** Ovo je Ljubavni kalkulator ***");
-                Console.WriteLine("**********************************");
-                Console.WriteLine();
-                Console.WriteLine("Program na jedinstven način \"računa\" koliko se 2 osobe vole.");
-                Console.WriteLine("Ako ste spremni, unesite imena osoba");
+        {
+            Console.WriteLine("**********************************");
+            Console.WriteLine("*** Ovo je Ljubavni kalkulator ***");
+            Console.WriteLine("**********************************");
+            Console.WriteLine();
+            Console.WriteLine("Program na jedinstven način \"računa\" koliko se 2 osobe vole.");
+            Console.WriteLine("Ako ste spremni, unesite imena osoba");
 
-            }
         }
     }
+}
