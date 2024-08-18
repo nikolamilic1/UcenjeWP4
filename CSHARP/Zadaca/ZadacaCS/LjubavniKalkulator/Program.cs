@@ -15,6 +15,8 @@ namespace ZadacaCS.LjubavniKalkulator
             pozdravna();
             var ime1 = "bobo";
             var ime2 = "boba";
+            Console.Write("Unesite prvo ime:");
+            ime1 = Console.ReadLine();
 
 
         }
