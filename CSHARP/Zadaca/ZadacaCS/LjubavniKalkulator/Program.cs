@@ -107,6 +107,10 @@ namespace ZadacaCS.LjubavniKalkulator
         {
             var niz = string.Join("", brojevi);
             brojevi = new int[niz.Length];
+            for (int i = 0; i < niz.Length; i++)
+            {
+                brojevi[i] = int.Parse(niz[i].ToString());
+            }
 
         }
 
