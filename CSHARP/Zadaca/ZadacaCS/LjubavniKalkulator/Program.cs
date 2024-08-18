@@ -122,7 +122,7 @@ namespace ZadacaCS.LjubavniKalkulator
             Console.WriteLine("**********************************");
             Console.WriteLine();
             Console.WriteLine("Program na jedinstven način \"računa\" koliko se 2 osobe vole.");
-            Console.WriteLine("Ako ste spremni, unesite imena osoba");
+            Console.WriteLine("Ako ste spremni, unesite imena:");
 
         }
     }
