@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,7 @@ namespace ZadacaCS.LjubavniKalkulator
         public Program()
         {
             pozdravna();
+            Pocetak:
             var ime1 = "";
             var ime2 = "";
             Console.Write("Unesite prvo ime:");
@@ -66,10 +68,10 @@ namespace ZadacaCS.LjubavniKalkulator
 
             // poziva metodu ljubav
             Console.WriteLine("{0} i {1} se vole {2}%", ime1, ime2, ljubav(brojevi));
-
-
-
+                       
         }
+
+        
 
         private int ljubav(int[] brojevi)
         {
@@ -114,7 +116,6 @@ namespace ZadacaCS.LjubavniKalkulator
 
         }
 
-
         private void pozdravna()
         {
             Console.WriteLine("**********************************");
@@ -123,7 +124,21 @@ namespace ZadacaCS.LjubavniKalkulator
             Console.WriteLine();
             Console.WriteLine("Program na jedinstven način \"računa\" koliko se 2 osobe vole.");
             Console.WriteLine("Ako ste spremni, unesite imena:");
-
         }
+
+        public static bool DEV = false;
+
+        internal static bool UcitajBool(string poruka, string trueValue)
+        {
+            Console.WriteLine(poruka + ": ");
+            return Console.ReadLine().Trim().ToLower() == trueValue;
+        }
+
     }
+
+    
+
+
+
+
 }
