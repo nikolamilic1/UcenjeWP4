@@ -55,8 +55,10 @@ namespace ZadacaCS.LjubavniKalkulator
                 }
                 brojevi[i] = u;
 
-
             }
+
+            Console.WriteLine(string.Join(",", brojevi));
+
         }
 
 
