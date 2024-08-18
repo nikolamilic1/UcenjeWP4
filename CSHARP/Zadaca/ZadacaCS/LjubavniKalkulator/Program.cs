@@ -19,6 +19,21 @@ namespace ZadacaCS.LjubavniKalkulator
             ime1 = Console.ReadLine();
             Console.Write("Unesite drugo ime:");
             ime2 = Console.ReadLine();
+            //Provjera ispravnog unosa znaka
+            bool ispravno = true;
+            foreach (var z in ime1)
+            {
+                if (!char.IsLetter(z))
+                {
+                    ispravno = false;
+                    break;
+                }
+            }
+            if (!ispravno)
+            {
+                Console.WriteLine("Unos imena nije dobar.");
+                return;
+            }
 
 
         }
