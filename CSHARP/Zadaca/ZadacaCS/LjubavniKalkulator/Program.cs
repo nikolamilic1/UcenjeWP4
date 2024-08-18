@@ -104,12 +104,13 @@ namespace ZadacaCS.LjubavniKalkulator
         //da bi znakovi veći od 9 bili pretvoreni u drugu znamenku dvoznamenkastog broja
         // prebacujemo u string pa onda u broj.
         private int[] srediNiz(int[] brojevi)
-        { 
-        
+        {
+            var niz = string.Join("", brojevi);
+
         }
 
 
-            private void pozdravna()
+        private void pozdravna()
             {
                 Console.WriteLine("**********************************");
                 Console.WriteLine("*** Ovo je Ljubavni kalkulator ***");
