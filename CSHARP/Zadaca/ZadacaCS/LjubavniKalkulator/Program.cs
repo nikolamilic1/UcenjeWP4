@@ -106,6 +106,7 @@ namespace ZadacaCS.LjubavniKalkulator
         private int[] srediNiz(int[] brojevi)
         {
             var niz = string.Join("", brojevi);
+            brojevi = new int[niz.Length];
 
         }
 
