@@ -59,11 +59,22 @@ namespace ZadacaCS.LjubavniKalkulator
 
             Console.WriteLine(string.Join(",", brojevi));
 
+            //da bi znakovi veći od 9 bili pretvoreni u drugu znamenku dvoznamenkastog broja
+            // prebacujemo u string pa onda u broj.
+            brojevi = srediNiz(brojevi);
+
+            Console.WriteLine(string.Join(",", brojevi));
+
+            // poziva metodu ljubav
+            Console.WriteLine("{0} i {1} se vole {2}%", ime1, ime2, ljubav(brojevi));
+
+
+
         }
 
 
 
-            private void pozdravna()
+        private void pozdravna()
             {
                 Console.WriteLine("**********************************");
                 Console.WriteLine("*** Ovo je Ljubavni kalkulator ***");
