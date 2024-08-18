@@ -83,6 +83,8 @@ namespace ZadacaCS.LjubavniKalkulator
                 }
             }
 
+            int[] novi = new int[brojevi.Length % 2 == 0 ? brojevi.Length / 2 : brojevi.Length / 2 + 1];
+
 
 
 
