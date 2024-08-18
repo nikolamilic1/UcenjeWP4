@@ -35,12 +35,23 @@ namespace ZadacaCS.LjubavniKalkulator
                 return;
             }
 
+            string s = ime1.ToLower() + ime2.ToLower();
+
+            Console.WriteLine(s);
+
+
 
         }
 
         private void pozdravna()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("**********************************");
+            Console.WriteLine("*** Ovo je Ljubavni kalkulator ***");
+            Console.WriteLine("**********************************");
+            Console.WriteLine();
+            Console.WriteLine("Program na jedinstven način \"računa\" koliko se 2 osobe vole.");
+            Console.WriteLine("Ako ste spremni, unesite imena osoba");
+
         }
     }
 }
