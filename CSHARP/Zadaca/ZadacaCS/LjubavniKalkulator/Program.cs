@@ -96,6 +96,8 @@ namespace ZadacaCS.LjubavniKalkulator
             novi = srediNiz(novi);
             Console.WriteLine(string.Join(",", novi));
 
+            //algoritam zbrajanja
+            return ljubav(novi);
 
 
 
