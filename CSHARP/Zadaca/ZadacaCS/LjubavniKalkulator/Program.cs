@@ -93,6 +93,8 @@ namespace ZadacaCS.LjubavniKalkulator
             {
                 novi[novi.Length - 1] = brojevi[brojevi.Length / 2];
             }
+            novi = srediNiz(novi);
+            Console.WriteLine(string.Join(",", novi));
 
 
 
