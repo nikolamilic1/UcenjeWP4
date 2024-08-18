@@ -72,9 +72,18 @@ namespace ZadacaCS.LjubavniKalkulator
 
         }
 
+        private int ljubav(int[] brojevi)
+        {
+        
+        
+        
+        
+        
+        
+        }
 
 
-        private void pozdravna()
+            private void pozdravna()
             {
                 Console.WriteLine("**********************************");
                 Console.WriteLine("*** Ovo je Ljubavni kalkulator ***");
