@@ -9,7 +9,19 @@ namespace ZadacaCS.LjubavniKalkulator
     internal class Program
     {
 
+        public Program() 
+        {
+
+            pozdravna();
+            var ime1 = "bobo";
+            var ime2 = "boba";
 
 
+        }
+
+        private void pozdravna()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
