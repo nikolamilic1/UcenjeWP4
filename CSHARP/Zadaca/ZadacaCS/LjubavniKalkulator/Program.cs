@@ -74,16 +74,24 @@ namespace ZadacaCS.LjubavniKalkulator
 
         private int ljubav(int[] brojevi)
         {
-        
-        
-        
-        
-        
-        
+            if (brojevi.Length < 4)
+            {
+                var broj = int.Parse(string.Join("", brojevi));
+                if (broj <= 100)
+                {
+                    return broj;
+                }
+            }
+
+
+
+
+
+
         }
 
 
-            private void pozdravna()
+        private void pozdravna()
             {
                 Console.WriteLine("**********************************");
                 Console.WriteLine("*** Ovo je Ljubavni kalkulator ***");
