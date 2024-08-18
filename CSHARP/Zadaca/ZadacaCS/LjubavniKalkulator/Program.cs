@@ -68,7 +68,7 @@ namespace ZadacaCS.LjubavniKalkulator
 
             // poziva metodu ljubav
             Console.WriteLine("{0} i {1} se vole {2}%", ime1, ime2, ljubav(brojevi));
-                       
+            
         }
 
         
