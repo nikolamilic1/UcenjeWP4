@@ -13,13 +13,15 @@ namespace ZadacaCS.LjubavniKalkulator
         public Program()
         {
             pozdravna();
-            Pocetak:
+        Pocetak:
             var ime1 = "";
             var ime2 = "";
             Console.Write("Unesite prvo ime:");
             ime1 = Console.ReadLine();
             Console.Write("Unesite drugo ime:");
             ime2 = Console.ReadLine();
+            ime1 = ime1.Trim();
+            ime2 = ime2.Trim();
             //Provjera ispravnog unosa znaka
             bool ispravno = true;
             foreach (var z in ime1)
@@ -33,13 +35,16 @@ namespace ZadacaCS.LjubavniKalkulator
             if (!ispravno)
             {
                 Console.WriteLine("Unos imena nije dobar.");
+                goto Ponovi;
                 return;
             }
 
             string s = ime1.ToLower() + ime2.ToLower();
 
-            Console.WriteLine(s);
 
+            Console.WriteLine("==================================");
+            Console.WriteLine(s);
+            Console.WriteLine("==================================");
             int[] brojevi = new int[s.Length];
             //ivicamarica
 
@@ -68,10 +73,29 @@ namespace ZadacaCS.LjubavniKalkulator
 
             // poziva metodu ljubav
             Console.WriteLine("{0} i {1} se vole {2}%", ime1, ime2, ljubav(brojevi));
-            
+            Console.WriteLine("==================================");
+        Ponovi:
+            Console.WriteLine("Želite li ponoviti unos imena? Odgovorite sa \"da\" ili \"ne\"");
+            string odgovor = Console.ReadLine();
+            if (odgovor == "da")
+            {
+                goto Pocetak;
+            }
+            else if (odgovor == "ne")
+            {
+                Console.WriteLine("Hvala na korištenju aplikacije! Goodbye!");
+            }
+            else
+            {
+                Console.WriteLine("Netočan unos. Odgovorite sa \"da\" ili \"ne\"");
+                goto Ponovi;
+            }
+
+
+
         }
 
-        
+
 
         private int ljubav(int[] brojevi)
         {
@@ -135,10 +159,6 @@ namespace ZadacaCS.LjubavniKalkulator
         }
 
     }
-
-    
-
-
 
 
 }
