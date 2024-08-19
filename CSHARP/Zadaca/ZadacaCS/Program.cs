@@ -6,7 +6,9 @@ using ZadacaCS;
 
 
 
-new ZadacaCS.LjubavniKalkulator.Program();
+new ZadacaCS.LjubavniKalkulator3.Program();
+
+//new ZadacaCS.LjubavniKalkulator.Program();
 
 
 //PassGen_EN2.Password();

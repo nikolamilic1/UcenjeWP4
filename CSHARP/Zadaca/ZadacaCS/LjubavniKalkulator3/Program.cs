@@ -1,15 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ZadacaCS.LjubavniKalkulator
+namespace ZadacaCS.LjubavniKalkulator3
 {
     internal class Program
     {
-
         public Program()
         {
             pozdravna();
@@ -22,7 +20,7 @@ namespace ZadacaCS.LjubavniKalkulator
             ime2 = Console.ReadLine();
             ime1 = ime1.Trim();
             ime2 = ime2.Trim();
-            //Provjera ispravnog unosa znaka
+            // Provjera ispravnog unosa znaka
             bool ispravno = true;
             foreach (var z in ime1)
             {
@@ -41,12 +39,10 @@ namespace ZadacaCS.LjubavniKalkulator
 
             string s = ime1.ToLower() + ime2.ToLower();
 
-
             Console.WriteLine("==================================");
             Console.WriteLine(s);
             Console.WriteLine("==================================");
             int[] brojevi = new int[s.Length];
-            //ivicamarica
 
             int u;
             for (int i = 0; i < s.Length; i++)
@@ -60,19 +56,18 @@ namespace ZadacaCS.LjubavniKalkulator
                     }
                 }
                 brojevi[i] = u;
-
             }
 
             Console.WriteLine(string.Join(",", brojevi));
 
-            //da bi znakovi veći od 9 bili pretvoreni u drugu znamenku dvoznamenkastog broja
+            // Da bi znakovi veći od 9 bili pretvoreni u drugu znamenku dvoznamenkastog broja,
             // prebacujemo u string pa onda u broj.
             brojevi = srediNiz(brojevi);
 
             Console.WriteLine(string.Join(",", brojevi));
 
-            // poziva metodu ljubav
-            Console.WriteLine("{0} i {1} se vole {2}%", ime1, ime2, ljubav(brojevi));
+            // Poziva metodu ljubav
+            Console.WriteLine("{0} i {1} se vole {2}%", ime1, ime2, Ljubav(brojevi));
             Console.WriteLine("==================================");
         Ponovi:
             Console.WriteLine("Želite li ponoviti unos imena? Odgovorite sa \"da\" ili \"ne\"");
@@ -90,44 +85,46 @@ namespace ZadacaCS.LjubavniKalkulator
                 Console.WriteLine("Netočan unos. Odgovorite sa \"da\" ili \"ne\"");
                 goto Ponovi;
             }
-
-
-
         }
 
-
-
-        private int ljubav(int[] brojevi)
+        private int Ljubav(int[] brojevi)
         {
-            if (brojevi.Length < 4)
+           
+
+            while (brojevi.Length < 4)
+
             {
                 var broj = int.Parse(string.Join("", brojevi));
                 if (broj <= 100)
                 {
                     return broj;
                 }
-            }
+                int[] novi = new int[brojevi.Length % 2 == 0 ? brojevi.Length / 2 : brojevi.Length / 2 + 1];
 
-            int[] novi = new int[brojevi.Length % 2 == 0 ? brojevi.Length / 2 : brojevi.Length / 2 + 1];
+                for (int i = 0; i < brojevi.Length / 2; i++)
+                {
+                    novi[i] = brojevi[i] + brojevi[brojevi.Length - 1 - i];
+                }
 
-            for (int i = 0; i < brojevi.Length / 2; i++)
-            {
-                novi[i] = brojevi[i] + brojevi[brojevi.Length - 1 - i];
-            }
-            if (brojevi.Length % 2 != 0)
-            {
-                novi[novi.Length - 1] = brojevi[brojevi.Length / 2];
-            }
-            novi = srediNiz(novi);
-            Console.WriteLine(string.Join(",", novi));
+                if (brojevi.Length % 2 != 0)
+                {
+                    novi[novi.Length - 1] = brojevi[brojevi.Length / 2];
+                }
 
-            //algoritam zbrajanja
-            return ljubav(novi);
+                novi = srediNiz(novi);
+                Console.WriteLine(string.Join(",", novi));
+
+                
+            }
+            return Ljubav(brojevi);
+
+
 
         }
 
-        //da bi znakovi veći od 9 bili pretvoreni u drugu znamenku dvoznamenkastog broja
-        // prebacuje se u string pa onda u broj
+
+        // Da bi znakovi veći od 9 bili pretvoreni u drugu znamenku dvoznamenkastog broja,
+        // prebacuje se u string pa onda u broj.
         private int[] srediNiz(int[] brojevi)
         {
             var niz = string.Join("", brojevi);
@@ -137,7 +134,6 @@ namespace ZadacaCS.LjubavniKalkulator
                 brojevi[i] = int.Parse(niz[i].ToString());
             }
             return brojevi;
-
         }
 
         private void pozdravna()
@@ -149,10 +145,5 @@ namespace ZadacaCS.LjubavniKalkulator
             Console.WriteLine("Program na jedinstven način \"računa\" koliko se 2 osobe vole.");
             Console.WriteLine("Ako ste spremni, unesite imena:");
         }
-        
-
-
     }
-
-
 }

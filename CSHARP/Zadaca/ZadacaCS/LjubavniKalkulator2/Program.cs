@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ZadacaCS.LjubavniKalkulator
+namespace ZadacaCS.LjubavniKalkulator2
 {
     internal class Program
     {
@@ -108,23 +107,31 @@ namespace ZadacaCS.LjubavniKalkulator
                 }
             }
 
-            int[] novi = new int[brojevi.Length % 2 == 0 ? brojevi.Length / 2 : brojevi.Length / 2 + 1];
+            int noviDuzina = brojevi.Length / 2 + (brojevi.Length % 2);
+            int[] novi = new int[noviDuzina];
+            int index = 0;
 
-            for (int i = 0; i < brojevi.Length / 2; i++)
+            for (int i = 0; i < brojevi.Length - 1; i += 2)
             {
-                novi[i] = brojevi[i] + brojevi[brojevi.Length - 1 - i];
+                novi[index] = brojevi[i] + brojevi[i + 1];
+                index++;
             }
+
             if (brojevi.Length % 2 != 0)
             {
-                novi[novi.Length - 1] = brojevi[brojevi.Length / 2];
+                novi[index] = brojevi[^1];
             }
-            novi = srediNiz(novi);
-            Console.WriteLine(string.Join(",", novi));
 
-            //algoritam zbrajanja
-            return ljubav(novi);
+            // Ispisujemo samo ako se niz promijenio
+            int[] noviSredjeni = srediNiz(novi);
+            if (!Enumerable.SequenceEqual(brojevi, noviSredjeni))
+            {
+                Console.WriteLine(string.Join(",", noviSredjeni));
+            }
 
+            return ljubav(noviSredjeni);
         }
+
 
         //da bi znakovi veći od 9 bili pretvoreni u drugu znamenku dvoznamenkastog broja
         // prebacuje se u string pa onda u broj
@@ -149,10 +156,7 @@ namespace ZadacaCS.LjubavniKalkulator
             Console.WriteLine("Program na jedinstven način \"računa\" koliko se 2 osobe vole.");
             Console.WriteLine("Ako ste spremni, unesite imena:");
         }
-        
 
 
     }
-
-
 }
