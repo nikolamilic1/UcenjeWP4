@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+// Ljubavni kalkulator --- ver.3  => umjesto rekurzije while petlja
 namespace ZadacaCS.LjubavniKalkulator3
 {
     internal class Program
@@ -67,7 +69,7 @@ namespace ZadacaCS.LjubavniKalkulator3
             Console.WriteLine(string.Join(",", brojevi));
 
             // Poziva metodu ljubav
-            Console.WriteLine("{0} i {1} se vole {2}%", ime1, ime2, Ljubav(brojevi));
+            Console.WriteLine("{0} i {1} se vole {2}%", ime1, ime2, ljubav(brojevi));
             Console.WriteLine("==================================");
         Ponovi:
             Console.WriteLine("Želite li ponoviti unos imena? Odgovorite sa \"da\" ili \"ne\"");
@@ -89,7 +91,7 @@ namespace ZadacaCS.LjubavniKalkulator3
 
         private int ljubav(int[] brojevi)
         {
-            while (brojevi.Length > 4)
+            while (brojevi.Length > 2)
             {
                 int[] novi = new int[brojevi.Length % 2 == 0 ? brojevi.Length / 2 : brojevi.Length / 2 + 1];
 
@@ -110,8 +112,6 @@ namespace ZadacaCS.LjubavniKalkulator3
             var rezultat = int.Parse(string.Join("", brojevi));
             return rezultat <= 100 ? rezultat : 100;
         }
-
-
 
         // Da bi znakovi veći od 9 bili pretvoreni u drugu znamenku dvoznamenkastog broja,
         // prebacuje se u string pa onda u broj.
@@ -136,4 +136,5 @@ namespace ZadacaCS.LjubavniKalkulator3
             Console.WriteLine("Ako ste spremni, unesite imena:");
         }
     }
+
 }

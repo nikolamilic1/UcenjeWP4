@@ -6,7 +6,7 @@ using ZadacaCS;
 
 
 
-new ZadacaCS.LjubavniKalkulator3.Program();
+new ZadacaCS.LjubavniKalkulator.Program();
 
 //new ZadacaCS.LjubavniKalkulator.Program();
 

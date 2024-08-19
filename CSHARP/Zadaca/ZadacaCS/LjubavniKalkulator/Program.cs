@@ -5,6 +5,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+
+// Ljubavni kalkulator --- ver.1  => osnovni zadatak plus:
+// 1. osigurava unos znakova i ignorira slučajni razmak "space"
+// 2. pozdravna poruka
+// 3. UX - ponovno vraća na unos imena ukoliko korisnik želi (osigurava odgovore DA/NE)
+// 
 namespace ZadacaCS.LjubavniKalkulator
 {
     internal class Program

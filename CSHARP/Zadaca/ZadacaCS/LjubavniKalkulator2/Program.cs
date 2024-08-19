@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+
+// Ljubavni kalkulator --- ver.2  => zbraja 1. i 2., 3. i 4. itd umjesto osnovnog algoritma
 namespace ZadacaCS.LjubavniKalkulator2
 {
     internal class Program
