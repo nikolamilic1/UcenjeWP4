@@ -87,18 +87,10 @@ namespace ZadacaCS.LjubavniKalkulator3
             }
         }
 
-        private int Ljubav(int[] brojevi)
+        private int ljubav(int[] brojevi)
         {
-           
-
-            while (brojevi.Length < 4)
-
+            while (brojevi.Length > 4)
             {
-                var broj = int.Parse(string.Join("", brojevi));
-                if (broj <= 100)
-                {
-                    return broj;
-                }
                 int[] novi = new int[brojevi.Length % 2 == 0 ? brojevi.Length / 2 : brojevi.Length / 2 + 1];
 
                 for (int i = 0; i < brojevi.Length / 2; i++)
@@ -111,14 +103,14 @@ namespace ZadacaCS.LjubavniKalkulator3
                     novi[novi.Length - 1] = brojevi[brojevi.Length / 2];
                 }
 
-
-                
+                brojevi = srediNiz(novi);
+                Console.WriteLine(string.Join(",", brojevi));
             }
-            return Ljubav(brojevi);
 
-
-
+            var rezultat = int.Parse(string.Join("", brojevi));
+            return rezultat <= 100 ? rezultat : 100;
         }
+
 
 
         // Da bi znakovi veći od 9 bili pretvoreni u drugu znamenku dvoznamenkastog broja,
