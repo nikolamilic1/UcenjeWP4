@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Net.Security;
+using WebAPI.Models;
 
 namespace WebAPI.Controllers
 {
@@ -39,8 +40,23 @@ namespace WebAPI.Controllers
             return Ok(new {sifra = id, naziv = ime});
         }
 
+        public IActionResult Post()
+        {
+            return BadRequest("Nešto ne valja");
+        }
 
+        [HttpPut]
+        public IActionResult Put(Osoba osoba)
+        {
 
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
 
+            osoba.Ime = osoba.Ime + " promjenio";
+            return StatusCode(StatusCodes.Status205ResetContent, osoba);
+
+        }
     }
 }
