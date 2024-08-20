@@ -71,6 +71,9 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             }
             
         }
+
+        
+
         /// <summary>
         /// Metoda vraća učitani string uz osigurače da mora biti veći od nula znakova i kraći od 50 znakova
         /// </summary>

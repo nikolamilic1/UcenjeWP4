@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -77,11 +78,11 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
         {
             PrikaziDjelatnike();
             var odabrani = Djelatnici[Pomocno.UcitajRasponBroja("Odaberi redni broj djelatnika za brisanje", 1, Djelatnici.Count) - 1];
-            if(Pomocno.UcitajBool("Sigurno obrisati " + odabrani.Ime + " " + odabrani.Prezime + "? (DA/NE)","da"))
-                {
+            if (Pomocno.UcitajBool("Sigurno obrisati " + odabrani.Ime + " " + odabrani.Prezime + "? (DA/NE)", "da"))
+            {
                 Djelatnici.Remove(odabrani);
-               Console.WriteLine("Djelatnik/ca {0} {1} uspješno obrisan/a.", odabrani.Ime, odabrani.Prezime);
-               // Console.WriteLine("Djelatnik {0} uspješno obrisan", odabrani);  --- ovako ne prikazuje ime i prezime već alocirano mjesto u memoriji
+                Console.WriteLine("Djelatnik/ca {0} {1} uspješno obrisan/a.", odabrani.Ime, odabrani.Prezime);
+                // Console.WriteLine("Djelatnik {0} uspješno obrisan", odabrani);  --- ovako ne prikazuje ime i prezime već alocirano mjesto u memoriji
             }
         }
 
@@ -100,14 +101,36 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             Console.WriteLine("--------------------------------------------");
             Console.WriteLine("--- Unesite tražene podatke o djelatniku ---");
             Console.WriteLine("--------------------------------------------");
+
+            int sifra;
+
+            // Ponavlja dok jedinstvena sifra nije dodana
+            do
+            {
+                sifra = Pomocno.UcitajRasponBroja("Unesi šifru djelatnika", 1, int.MaxValue);
+
+                // Provjera jel sifra postoji
+                if (Djelatnici.Any(d => d.Sifra == sifra))
+                {
+                    Console.WriteLine("Već postoji djelatnik s istom šifrom. Unesite drugu šifru.");
+                }
+                else
+                {
+                    break;
+                }
+
+            } while (true);
+
+            // Nastavlja sa unosom ostalih podataka
             Djelatnici.Add(new()
             {
-                Sifra = Pomocno.UcitajRasponBroja("Unesi šifru djelatnika",1,int.MaxValue),
-                Ime = Pomocno.UcitajString("Unesi ime djelatnika",50,true),
-                Prezime = Pomocno.UcitajString("Unesi prezime djelatnika",50,true),
-                Email = Pomocno.UcitajString("Unesi email djelatnika",50,true)
-            } 
-                );
+                Sifra = sifra,
+                Ime = Pomocno.UcitajString("Unesi ime djelatnika", 50, true),
+                Prezime = Pomocno.UcitajString("Unesi prezime djelatnika", 50, true),
+                Email = Pomocno.UcitajString("Unesi email djelatnika", 50, true)
+            });
+
+            Console.WriteLine("Djelatnik je uspješno dodan!");
         }
 
         public void PrikaziDjelatnike()
@@ -116,7 +139,7 @@ namespace ZadacaCS.EvidencijaRadaKonzolna
             Console.WriteLine("--- Djelatnici u aplikaciji ---");
             Console.WriteLine("-------------------------------");
             int rb = 0;
-            foreach (var p in Djelatnici) 
+            foreach (var p in Djelatnici)
             {
                 Console.WriteLine(++rb + ". " + p.Ime + " " + p.Prezime);  //prepisati metodu to string
             }

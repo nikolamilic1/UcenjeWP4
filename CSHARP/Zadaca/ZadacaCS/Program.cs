@@ -1,12 +1,21 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.Reflection.Metadata;
 using ZadacaCS;
-
-//using ZadacaCS.EvidencijaRadaKonzolna;
-
+using ZadacaCS.EvidencijaRadaKonzolna;
 
 
-new ZadacaCS.LjubavniKalkulator.Program();
+
+
+
+//new ZadacaCS.KonzolnaEdunova.Izbornik();
+
+
+
+
+
+
+
+//new ZadacaCS.LjubavniKalkulator.Program();
 
 //new ZadacaCS.LjubavniKalkulator.Program();
 
@@ -19,7 +28,7 @@ new ZadacaCS.LjubavniKalkulator.Program();
 
 //passGEn();
 
-//new ZadacaCS.EvidencijaRadaKonzolna.Izbornik();
+new ZadacaCS.EvidencijaRadaKonzolna.Izbornik();
 
 //CiklicnaTablica.Izvedi();
 
