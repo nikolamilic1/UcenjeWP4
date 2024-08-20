@@ -55,7 +55,9 @@ namespace WebAPI.Controllers
             }
 
             osoba.Ime = osoba.Ime + " promjenio";
-            return StatusCode(StatusCodes.Status205ResetContent, osoba);
+            //return StatusCode(StatusCodes.Status205ResetContent, osoba);
+
+            return StatusCode(StatusCodes.Status205ResetContent, new JsonResult);
 
         }
     }
