@@ -39,7 +39,7 @@ namespace WebAPI.Controllers
         {
             return Ok(new {sifra = id, naziv = ime});
         }
-
+        [HttpPost]
         public IActionResult Post()
         {
             return BadRequest("Nešto ne valja");
