@@ -55,10 +55,19 @@ namespace WebAPI.Controllers
             }
 
             osoba.Ime = osoba.Ime + " promjenio";
+
             //return StatusCode(StatusCodes.Status205ResetContent, osoba);
 
-            return StatusCode(StatusCodes.Status205ResetContent, new JsonResult);
+            return StatusCode(StatusCodes.Status202Accepted, osoba);
 
         }
+
+        [HttpDelete]
+        public IActionResult Delete(int id)
+        {
+            return NotFound("Nije pronađeno u bazi");
+        }
+
+
     }
 }
