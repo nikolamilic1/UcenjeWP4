@@ -1,5 +1,7 @@
 ﻿use master;
 go
+alter database evidencija set single_user with rollback immediate;
+go
 drop database if exists evidencija;
 go
 create database evidencija collate Croatian_CI_AS;
@@ -30,9 +32,6 @@ email varchar(50) not null
 );
 
 create table evidencija_rada(
-sifra int not null primary key identity(1,1),
-vrijeme_pocetka datetime,
-vrijeme_zavrsetka datetime,
 zadatak int,
 djelatnik int
 );
@@ -80,15 +79,15 @@ insert into zadatak (naziv,pocetak,zavrsetak,projekt,opis) values
 
 insert into zadatak (naziv,projekt,opis) values
 ('Definiranje ciljeva',2,'Razjasniti svrhu web stranice (promocija benda, informacije o koncertima, prodaja muzike i mercha, komunikacija s fanovima). Definirati ciljnu publiku (fanovi, promotori, mediji).'),
-('Analiza zahtjeva',2,'Prikupiti zahteve od članova benda i menadžmenta. Odrediti ključne funkcionalnosti (galerija, biografija, muzički player, kalendar događaja, kontakt forma).'),
+('Analiza zahtjeva',2,'Prikupiti zahtjeve od članova benda i menadžmenta. Odrediti ključne funkcionalnosti (galerija, biografija, muzički player, kalendar događaja, kontakt forma).'),
 ('Informacijska arhitektura',2,'Kreirati strukturu web stranice, uključujući glavne sekcije (početna stranica, biografija, muzika, turneje, galerija, kontakt).'),
 ('UI/UX dizajn',2,'Razviti wireframe-ove za glavne stranice. Dizajnirati vizuelni identitet stranice koji će odražavati stil i energiju benda Teheran. Izraditi prototipove za pregled i odobrenje. Osigurati da dizajn bude prilagođen različitim uređajima (desktop,tablet...)'),
 ('Front-end razvoj',2,'Kodirati dizajn koristeći HTML, CSS i JavaScript. Implementirati responzivni dizajn za optimalno korisničko iskustvo na svim uređajima.'),
 ('Back-end razvoj',2,'Postaviti serversku stranu ako je potrebno za dinamičke funkcionalnosti (CMS za upravljanje sadržajem, baza podataka za liste događaja). Integrisati potrebne servise (npr. muzički player, integracija sa društvenim mrežama, newsletter prijava).'),
-('Deployment',2,'Postaviti stranicu na produkciono okruženje. Konfigurisati hosting i domen. Provjeriti je li sve pravilno postavljeno i funkcionalno.'),
-('Ažuriranja i unapređenja',2,'Redovno ažurirati sadržaj (nove pjesme, datumi turneja, novosti). Implementirati nove funkcionalnosti na osnovu korisničkog feedback-a i tehnoloških unapređenja.'),
+('Deployment',2,'Postaviti stranicu na produkciono okruženje. Konfigurirati hosting i domen. Provjeriti je li sve pravilno postavljeno i funkcionalno.'),
+('Ažuriranja i unapređenja',2,'Redovito ažurirati sadržaj (nove pjesme, datumi turneja, novosti). Implementirati nove funkcionalnosti na osnovu korisničkog feedback-a i tehnoloških unapređenja.'),
 ('SEO optimizacija',2,'Optimizirati stranicu za tražilice kako bi se poboljšala vidljivost.'),
-('Korisnička podrška',2,'Pružati podršku posetiocima stranice kroz različite kanale (e-mail, chat) kako bi se osiguralo zadovoljstvo korisnika i rešili eventualni problemi.');
+('Korisnička podrška',2,'Pružati podršku posetiocima stranice kroz različite kanale (e-mail, chat) kako bi se osiguralo zadovoljstvo korisnika i rješili eventualni problemi.');
 
 
 --INSERTI ZADATAKA ZA PROJEKT TimeMaster (bez kolona pocetak i zavrsetak)
@@ -100,6 +99,6 @@ insert into zadatak (naziv,projekt,opis) values
 ('Front-end razvoj',3,'Kodirati korisnički interfejs koristeći HTML, CSS, JavaScript i odgovarajuće front-end framework-e (npr. React, Angular, Vue.js).'),
 ('Back-end razvoj',3,'Razviti serversku stranu aplikacije koristeći odgovarajuće tehnologije (npr. Node.js, Django, Ruby on Rails) i API-je za komunikaciju između front-end-a i back-end-a.'),
 ('Integracija baze podataka',3,'Implementirati bazu podataka i integrirati je sa back-end-om'),
-('Sistem testiranje',3,'Testirati kompletnu aplikaciju kako bi se osiguralo da svi delovi funkcionišu zajedno bez problema.'),
+('Sistem testiranje',3,'Testirati kompletnu aplikaciju kako bi se osiguralo da svi dijelovi funkcioniraju zajedno bez problema.'),
 ('Deployment',3,'Postaviti aplikaciju na produkciono okruženje. To uključuje konfiguraciju servera, baze podataka i bilo kojih drugih potrebnih servisa.'),
 ('Ažuriranja i unapređenja',3,'Redovno ažurirati aplikaciju novim funkcionalnostima i unapređenjima na osnovu korisničkog feedback-a i tehnoloških unapređenja.');
