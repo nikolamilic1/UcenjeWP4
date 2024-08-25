@@ -17,7 +17,7 @@ klijent varchar(100) not null
 
 create table zadatak(
 sifra int not null primary key identity(1,1),
-naziv varchar(100) not null,
+naziv varchar(100),
 pocetak datetime,
 zavrsetak datetime,
 projekt int,
