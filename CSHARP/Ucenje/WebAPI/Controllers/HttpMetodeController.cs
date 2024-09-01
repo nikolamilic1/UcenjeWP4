@@ -61,9 +61,9 @@ namespace WebAPI.Controllers
                 return BadRequest(ModelState);
             }
 
-            osoba.Ime = osoba.Ime + " promijenio";
+            osoba.Ime = osoba.Ime + " promjenio";
 
-            return StatusCode(StatusCodes.Status205ResetContent, osoba);
+            return StatusCode(StatusCodes.Status201Created, osoba);
 
 
         }
