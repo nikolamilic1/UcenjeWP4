@@ -17,11 +17,25 @@ namespace WebAPI.Controllers
         }
         // Ovdje završava ruta
 
+
+        // Ovdje počinje ruta
         [HttpGet]
-        [Route("pozdrav")]
+        [Route("Pozdrav")]
         public string Pozdravi(string s)
         {
-            return "Hello" + s;
+            return "Hello " + s;
+        }
+        // Ovdje završava ruta
+
+
+        
+
+        // Ovdje počinje ruta
+        [HttpGet]
+        [Route("hello")]
+        public IActionResult Pozdravi(int id, string ime)
+        {
+            return Ok(new { sifra = id, naziv = ime });  //napravljena nova instanca klase koja ima dva svojstva sifra i naziv
         }
     }
 }
