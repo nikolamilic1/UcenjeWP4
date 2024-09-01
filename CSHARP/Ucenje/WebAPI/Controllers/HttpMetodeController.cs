@@ -37,5 +37,17 @@ namespace WebAPI.Controllers
         {
             return Ok(new { sifra = id, naziv = ime });  //napravljena nova instanca klase koja ima dva svojstva sifra i naziv
         }
+
+        // Ovdje završava ruta
+
+
+
+
+        // Ovdje počinje ruta
+        [HttpPost]
+        public IActionResult Post()
+        {
+            return BadRequest("Nešto ne valja");
+        }
     }
 }
