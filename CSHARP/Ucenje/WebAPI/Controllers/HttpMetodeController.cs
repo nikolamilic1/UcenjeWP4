@@ -1,14 +1,15 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using WebAPI.Models;
 
 namespace WebAPI.Controllers
-{ 
+{
 
 
-[ApiController]
-[Route("api/v1/[controller]")]
-    public class HttpMetodeController:ControllerBase
+    [ApiController]
+    [Route("api/v1/[controller]")]
+    public class HttpMetodeController : ControllerBase
     {
-        
+
         // Ovdje počinje ruta
         [HttpGet]
         public string Pozdravi()
@@ -28,7 +29,7 @@ namespace WebAPI.Controllers
         // Ovdje završava ruta
 
 
-        
+
 
         // Ovdje počinje ruta
         [HttpGet]
@@ -41,13 +42,24 @@ namespace WebAPI.Controllers
         // Ovdje završava ruta
 
 
-
-
         // Ovdje počinje ruta
         [HttpPost]
         public IActionResult Post()
         {
             return BadRequest("Nešto ne valja");
         }
+        // Ovdje završava ruta
+
+
+        // Ovdje počinje ruta
+        [HttpPut]
+        public IActionResult Put(Osoba osoba)  // ne prima boolean, nego cijelu klasu
+        {
+
+        }
+        
+            
+
+
+        }
     }
-}
