@@ -63,7 +63,7 @@ namespace WebAPI.Controllers
 
             osoba.Ime = osoba.Ime + " promjenio";
 
-            return StatusCode(StatusCodes.Status201Created, osoba);
+            return StatusCode(StatusCodes.Status202Accepted, osoba);
 
 
         }
