@@ -55,11 +55,21 @@ namespace WebAPI.Controllers
         [HttpPut]
         public IActionResult Put(Osoba osoba)  // ne prima boolean, nego cijelu klasu
         {
+            // ako nisi primio osobu vrati BadRequest
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            osoba.Ime = osoba.Ime + " promijenio";
+
+            return StatusCode(StatusCodes.Status205ResetContent, osoba);
+
 
         }
-        
-            
 
 
-        }
+
+
     }
+}
