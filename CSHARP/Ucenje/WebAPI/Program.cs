@@ -13,7 +13,11 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(opcije =>
+    {
+        opcije.ConfigObject.AdditionalItems.Add("requestSnippetsEnabled", true);
+    });
+    // ovo gore je za prikazivanje CMDa u swaggeru
 }
 
 app.UseHttpsRedirection();
