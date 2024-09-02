@@ -66,8 +66,16 @@ namespace EdunovaAPP.Controllers
             return Ok(new { poruka = "Uspješno promjenjeno" });
         }
 
-
-
+        [HttpDelete]
+        [Route("{sifra:int}")]
+        [Produces("application/json")]
+        public IActionResult Delete(int sifra)
+        {
+            var smjerIzBaze = _context.Smjerovi.Find(sifra);
+            _context.Smjerovi.Remove(smjerIzBaze);
+            _context.SaveChanges();
+            return Ok(new { poruka = "Uspješno obrisano" });
+        }
 
 
 
