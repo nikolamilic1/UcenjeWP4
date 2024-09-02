@@ -8,7 +8,7 @@ namespace EdunovaAPP.Controllers
 
     [ApiController]
     [Route("api/v1/[controller]")]
-    public class SmjerController:ControllerBase
+    public class SmjerController : ControllerBase
     {
         //dependency injection
         // 1. defirniraš privatno svojstvo
@@ -22,5 +22,18 @@ namespace EdunovaAPP.Controllers
         {
             _context = context;
         }
+
+        // RUTE
+
+        [HttpGet]
+        public ActionResult Get()
+        {
+            return Ok(_context.Smjerovi);
+        }
+
+
+
+
+
     }
 }
