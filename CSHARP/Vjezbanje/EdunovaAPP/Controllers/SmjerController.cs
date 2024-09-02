@@ -34,19 +34,21 @@ namespace EdunovaAPP.Controllers
 
         [HttpGet]
         [Route("{sifra:int}")]
-        public IActionResult GetBySifra(int sifra) {
+        public IActionResult GetBySifra(int sifra)
+        {
             return Ok(_context.Smjerovi.Find(sifra));
         }
 
         [HttpPost]
-        public IActionResult Post(Smjer smjer)         
-        { 
-        _context.Smjerovi.Add(smjer);
+        public IActionResult Post(Smjer smjer)
+        {
+            _context.Smjerovi.Add(smjer);
             _context.SaveChanges();
             return StatusCode(StatusCodes.Status201Created, smjer);
         }
         [HttpPut]
         [Route("{sifra:int}")]
+        [Produces("application/json")]
         public IActionResult Put(int sifra, Smjer smjer)
         {
             var smjerIzBaze = _context.Smjerovi.Find(sifra);
@@ -54,7 +56,7 @@ namespace EdunovaAPP.Controllers
             //za sada ručno, kasnije Mapper
             smjerIzBaze.Naziv = smjer.Naziv;
             smjerIzBaze.Trajanje = smjer.Trajanje;
-            smjerIzBaze.Cijena = smjer.Cijena; 
+            smjerIzBaze.Cijena = smjer.Cijena;
             smjerIzBaze.IzvodiSeOd = smjer.IzvodiSeOd;
             smjerIzBaze.Vaucer = smjer.Vaucer;
 
