@@ -45,6 +45,31 @@ namespace EdunovaAPP.Controllers
             _context.SaveChanges();
             return StatusCode(StatusCodes.Status201Created, smjer);
         }
+        [HttpPut]
+        [Route("{sifra:int}")]
+        public IActionResult Put(int sifra, Smjer smjer)
+        {
+            var smjerIzBaze = _context.Smjerovi.Find(sifra);
+
+            //za sada ručno, kasnije Mapper
+            smjerIzBaze.Naziv = smjer.Naziv;
+            smjerIzBaze.Trajanje = smjer.Trajanje;
+            smjerIzBaze.Cijena = smjer.Cijena; 
+            smjerIzBaze.IzvodiSeOd = smjer.IzvodiSeOd;
+            smjerIzBaze.Vaucer = smjer.Vaucer;
+
+            _context.Smjerovi.Update(smjerIzBaze);
+            _context.SaveChanges();
+
+            return Ok(new { poruka = "Uspješno promjenjeno" });
+        }
+
+
+
+
+
+
+
 
 
     }
