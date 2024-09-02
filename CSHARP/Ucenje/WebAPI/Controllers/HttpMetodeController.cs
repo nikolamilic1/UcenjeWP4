@@ -60,15 +60,22 @@ namespace WebAPI.Controllers
             {
                 return BadRequest(ModelState);
             }
-
+            
             osoba.Ime = osoba.Ime + " promjenio";
 
             return StatusCode(StatusCodes.Status202Accepted, osoba);
-
-
         }
+        // Ovdje završava ruta
 
 
+        // Ovdje počinje ruta
+        [HttpDelete]
+        public IActionResult Delete(int id) 
+        {
+        
+            return NotFound("Nije pronađeno u bazi");
+        
+        }
 
 
     }
