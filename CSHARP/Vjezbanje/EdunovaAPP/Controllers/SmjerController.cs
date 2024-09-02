@@ -26,7 +26,7 @@ namespace EdunovaAPP.Controllers
         // RUTE
 
         [HttpGet]
-        public ActionResult Get()
+        public IActionResult Get()
         {
             return Ok(_context.Smjerovi);
         }
