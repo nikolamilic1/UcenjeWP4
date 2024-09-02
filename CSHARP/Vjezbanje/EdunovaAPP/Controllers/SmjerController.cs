@@ -1,4 +1,5 @@
 ﻿using EdunovaAPP.Data;
+using EdunovaAPP.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EdunovaAPP.Controllers
@@ -37,6 +38,13 @@ namespace EdunovaAPP.Controllers
             return Ok(_context.Smjerovi.Find(sifra));
         }
 
+        [HttpPost]
+        public IActionResult Post(Smjer smjer)         
+        { 
+        _context.Smjerovi.Add(smjer);
+            _context.SaveChanges();
+            return StatusCode(StatusCodes.Status201Created, smjer);
+        }
 
 
     }
