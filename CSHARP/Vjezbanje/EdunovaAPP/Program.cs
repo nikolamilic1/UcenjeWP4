@@ -1,4 +1,5 @@
 using EdunovaAPP.Data;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,7 +12,12 @@ builder.Services.AddSwaggerGen();
 
 
 // dodavanje baze podataka
-builder.Services.AddDbContext<EdunovaContext>();
+builder.Services.AddDbContext<EdunovaContext>(
+    opcije =>
+    {
+        opcije.UseSqlServer(builder.Configuration.GetConnectionString("EdunovaContext"));
+    }
+    );
 
 
 
