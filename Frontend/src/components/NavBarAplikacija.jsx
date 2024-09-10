@@ -22,7 +22,7 @@ const navigate = useNavigate();
             <Nav.Link href="#link">Swagger</Nav.Link>
             <NavDropdown title="Programi" id="basic-nav-dropdown">
             <Nav.Link onClick={()=>navigate(RoutesNames.SMJER_PREGLED)}>Smjerovi</Nav.Link>
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="https://nikolamilic1-001-site1.htempurl.com/swagger/index.html">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
               </NavDropdown.Item>
