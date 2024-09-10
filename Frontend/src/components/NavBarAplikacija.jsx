@@ -2,11 +2,13 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Routes, useNavigate } from 'react-router-dom';
+import { RoutesNames } from '../constants';
 
 
 export default function NavBarAplikacija(){
 
-
+const navigate = useNavigate();
 
     return(
          <>
@@ -16,9 +18,10 @@ export default function NavBarAplikacija(){
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Početna</Nav.Link>
+            <Nav.Link onClick={()=>navigate(RoutesNames.HOME)}>Početna</Nav.Link>
             <Nav.Link href="#link">Swagger</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+            <NavDropdown title="Programi" id="basic-nav-dropdown">
+            <Nav.Link onClick={()=>navigate(RoutesNames.)}>Početna</Nav.Link>
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
