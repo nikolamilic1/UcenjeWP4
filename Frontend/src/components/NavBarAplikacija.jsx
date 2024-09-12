@@ -14,15 +14,14 @@ const navigate = useNavigate();
          <>
 <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">Evidencija rada app</Navbar.Brand>
+        <Navbar.Brand href="#home">Edunova app</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link onClick={()=>navigate(RoutesNames.HOME)}>Početna</Nav.Link>
-            <Nav.Link href="#link">Swagger</Nav.Link>
+            <Nav.Link href="https://tjakopec-001-site1.ftempurl.com/swagger/index.html" target='_blank'>Swagger</Nav.Link>
             <NavDropdown title="Programi" id="basic-nav-dropdown">
             <Nav.Link onClick={()=>navigate(RoutesNames.SMJER_PREGLED)}>Smjerovi</Nav.Link>
-              <NavDropdown.Item href="https://nikolamilic1-001-site1.htempurl.com/swagger/index.html">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
               </NavDropdown.Item>
