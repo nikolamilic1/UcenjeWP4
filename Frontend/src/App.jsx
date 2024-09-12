@@ -18,7 +18,7 @@ function App() {
         <Route path={RoutesNames.HOME} element={<Pocetna />} />
 
 
-        <Route path={RoutesNames.SMJER_PREGLED} elemnt={<SmjeroviPregled />} />
+        <Route path={RoutesNames.SMJER_PREGLED} element={<SmjeroviPregled />} />
        </Routes>
     </>
   )

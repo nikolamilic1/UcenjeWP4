@@ -3,3 +3,12 @@ U terminalu izvesti
 npm install react-router-dom
 
 npm install react-bootstrap bootstrap
+
+npm install axios
+
+npm install react-number-format  // za formatiranje cijene
+
+npm install moment   
+
+npm install react-icons
+
