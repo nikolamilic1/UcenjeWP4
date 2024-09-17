@@ -1,4 +1,4 @@
-import { Container, Table } from "react-bootstrap";
+import { Button, Container, Table } from "react-bootstrap";
 import SmjerService from "../../services/SmjerService";
 import { useEffect, useState } from "react";
 import { NumericFormat } from "react-number-format";
@@ -72,7 +72,13 @@ export default function SmjeroviPregled() {
                                 color={vaucer(smjer.vaucer)}
                                 />
                             </td>
-                            <td>{smjer.sifra}</td>
+                            <td>
+                                <Button
+                                variant="danger"
+                                onClick={()=>obrisi(smjer.sifra)}>
+                                    Obriši
+                                </Button>
+                            </td>
 
                     </tr>
                 ))}
