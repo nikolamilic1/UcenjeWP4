@@ -29,7 +29,7 @@ export default function SmjeroviPregled() {
 
     function vaucer(v) {
         if(v==null)
-    }
+    
 
     return (
         <Container>
@@ -80,4 +80,6 @@ export default function SmjeroviPregled() {
                 </Table>
         </Container>
     )
+
+}
 }
