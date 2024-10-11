@@ -11,8 +11,8 @@ use evidencija;
 
 create table projekt(
 sifra int not null primary key identity(1,1),
-naziv varchar(100) not null,
-klijent varchar(100) not null
+naziv varchar(100),
+klijent varchar(100)
 );
 
 create table zadatak(
