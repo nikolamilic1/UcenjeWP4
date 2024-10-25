@@ -49,6 +49,12 @@ insert into djelatnik (ime,prezime,email) values
 ('Pero','Perić','pero.peric@gmail.com'),
 ('Ivan','Ivić','ivan.ivic@gmail.com'),
 ('Jozo','Jozić','jozo.jozicgmail.com'),
+('Joco','Jocić','joco.jocic@gmail.com'),
+('Ivana','Ivanović','ivan.ivic@gmail.com'),
+('Napoleon','Bonaparte','napoleon@gmail.com'),
+('Bill','Gates','bill@gmail.com'),
+('Dow','Jones','dj@gmail.com'),
+('Maria','Calais','mariagmail.com'),
 ('Lucija','Lucić','lucija.lucic@gmail.com');
 
 
